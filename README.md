@@ -1,2 +1,0 @@
-# konikapp 
-# proyecto integrador 
