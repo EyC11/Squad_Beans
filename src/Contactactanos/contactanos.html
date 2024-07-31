@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <!-- El link puede cambiar su dirección -->
+    <link rel="stylesheet" href="./style/contactanos.css">
+    <!--Links de topografía-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div>
+        <div>
+            <h1 class="contact">Contáctanos </h1>
+            <button class="botonCliente">Soy Cliente</button>
+            <button class="botonProveedor">Soy Proveedor</button>
+
+            <form class="formContactanos">
+                <div class="grupo-datos">
+                    <label for="nombres">Nombre (s):</label>
+                    <input type="text" id="nombres" required placeholder="Escribe tu nombre (s)">
+                </div>
+                <div class="grupo-datos">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" required placeholder="Escribe tus apellidos">
+                </div>
+
+                <div class="contenedor2">
+
+                    <div class="grupo-datos">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="Ejemplo correo@gmail.com" required>
+                    </div>
+
+                    <div class="grupo-datos">
+                        <label for="ubicacion">Ubicación:</label>
+                        <input type="text" id="ubicacion" placeholder="Coloca tu ubicación" required>
+                    </div>
+
+                    <div class="grupo-datos">
+                        <label for="topicos">Tópico:</label>
+                        <select name="topicos" id="topicos" required placeholder="Selecciona un tema">
+                            <option value="" disabled selected>Selecciona un tema</option>
+                            <option value="reseñas">Reseñas</option>
+                            <option value="servicios">Servicios</option>
+                            <option value="pagos">Pagos</option>
+                            <option value="asistencia">Asistencia técnica</option>
+                        </select>
+
+                    </div>
+
+                    <div class="grupo-datos">
+                        <label for="Ayuda">¿Cómo podemos ayudar?</label>
+                        <input type="text" id="Ayuda" placeholder="Describe que problema tienes...">
+                    </div>
+                    <div class="div-btn-enviar">
+                        <button class="btn">Enviar</button>
+
+                    </div>
+                </div>
+
+
+                <!--- aqui iria el div de descipcion -->
+            </form>
+
+
+        </div>
+        <div class="seccion2">
+            <img>
+
+        </div>
+    </div>
+</body>
+
+</html>
