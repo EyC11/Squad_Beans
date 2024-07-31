@@ -1,1 +1,121 @@
-/* 
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-color: #D9B70D ;
+    border-width: 5px;
+    border-style: solid;
+    
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-search input {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+}
+
+.navbar-buttons {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar-button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    text-decoration: none;
+    background-color: #555;
+    padding: 10px 15px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: #777;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    border-width: 5px;
+    border-style: solid;
+    border-color: #D9B70D;
+    background-color: #2D4B73;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+.footer--container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .footer--container--2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:#FFFFFF;
+}
+ 
+.subtitulo--footer{
+    color: #D9B70D;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-align:left;
+    
+}
+
+a, .anchor--footer{
+    color:#FFFFFF;
+    list-style:none;
+    cursor: pointer;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 10px;
+    font-style: normal;
+    text-align:left;
+    margin-left: -20px ;
+}
+
+a{
+    color:#FFFFFF;
+    text-decoration: none;
+
+}
+
+
