@@ -1,0 +1,105 @@
+/*
+#D9B70D -- Dorado
+#253C59 -- Azul obscuro
+#4C5973 -- Azul 
+#99B4BF -- Azul claro
+#FFFFFF -- !Negro
+
+//Falta descargar tipo de letra 
+font-family: "DM Sans", sans-serif; 
+Titulos 
+font-family: "Poppins", sans-serif;
+*/
+
+
+.contact{
+    color: #253C59;
+    font-family: "Poppins", sans-serif;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.formContactanos{
+    background-color: #253C59;
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    margin: 40px;
+    border-radius: 25px;
+    padding: 20px;
+    border: none;
+    margin-right: 400px;
+    box-sizing: content-box;
+    /* display: flex;
+    align-items: column; */
+}
+
+.grupo-datos{
+    padding-left: 40px;
+    margin: 20px;
+    align-items: baseline;
+}
+
+input {
+    border-radius: none;
+    border: none;
+}
+
+button {
+    border-radius: 20px;
+    margin: 10px;
+    color: #253C59;
+    background-color: #D9B70D;
+    padding: 0px 10px;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-style: bold;
+    border: 20px 20px #253C59;
+}
+
+.btn {
+    padding: 0px 25px;
+    cursor: pointer;
+}
+
+.div-btn-enviar {
+    text-align: right;
+}
+
+.botonCliente {
+    background-color: #FFFFFF;
+    padding: 0px 25px;
+}
+
+.contenedor1 {
+    display: flex;
+    align-items: end;
+    text-align: right; 
+}
+.contenedor2 {
+    display: flex;
+    align-items: row;
+    text-align: center;
+}
+.contenedor3 {
+    display: flex;
+    align-items: row;
+    text-align: center;
+}
+
+#topicos {
+    width: 90%;
+}
+
+.botones_der {
+    background-color: rgb(112, 30, 30);
+    text-align: right;
+}
+
+#Ayuda {
+    width: 100%;
+    padding-bottom: 30%;
+}
+
+#img-contactanos {
+    width: 400px;
+}
