@@ -29,6 +29,8 @@ font-family: "Poppins", sans-serif;
     border: none;
     margin-right: 400px;
     box-sizing: content-box;
+    /* display: flex;
+    align-items: column; */
 }
 
 .grupo-datos{
@@ -66,4 +68,38 @@ button {
 .botonCliente {
     background-color: #FFFFFF;
     padding: 0px 25px;
+}
+
+.contenedor1 {
+    display: flex;
+    align-items: end;
+    text-align: right; 
+}
+.contenedor2 {
+    display: flex;
+    align-items: row;
+    text-align: center;
+}
+.contenedor3 {
+    display: flex;
+    align-items: row;
+    text-align: center;
+}
+
+#topicos {
+    width: 90%;
+}
+
+.botones_der {
+    background-color: rgb(112, 30, 30);
+    text-align: right;
+}
+
+#Ayuda {
+    width: 100%;
+    padding-bottom: 30%;
+}
+
+#img-contactanos {
+    width: 400px;
 }

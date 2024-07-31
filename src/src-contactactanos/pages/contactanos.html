@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contáctanos</title>
-    <!-- El link puede cambiar su dirección -->
-    <link rel="stylesheet" href="./style/contactanos.css">
+    <!-- El link puede cambiar su dirección 30/07/24 -->
+    <link rel="stylesheet" href="../styles/contactanos.css">
     <!--Links de topografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,24 +22,32 @@
 
 <body>
 
-    <div>
-        <div>
-            <h1 class="contact">Contáctanos </h1>
-            <button class="botonCliente">Soy Cliente</button>
-            <button class="botonProveedor">Soy Proveedor</button>
+    <div class="contenedor-general"> 
+        <!-- contenedor-general contiene la seccion1 y la seccion2  -->
+        <div class="seccion1">
+            <div class="contenedor1">
+                <div>
+                    <h1 class="contact">Contáctanos </h1>
+                </div>
+                <div class="botones_der">
+                    <button class="botonCliente">Soy Cliente</button>
+                    <button class="botonProveedor">Soy Proveedor</button>
+                </div>
+            </div>
 
             <form class="formContactanos">
-                <div class="grupo-datos">
-                    <label for="nombres">Nombre (s):</label>
-                    <input type="text" id="nombres" required placeholder="Escribe tu nombre (s)">
-                </div>
-                <div class="grupo-datos">
-                    <label for="apellidos">Apellidos:</label>
-                    <input type="text" id="apellidos" required placeholder="Escribe tus apellidos">
-                </div>
 
                 <div class="contenedor2">
-
+                    <div class="grupo-datos">
+                        <label for="nombres">Nombre (s):</label>
+                        <input type="text" id="nombres" required placeholder="Escribe tu nombre (s)">
+                    </div>
+                    <div class="grupo-datos">
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidos" required placeholder="Escribe tus apellidos">
+                    </div>
+                </div>    
+                <div class="contenedor3">
                     <div class="grupo-datos">
                         <label for="email">Email:</label>
                         <input type="text" id="email" placeholder="Ejemplo correo@gmail.com" required>
@@ -49,6 +57,9 @@
                         <label for="ubicacion">Ubicación:</label>
                         <input type="text" id="ubicacion" placeholder="Coloca tu ubicación" required>
                     </div>
+                </div>
+
+                    
 
                     <div class="grupo-datos">
                         <label for="topicos">Tópico:</label>
@@ -70,8 +81,6 @@
                         <button class="btn">Enviar</button>
 
                     </div>
-                </div>
-
 
                 <!--- aqui iria el div de descipcion -->
             </form>
@@ -79,7 +88,22 @@
 
         </div>
         <div class="seccion2">
-            <img>
+            <div class="">
+                <img id="img-contactanos" src="https://www.linkaform.com/hubfs/linkaform-2021/img-contactanos.png" alt="Imagen-Contactanos">
+            </div>
+            
+            <h3>Nos encontramos en:</h3>
+            <div class="info-SB">
+
+                <label>Nuestro E-mail</label>
+                <label>squadbeans@gmail.com</label>
+
+
+                <label>Nuestro Teléfono</label>
+                <label>+52 (55) 12-34-56-78</label>
+            </div>
+            
+
 
         </div>
     </div>
