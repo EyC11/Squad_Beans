@@ -1,0 +1,336 @@
+/*Creacion de pagina styles Acerca de nosotros.*/
+/*Colores a usar 
+background: #EFF0F5
+azul fuerte: #2D4B73
+azul claro: #99B4BF
+oro: #D9B70D
+blanco: #FFFFFF
+Documentacion: https://www.w3schools.com
+
+*/
+
+
+body {
+    background-color: #EFF0F5;
+}
+
+/* Estilos generales para el contenedor */
+
+
+/*SECCION 1*/
+.container--total{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.container {
+    background-color: #2D4B73;
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    justify-items:auto;
+}
+
+.container-h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.container-p {
+    position: relative;
+    text-align: center;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+}
+
+
+
+.empezar--boton {
+    background-color: #D9B70D;
+    color: #2D4B73;
+    cursor: pointer;
+    padding: 7px;
+    border: solid 2px #2D4B73;
+    border-radius: 20px;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+.empezar--boton:hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border: solid 2px #D9B70D;
+}
+
+.like {
+    width: 100%;
+    height: auto;
+
+}
+
+.img--container {
+    width: 30%;
+    max-width: 350px;
+    position: relative;
+    top: -280px;
+    left: 0px;
+    z-index: 0;
+    padding: 0;
+
+}
+
+@media screen and (max-width: 1350px) {
+    .img--container {
+        visibility: hidden;
+    }
+}
+
+
+/*SECCION 2*/
+/*@media screen and (min-width:700px) {
+    .container2 {
+        display: flex;
+        margin: auto;
+        flex: wrap;
+    }
+
+    img {
+        width: 200px;
+        float: left;
+        clear: left;
+
+    }
+
+    .container2--porque {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container2 #porque {
+        background-color: #99B4BF;
+        width: 1336px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        padding: 50px;
+        border-radius: 20px;
+        grid-column: span 2;
+    }
+}*/
+
+.container2{
+    background-color: #99B4BF;
+    color: #2D4B73;
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    justify-items:center;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+}
+
+.container--porque{
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    justify-items:center;
+}
+
+#porque{
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    padding-top: 50px;
+    justify-items:center;
+}
+
+.row{
+    justify-items: auto;
+}
+
+.mision {
+    background-color: #99B4BF;
+    color: #2D4B73;
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+.vision {
+    background-color: #2D4B73;
+    color: #99B4BF;
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+
+.valores {
+    background-color: #99B4BF;
+    color: #2D4B73;
+    border-radius: 20px;
+    width: 1336px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 50px;
+    padding: 30px;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+
+}
+
+/*valores h2 {
+    text-align: center;
+}*/
+
+
+
+
+
+/* SECCION 3: CARRUSEL ESTILOS */
+@media screen and (min-width:700px) {
+    .card-fondo {
+        display: flex;
+        background-color: #2D4B73;
+        margin: 20px;
+        padding: 15px;
+        justify-content: space-around;
+
+
+    }
+
+    .cards {
+        /* cards 4 */
+        display: flex;
+        margin-left: 5px;
+        /* width: calc(100%/3); */
+        width: 260px;
+        height: 345px;
+
+    }
+
+    .imagen-carrusel {
+        height: 200px;
+        margin: 0 auto;
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        background-color: #99B4BF;
+    }
+}
+
+/* @media screen and (max-width:568px){
+    .card:not(:first-child) {
+        display: none;
+    }
+    
+} */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    /* Botones */
+    background-color: #99B4BF;
+}
+
+.card-body H5 {
+    color: #253c59;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+
+}
+
+.imagen-carrusel img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.card-title {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card-text {
+    color: #253c59;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+
+
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    text-align: center;
+    background-color: #D9B70D;
+    border: #ffffff solid 2px;
+    color: #253c59;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    border: solid 2px;
+    background-color: #2D4B73;
+    color: #D9B70D;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imagen-fondo {
+    background-color: #253c59;
+}
