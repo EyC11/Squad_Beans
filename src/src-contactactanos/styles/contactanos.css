@@ -54,7 +54,7 @@ input, select { /* Cambio: agregar select a la regla */
     padding: 10px; /* Cambio: agregar padding */
     border-radius: 5px; /* Cambio: bordes redondeados */
     border: 1px solid #99B4BF; /* Cambio: borde gris claro */
-    font-size: 16px; /* Cambio: tamaño de fuente */
+    font-size: 14px; /* Cambio: tamaño de fuente */
 }
 
 button {
@@ -168,6 +168,7 @@ button:hover {
     #img-contactanos {
         width: 150px;
     }
+
 }
 
 /* Inicio de la sección 2  */

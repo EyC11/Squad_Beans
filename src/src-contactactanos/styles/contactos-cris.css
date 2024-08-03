@@ -1,0 +1,213 @@
+/*
+#D9B70D -- Dorado
+#253C59 -- Azul obscuro
+#4C5973 -- Azul 
+#99B4BF -- Azul claro
+#FFFFFF -- !Negro
+
+//Falta descargar tipo de letra 
+font-family: "DM Sans", sans-serif; 
+Titulos 
+font-family: "Poppins", sans-serif;
+*/
+
+
+
+.contact{
+    color: #253C59;
+    font-family: "Poppins", sans-serif;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.form-container {
+    background-color: #253C59;
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    margin: 40px;
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    margin-top: 10px;
+    width: 100%; /* Cambio: ajustar ancho al 100% del contenedor */
+    max-width: 600px; /* Cambio: máximo ancho de 600px para responsividad */
+    box-sizing: border-box; /* Cambio de content-box a border-box para mejor manejo del padding */
+}
+
+.contenedor2 {
+    display: flex;
+    align-items: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.grupo-datos {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Cambio: disposición vertical de elementos hijos */
+    width: 100%;
+}
+
+.tamaño_text {
+    width: 100%;
+}
+
+#topicos {
+    width: 100%;
+}
+
+#Ayuda {   /* Para el cuadro de texto de comentarias */
+    width: 100%;
+    height: 130px;  
+}
+
+.info-SB {
+    align-items: center; /* Cambio: centrar contenido en pantallas pequeñas */
+    text-align: right; /* Cambio: centrar texto */
+    margin-right: 20px;
+    margin-bottom: 1em;
+    font-family:"DM Sans", sans-serif;
+}
+
+.seccion2 {
+    text-align: center;
+    border-radius: 20px;
+    background-color: #99B4BF;
+    margin: 10px 10px 10px 20px;
+}
+
+#img-contactanos {
+    width: 350px;
+}
+/***********************Botones*****************************/
+
+
+/*Botones superiores Cliente y Proveedor*/
+
+.botonesUsers {
+    display: flex;
+    flex-direction: row;
+    margin-left: 27%;
+    gap: 20px;
+}
+
+.botonCliente {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.botonCliente:hover {
+
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #253C59;
+    transition: 0.5s;
+
+}
+
+.botonProveedor {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+
+}
+
+.botonProveedor:hover {
+
+    border: 2px solid #D9B70D;
+    color: #D9B70D;
+    background-color: #253C59;
+    transition: 0.5s;
+
+}
+
+/* Boton enviar */
+
+.div-btn-enviar {
+    text-align: right;
+}
+
+.botonEnviarForm {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+
+}
+
+.botonEnviarForm:hover{
+    
+    border:2px solid #D9B70D;
+    color: #D9B70D;
+    background-color: #253C59;
+    transition: 0.5s;
+
+}
+
+
+@media (max-width: 500px) { /* Cambio: media query para pantallas más pequeñas */
+    .contenedor-general{
+        flex-direction: column;
+        
+    }
+
+    .form-container {
+        margin-left: 5px;
+    }
+
+    .formContactanos {
+        margin: 40px; /* Cambio: ajustar margen */
+        align-items: center;
+    }
+
+    .grupo-datos {
+        width: 100%;
+    }
+
+    .div-btn-enviar {
+        text-align: center; /* Cambio: centrar botón en pantallas pequeñas */
+    }
+
+    .seccion2 {
+        align-items: center; /* Cambio: centrar contenido en pantallas pequeñas */
+        text-align: right; /* Cambio: centrar texto */
+        max-width: 600px;
+    }
+
+    #img-contactanos {
+        width: 150px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedor2 {
+        display: flex;
+        flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
+        justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
+    }
+
+    .info-SB {
+        margin: 20px;
+    }
+    .botonesUsers {
+        display: flex;
+        align-items: center;
+    }
+}
