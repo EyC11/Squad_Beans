@@ -26,83 +26,152 @@
     <nav class="navbar">
         <div class="navbar--container">
 
-            <!-- Caja contenedora del logo principial-->
-            <div class="logoKonikapp">
-                <a href="/index.html">
-                    <img src="../../public/assets/konijapp_nombre.png" alt="logo--texto" class="navbar--logo">
-                </a>
-            </div>
+            <div class="responsive--container">
+                <!-- Caja contenedora del logo principial y el menu de hamburgesa-->
+                <div class="subcontainer1--navbar">
+                    <div class="logoKonikapp">
+                        <a href="/index.html">
+                            <img src="../../public/assets/konijapp_nombre.png" alt="logo--texto" class="navbar--logo">
+                        </a>
+                    </div>
+                
 
-            <!-- Caja contenedora del menu de hamburguesa desplegable-->
-            <div>
-                <a href=""><img src="../../public/assets/menuHamburgesa.png" alt="" class="menuHamburgesa"></a>
+                    <!-- Caja contenedora del menu de hamburguesa desplegable-->
+                    <div class="dropdown" >
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:transparent; border-style:none;margin: 0;">
+                            <img src="../../public/assets/menuHamburgesa.png" alt="" class="menuHamburgesa" >
+                        </button>
+                        <!-- Lista desordenada con las opciones dentro del menu de hamburguesa-->
+                        <ul class="dropdown-menu">
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    Preguntas frecuentes
+                                </button>
+                            </li>
+
+                            <hr>
+
+                            <li>
+                                <button class="dropdown-item" type="button">
+                                    Sugerencias
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subcontainer2--navbar">            
+                    <div class="navbar--search-cuadroAzul">
+                        <div>
+                            <a href="#" name="bonton_busqueda" class="navbar-button--busqueda">
+                                <img src="../../public/assets/logoBusqueda.png" alt="" class="logo--busqueda">
+                             </a>
+                        </div>
+
+                        <div class="cuadro--busqueda">
+                            <!-- Input para la busqueda por texto-->
+                            <input type="text" placeholder="Busca albañiles, choferes, limpieza de hogar..."  >
+
+                        </div>
+
+                        <!-- Caja de un div para el menu de "Mas categorias"-->
+                        <div class="dropdown" style="margin:0;">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#2D4B73 ; width:100% ;border-color: #2D4B73;border-radius: 20px;"> <!-- se colocaron los estilos en linea para esta clase debido a su peculiar nombre que no es aceptado en una hoja de CSS-->
+                                Mas categorias
+                            </button>
+
+                            <!-- Lista desordenada con las opciones dentro del menu "Mas categorias"-->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        Hogar
+                                    </button>
+                                </li>
+
+                                <hr>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        construccion
+                                    </button>
+                                </li>
+
+                                <hr>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">electronicay electricidad</button></li>
+                                <hr>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">
+                                        clases
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+
+
+
 
             <!-- Caja de un div para el icono de lupa, con la funcion de busqueda-->
-            <div class="navbar--search">
-                <div>
-                    <a href="#" name="bonton_busqueda" class="navbar-button--busqueda">
-                        <img src="../../public/assets/logoBusqueda.png" alt="" class="logo--busqueda">
-                    </a>
-                </div>
-                <div>
-                    <!-- Input para la busqueda por texto-->
-                    <input type="text" placeholder="Busca albañiles, choferes, limpieza de hogar..." class="cuadro--busqueda">
 
-                </div>
-
-                <!-- Caja de un div para el menu de "Mas categorias"-->
-                <div class="dropdown" style="margin:0;">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#2D4B73 ; width:150px ;border-color: #2D4B73;border-radius: 20px;"> <!-- se colocaron los estilos en linea para esta clase debido a su peculiar nombre que no es aceptado en una hoja de CSS-->
-                      Mas categorias
-                    </button>
-
-                    <!-- Lista desordenada con las opciones dentro del menu "Mas categorias"-->
-                    <ul class="dropdown-menu">
-                      <li><button class="dropdown-item" type="button">Hogar</button></li>
-                      <hr>
-                      <li><button class="dropdown-item" type="button">construccion</button></li>
-                      <hr>
-                      <li><button class="dropdown-item" type="button">electronicay electricidad</button></li>
-                      <hr>
-                      <li><button class="dropdown-item" type="button">clases</button></li>
-                    </ul>
-                </div>
-            </div>
 
             <!-- Caja de un div contendor de las 4 botones -->
             <div class="navbar-buttons">
                 <!-- Caja de un div contendor de los 2 primeros botones acomodados en columnas -->
                 <div class="navbar--buttons--type12">
-                    <a href="#" class="navbar--buttontype1">Donativos</a>
+                   <button class="botonDonativos">Donativos</button>
                     <br>
-                    <a href="#" class="navbar--buttontype2">Ayuda</a>
+                     <button class="botonAyuda">Ayuda</button>
                 </div>
 
                 <!-- Caja de un div contendor de los 2 primeros botones acomodados en fila -->
                 <div class="navbar--buttons--type34">
-                    <a href="#" class="navbar--buttontype3">Mensajes</a>
-                    <a href="#" class="navbar--buttontype4">Cerrar Sesion</a>
+                    <button class="botonMensajes">Mensajes</button>
+                    <button class="botonCerrar">Cerrar Sesion</button>
                 </div>
             </div>
+
         </div>
     </nav>
 
     <!-- Contenido Principal -->
-    <main>
+    <main class="contenidoPrincipa">
         <h1>Hola mundo</h1>
+        <br><br><br><br><br><br><br>
+        <h2>holamundo</h2>
+        <br><br><br><br><br><br><br>
+        <h3>hola mundo</h3>
+        <br><br><br><br><br><br><br>
+        <h4>Hola Mundo</h4>
+        <br><br><br><br><br><br><br>
+        <h5>Hola Mundo </h5>
+        <br><br><br><br><br><br><br>
+        <h1>Hola mundo</h1>
+        <br><br><br><br><br><br><br>
+        <h2>holamundo</h2>
+        <br><br><br><br><br><br><br>
+        <h3>hola mundo</h3>
+        <br><br><br><br><br><br><br>
+        <h4>Hola Mundo</h4>
+        <br><br><br><br><br><br><br>
+        <h5>Hola Mundo </h5>
 
     </main>
 
     <!-- Pie de Página -->
-    <footer class="footer">
+    <footer id="footer">
         <!-- Contenedor principial del footer-->
         <div class=" footer--container">
             <div>
                  <!-- Caja de texto footer, apartado Acerca de nosotros-->
                 <p class="subtitulo--footer">Acerca de nosotros</p>
                 <ul class="anchor--footer">
-                    <li><a href="#"  >Acerca de la empresa</a></li>
+                    <li><a href="https://www.google.com/" target="_blank" >Acerca de la empresa</a></li>
                     <li><a href="#"  >Mision</a></li>
                     <li><a href="#"  >Vision</a></li>
                     <li><a href="#"  >Valores</a></li>
@@ -171,8 +240,8 @@
         <!-- Caja de texto footer, apartado derechos de autor-->
         <div class="footer--container--2">
             <p>&copy;Copiright 2024 Koniapp.org todos los derechos reservados .</p>
-            <p>Terminos y Condiciones</p>
-            <p>Aviso de privacidad</p>
+            <p><a href="#" >Terminos y Condiciones</p></a>
+            <p><a href="#" >Aviso de privacidad</p></a>
         </div>
     </footer>
 
@@ -181,6 +250,7 @@
 
     <!--script de boostrap-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../scripts/navbar.js"></script>
 </body>
 
 </html>
