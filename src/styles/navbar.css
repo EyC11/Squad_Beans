@@ -3,8 +3,9 @@
 body {
     margin: 0;
     padding: 0;
-    
+   
 }
+
 /* Barra de navegacion contenido general */
 .navbar {
     background-color: #FFFFFF;
@@ -17,7 +18,6 @@ body {
     border-width: 5px;
     border-style: solid;
     min-height:100px;
-    
 }
 
 /* Barra de navegacion segundo div creado para contener todos los elementos */
@@ -30,31 +30,27 @@ body {
     align-items: stretch;
     min-height: 100px;
     width: 100%;
-    
+   
 }
 
 .responsive--container{
     display: flex;
     flex-direction:row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-around;
-    width: 70%;
-    min-width: 400px;
+    width:70% ;
+    min-width:400px; 
 }
 
 /* Contenedor del logo */
-
 .subcontainer1--navbar{
     display: flex;
     flex-direction: row;
-    justify-content:space-between ;
+    justify-content:space-around ;
     align-items: center;
-    padding:0;
-    width:28%;
-    min-width:400px;
-    
-    
+    width: 300px; 
 }
+
 .navbar--logo{
     width: 200px;
     margin: 0px;
@@ -63,18 +59,18 @@ body {
 
 /* Contenedor del menu de hamburguesa */
 .menuHamburgesa{
-    height: 40px;
+    width:40px;
 }
 
 /* Contenedor icono de lupa */
-
 .subcontainer2--navbar{
     display:flex;
     justify-content: center; 
     align-items:center;
-    width: 60%;
-    min-width:400px ;
+    width:60%;
+    min-width:500px ;
 }
+
 .navbar--search-cuadroAzul{
     display: flex;
     width: 100%; 
@@ -90,6 +86,7 @@ body {
     border-left: 5px solid #2D4B73;
     border-radius: 20px;
 }
+
 .logo--busqueda{
     width: 30px;
     margin: 20px;
@@ -115,25 +112,25 @@ body {
 
 /* Contenedor general de los 4 botones */
 .navbar-buttons {
-    font-family: "Poppins", sans-serif !important;
-    font-weight: 700 !important;
-    font-style: normal !important;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0px,700px,0px,0px;
     gap:10px;
-    width: 25%;
-    min-width:20% ;
    
 }
+
 /* Contenedor de los botones "donativos y "ayuda" acomodados en columna */
 .navbar--buttons--type12{
     display: flex;
     flex-direction: column;
+    justify-content: space-around ;
+
 }
 
 /* Especificaciones del boton "donativos"*/
-.botonDonativos {
+
+.botonDonativos button {
     border: 3px solid #D9B70D !important;
     border-radius: 20px;
     margin: 2px;
@@ -143,8 +140,10 @@ body {
     cursor: pointer;
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
+    width: 100%;
 }
-.botonDonativos:hover {
+
+.botonDonativos:hover button {
 
     border: 3px solid #D9B70D !important;
     color: #FFFFFF;
@@ -153,7 +152,8 @@ body {
 }
 
 /* Especificaciones del boton "ayuda" */
-.botonAyuda {
+
+.botonAyuda button {
     border: 3px solid #253C59 !important;
     border-radius: 20px;
     margin: 2px;
@@ -163,27 +163,36 @@ body {
     cursor: pointer;
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
+    width: 100%;
 }
-.botonAyuda:hover {
+
+.botonAyuda:hover button {
     border: 3px solid  #253C59 !important;
     color: #FFFFFF;
     background-color: #D9B70D;
     transition: 0.5s;
 
 }
+
 /* Contenedor de los botones "mensajes y "cerrar sesion" acomodados en fila */
 .navbar--buttons--type34{
     display: flex;
     flex-direction: row;
-    padding: auto;
     gap: 10px;
-    flex-wrap:wrap;
+    flex-wrap:wrap-reverse;
     align-content:center;
+    justify-content: end;
     
 }
 
 /* Especificaciones del boton "mensajes" */
 .botonMensajes{
+    display: flex;
+    align-items: center;
+    gap:0px;
+}
+
+.botonMensajes button{
     border: 3px solid #253C59 !important;
     border-radius: 10px;
     margin: 2px;
@@ -193,15 +202,24 @@ body {
     cursor: pointer;
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
+    
 }
-.botonMensajes:hover{
+
+.botonMensajes:hover button{
     border: 3px solid  #253C59 !important;
     color: #253C59;
     background-color: #FFFFFF;
     transition: 0.5s;
-}   
+}
+
 /* Especificaciones del boton "cerrar sesion" */
 .botonCerrar{
+    display: flex;
+    align-items: center;
+
+}
+
+.botonCerrar button{
     border: 3px solid #253C59 !important;
     border-radius: 10px;
     margin: 2px;
@@ -211,17 +229,15 @@ body {
     cursor: pointer;
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
-    display: flex;
-    flex-wrap: nowrap;
+    width:120px;
 }
-.botonCerrar:hover{
+
+.botonCerrar:hover button{
     border: 3px solid  #253C59 !important;
     color: #FFFFFF !important;
     background-color: #253C59;
     transition: 0.5s;
 }
-
-
 
 /* Body contenido general */
 main {
@@ -239,11 +255,8 @@ main {
     background-color: #2D4B73;
     text-align: center;
     padding: 10px 20px;
-  
     width: 100%;
-    min-height: 200px;
-   
-    
+    min-height: 200px;  
 }
 
 footer {
@@ -251,10 +264,11 @@ footer {
     bottom: -800px; /* Oculto inicialmente */
     width: 100%;
     transition: bottom 0.8s ease; /* Transición suave */
-  }
+}
+
 footer.visible {
     bottom: 0; /* Muestra el footer */
-  }
+}
 
 
 
@@ -264,12 +278,13 @@ footer.visible {
     flex-direction: row;
     justify-content: space-around ;
 }
- .footer--container--2{
+
+.footer--container--2{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color:#FFFFFF !important;
- }
+}
 
 .social-link{
         display: flex;
@@ -313,37 +328,50 @@ a:hover, .anchor--footer:hover{
     
 }
 
-/* Media Queries */
-/*@media (max-width: 700px) {
-    .footer--container {
-
-
-
-        flex-direction: column;
-        text-align: left;
-    }
-
-    .footer--container--2 {
-        flex-direction: column;
-        text-align: center;
-    }
-}*/
 
 @media (max-width: 500px) {
+
+    .navbar{
+        width: 100%;
+    }
 
     .navbar--container {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
+        min-width: 400px;
         
+    }
+    .responsive--container{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        width:100% ;
+        
+    }
+    .subcontainer1--navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between ;
+        align-items: center;
+        width: 100%; 
+        
+    }
+    .navbar--logo{
+        margin-left: 20%;
+    }
+
+    .subcontainer2--navbar{
+        min-width:400px;
+        width: 100%;
     }
 
     .navbar-buttons {
         
         display: flex;
         flex-direction:row;
-        justify-content: space-around;
+        justify-content:center;
         gap:0px;
         width:100%;
     }
@@ -353,12 +381,31 @@ a:hover, .anchor--footer:hover{
     .navbar--buttons--type12{
         display: flex;
         flex-direction: row;
-        min-width:192px;
+        justify-content: space-between;
+       
     }
+
 
     .navbar--buttons--type34{
         display: flex;
         flex-direction: row;
-        width: 250px;
+        flex-wrap: nowrap;
+        justify-content:center;
+        gap: 0;
     }
+
+    .footer--container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .footer--container--2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+  
 }
