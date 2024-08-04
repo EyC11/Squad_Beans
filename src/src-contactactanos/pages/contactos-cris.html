@@ -20,46 +20,49 @@
 <body>
     
     <div>
+        <!-- row y col clases del Bootstrap, no se deben modificar ya que esto causaría error -->
         <div class="row">
             <div class="col">
                 <div>
-                    <h1 class="contact">Contáctanos </h1>
+                    <h1 class="contacto--titulo">Contáctanos</h1>
                 </div>
-                <!-- Emi botones-->
+                <!-- Botones Soy Cliente y Soy Proveedor -->
+                <!-- Se uso camel case en esete div para englobar los botones de Soy Cliente y Soy Usuario -->
                 <div class="botonesUsers">
-                    <button class="botonCliente">Soy Cliente</button>
-                    <button class="botonProveedor">Soy Proveedor</button>
+                    <button class="botonUsers--Cliente">Soy Cliente</button>
+                    <button class="botonUsers--Proveedor">Soy Proveedor</button>
                 </div>
             </div>
         </div>
+        <!-- row y col clases del Bootstrap del formulario, no se deben modificar ya que esto causaría error -->
         <div class="row">
             <div class="col">
                 <form class="form-container">
-                    <div class="contenedor2">
-                        <div class="grupo-datos">
+                    <div class="form-container--contenedor">
+                        <div class="form-container--contenedor--grupo-datos">
                             <label for="nombres">Nombre (s):</label>
-                            <input type="text" id="nombres" required placeholder="Escribe tu nombre (s)">
+                            <input type="text" id="form-container--contenedor--grupo-datos--nombres" required placeholder="Escribe tu nombre (s)">
                         </div>
-                        <div class="grupo-datos">
+                        <div class="form-container--contenedor--grupo-datos">
                             <label for="apellidos">Apellidos:</label>
-                            <input type="text" id="apellidos" required placeholder="Escribe tus apellidos">
+                            <input type="text" id="form-container--contenedor--grupo-datos--apellidos" required placeholder="Escribe tus apellidos">
                         </div>
                     </div>
-                    <div class="contenedor2">
-                        <div class="grupo-datos">
+                    <div class="form-container--contenedor">
+                        <div class="form-container--contenedor--grupo-datos">
                             <label for="email">Email:</label>
-                            <input type="text" id="email" placeholder="Ejemplo correo@gmail.com" required>
+                            <input type="text" id="form-container--contenedor--grupo-datos--email" placeholder="Ejemplo correo@gmail.com" required>
                         </div>
     
-                        <div class="grupo-datos">
+                        <div class="form-container--contenedor--grupo-datos">
                             <label for="ubicacion">Ubicación:</label>
-                            <input type="text" id="ubicacion" placeholder="Coloca tu ubicación" required>
+                            <input type="text" id="form-container--contenedor--grupo-datos--ubicacion" placeholder="Coloca tu ubicación" required>
                         </div>
                     </div>
 
-                    <div class="grupo-datos">
+                    <div class="form-container--contenedor--grupo-datos">
                         <label for="topicos">Tópico:</label>
-                        <select name="topicos" id="topicos" required placeholder="Selecciona un tema">
+                        <select name="topicos" id="form-container--contenedor--grupo-datos--topicos" required placeholder="Selecciona un tema">
                             <option disabled selected>Selecciona un tema</option>
                             <option value="reseñas">Reseñas</option>
                             <option value="servicios">Servicios</option>
@@ -68,16 +71,16 @@
                         </select>
                     </div>
 
-                    <div class="grupo-datos">
+                    <div class="form-container--contenedor--grupo-datos">
                         <label for="Ayuda">¿Cómo podemos ayudar?</label>
-                        <textarea type="text" id="Ayuda" placeholder="Describe que problema tienes...
+                        <textarea type="text" id="form-container--contenedor--grupo-datos--Ayuda" placeholder="Describe que problema tienes...
     * Problemas con la aplicacion
     * Problemas con mi cuenta
     * Quiero reportar una cuenta
     * Contactar a soporte tecnico"></textarea>
                     </div>
-                    <div class="div-btn-enviar">
-                        <button class="botonEnviarForm">Enviar</button>
+                    <div class="form-container--btn-enviar">
+                        <button class="form-container--btn-enviar--botonEnviarForm">Enviar</button>
                         
                     </div>
 
@@ -85,13 +88,13 @@
             </div>
             <div class="col">
                 <form>
-                <div class="seccion2">
+                <div class="from-div">
                 <div class="container">
-                    <img id="img-contactanos" src="https://www.linkaform.com/hubfs/linkaform-2021/img-contactanos.png"
+                    <img id="from-div--img-contactanos" src="https://www.linkaform.com/hubfs/linkaform-2021/img-contactanos.png"
                         alt="Imagen-Contactanos">
                 </div>
                 <br>
-                <div class="info-SB">
+                <div class="from-div--info-SB">
                 <h3>Nos encontramos en:</h3>
     
                     <h4>Nuestro E-mail</h4>
