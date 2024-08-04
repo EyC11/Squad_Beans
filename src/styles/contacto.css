@@ -1,105 +1,213 @@
 /*
+Colores utilizados:
 #D9B70D -- Dorado
 #253C59 -- Azul obscuro
 #4C5973 -- Azul 
 #99B4BF -- Azul claro
 #FFFFFF -- !Negro
 
-//Falta descargar tipo de letra 
+//Tipo de letra
+Texto: 
 font-family: "DM Sans", sans-serif; 
 Titulos 
 font-family: "Poppins", sans-serif;
 */
 
 
-.contact{
+.contacto--titulo{
     color: #253C59;
     font-family: "Poppins", sans-serif;
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.formContactanos{
+.form-container {
     background-color: #253C59;
     color: #FFFFFF;
     font-family: "DM Sans", sans-serif;
+    font-size: 16px;
     margin: 40px;
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 20px;
     border: none;
-    margin-right: 400px;
-    box-sizing: content-box;
-    /* display: flex;
-    align-items: column; */
+    margin-top: 10px;
+    width: 100%; /* Cambio: ajustar ancho al 100% del contenedor */
+    max-width: 600px; /* Cambio: máximo ancho de 600px para responsividad */
+    box-sizing: border-box; /* Cambio de content-box a border-box para mejor manejo del padding */
 }
 
-.grupo-datos{
-    padding-left: 40px;
-    margin: 20px;
-    align-items: baseline;
+.form-container--contenedor {
+    display: flex;
+    align-items: row;
+    text-align: center;
+    justify-content: space-around;
 }
 
-input {
-    border-radius: none;
-    border: none;
+.form-container--contenedor--grupo-datos {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column; /* Cambio: disposición vertical de elementos hijos */
+    width: 100%;
 }
 
-button {
+#form-container--contenedor--grupo-datos--topicos {
+    width: 100%;
+}
+
+#form-container--contenedor--grupo-datos--Ayuda {   /* Para el cuadro de texto de comentarias */
+    width: 100%;
+    height: 130px;  
+}
+
+.from-div--info-SB {
+    align-items: center; /* Cambio: centrar contenido en pantallas pequeñas */
+    text-align: right; /* Cambio: centrar texto */
+    margin-right: 20px;
+    margin-bottom: 1em;
+    font-family:"DM Sans", sans-serif;
+}
+
+.from-div {
+    text-align: center;
     border-radius: 20px;
-    margin: 10px;
+    background-color: #99B4BF;
+    margin: 10px 10px 10px 20px;
+}
+
+#from-div--img-contactanos {
+    width: 350px;
+}
+/***********************Botones*****************************/
+
+
+/*Botones superiores Cliente y Proveedor*/
+
+.botonesUsers {
+    display: flex;
+    flex-direction: row;
+    margin-left: 27%;
+    gap: 20px;
+}
+
+.botonUsers--Cliente {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.botonUsers--Cliente:hover {
+
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #253C59;
+    transition: 0.5s;
+
+}
+
+.botonUsers--Proveedor {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
     color: #253C59;
     background-color: #D9B70D;
-    padding: 0px 10px;
     cursor: pointer;
+
+}
+
+.botonUsers--Proveedor:hover {
+
+    border: 2px solid #D9B70D;
+    color: #D9B70D;
+    background-color: #253C59;
+    transition: 0.5s;
+
+}
+
+/* Boton enviar */
+
+.form-container--btn-enviar {
+    text-align: right;
+}
+
+.form-container--btn-enviar--botonEnviarForm {
     font-family: "Poppins", sans-serif;
-    font-style: bold;
-    border: 20px 20px #253C59;
-}
-
-.btn {
-    padding: 0px 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #D9B70D;
     cursor: pointer;
+
 }
 
-.div-btn-enviar {
-    text-align: right;
+.form-container--btn-enviar--botonEnviarForm:hover{
+    
+    border:2px solid #D9B70D;
+    color: #D9B70D;
+    background-color: #253C59;
+    transition: 0.5s;
+
 }
 
-.botonCliente {
-    background-color: #FFFFFF;
-    padding: 0px 25px;
-}
 
-.contenedor1 {
-    display: flex;
-    align-items: end;
-    text-align: right; 
-}
-.contenedor2 {
-    display: flex;
-    align-items: row;
-    text-align: center;
-}
-.contenedor3 {
-    display: flex;
-    align-items: row;
-    text-align: center;
-}
+@media (max-width: 500px) { /* Cambio: media query para pantallas más pequeñas */
+    .contenedor-general{
+        flex-direction: column;
+        
+    }
 
-#topicos {
-    width: 90%;
-}
+    .form-container {
+        margin-left: 5px;
+    }
 
-.botones_der {
-    background-color: rgb(112, 30, 30);
-    text-align: right;
-}
+    .formContactanos {
+        margin: 40px; /* Cambio: ajustar margen */
+        align-items: center;
+    }
 
-#Ayuda {
-    width: 100%;
-    padding-bottom: 30%;
-}
+    .form-container--contenedor--grupo-datos {
+        width: 100%;
+    }
 
-#img-contactanos {
-    width: 400px;
+    .form-container--btn-enviar {
+        text-align: center; /* Cambio: centrar botón en pantallas pequeñas */
+    }
+
+    .from-div {
+        align-items: center; /* Cambio: centrar contenido en pantallas pequeñas */
+        text-align: right; /* Cambio: centrar texto */
+        max-width: 600px;
+    }
+
+    #from-div--img-contactanos {
+        width: 150px;
+    }
+
+    .from-div--img {
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .form-container--contenedor {
+        display: flex;
+        flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
+        justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
+    }
+
+    .from-div--info-SB {
+        margin: 20px;
+    }
+    .botonesUsers {
+        display: flex;
+        align-items: center;
+    }
 }
