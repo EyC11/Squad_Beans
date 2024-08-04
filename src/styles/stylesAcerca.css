@@ -7,6 +7,8 @@ oro: #D9B70D
 blanco: #FFFFFF
 Documentacion: https://www.w3schools.com
 
+Breakpoint debajo de los 500px
+Usar porcentajes 
 */
 
 
@@ -14,33 +16,31 @@ body {
     background-color: #EFF0F5;
 }
 
-/* Estilos generales para el contenedor */
 
-
-/*SECCION 1*/
-/*.container--total{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}*/
-
-
+/*SECCION 1: Acerca de nosotros*/
 .container {
     background-color: #2D4B73;
     border-radius: 20px;
-    width: 1336px;
+    max-width: 1140px;
     height: 260px;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     text-align: center;
-    margin: auto;
-    padding-top: 50px;
-    justify-items:auto;
+    padding: 20px;
+    margin: 20px;
+    /* margin: auto;
+    padding-top: 50px; */
+    justify-items: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        min-height: 300px;
+    }
 }
 
 .container-h1 {
-   
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -49,19 +49,16 @@ body {
 .container-p {
     display: flex;
     flex-direction: column;
-    position: relative;
-   
     text-align: center;
     font-family: 'DM-Sans', sans-serif;
     font-weight: 300;
 }
 
-
-
 .empezar--boton {
     background-color: #D9B70D;
     color: #2D4B73;
     cursor: pointer;
+    width: 300px;
     padding: 7px;
     border: solid 2px #2D4B73;
     border-radius: 20px;
@@ -92,7 +89,6 @@ body {
     left: 0px;
     z-index: 2;
     padding: 0;
-
 }
 
 @media screen and (max-width: 1350px) {
@@ -102,233 +98,113 @@ body {
 }
 
 
-/*SECCION 2*/
-/*@media screen and (min-width:700px) {
-    .container2 {
-        display: flex;
-        margin: auto;
-        flex: wrap;
-    }
 
-    img {
-        width: 200px;
-        float: left;
-        clear: left;
 
-    }
-
-    .container2--porque {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
-
-    .container2 #porque {
-        background-color: #99B4BF;
-        width: 1336px;
-        height: 260px;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin: auto;
-        padding: 50px;
-        border-radius: 20px;
-        grid-column: span 2;
-    }
-}*/
-
-.container2{
-    height: 260px;
-    width: 1336px;
+/*SECCION 2: Por que usas Konikapp*/
+.container--2 {
     background-color: #99B4BF;
-    color: #2D4B73;
+    padding: 20px;
+    margin: 20px;
     border-radius: 20px;
+    max-width: 1336px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    margin: auto;
-    padding-top: 50px;
-    justify-items:left;
-    position: relative;
-    z-index: 1;
-    
-    /*text-align: left;
-    align-items: left;*/
+    flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
+    justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
 }
 
-.h2--por{
-    width: 900px;
-    margin-left: 50px;
-    text-align: center;
-    font-family: 'Poppins',sans-serif;
+
+.container--h1 {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
-}
-
-.p--por{
-    width: 900px;
-    margin-left: 50px;
-    position: relative;
     text-align: center;
+    color: #253c59;
+    text-align: center;
+    align-items: center;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    
+}
+
+.contenido p {
     font-family: 'DM-Sans', sans-serif;
-    font-weight: 300;
+    text-align: center;
+    color: #253c59;
+    margin-right: 20px;
+    
+}
+ .image{
+     flex-wrap: wrap;
 }
 
-.image-container{
-    width: 30%;
-    max-width: 450px;
-    position: absolute;
-    top: 180px;
-    right: 0px;
-    z-index: 2;
-    padding: 0;
-}
-
-@media screen and (max-width: 1350px) {
-    .image-container{
-        visibility: hidden;
+@media screen and (max-width:800px) {
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
-}
-
-.search{
-    width: 100%;
-    height: auto;
-}
-
-/*.container--porque{
-    background-color: #99B4BF;
-    color: #2D4B73;
-    border-radius: 20px;
-    width: 1336px;
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding-top: 50px;
-    justify-items:center;
-    font-family: 'DM-Sans', sans-serif;
-    font-weight: 300;
-
     
-}*/
+}
 
-/*.porque{
-    border-radius: 20px;
-    width: 1336px;
-    height: 260px;
+
+
+/*Sección 3: Mision, Vision y Valores */
+.container--3 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    padding-top: 50px;
-    justify-items:center;
-}*/
-
-/*.row{
-    justify-items: auto;
-}*/
-
-.row{
-    display: flex;
-    flex-direction:column;
+    justify-content: space-around;
+    margin:20px;
     
-    margin-right: 70px;
-    width: 1336px;
-    height: 260px;
+    
 }
 
-.mision {
+.card-k {
     background-color: #99B4BF;
     color: #2D4B73;
-    border-radius: 20px;
-    width: 30%;
-    height: 260px;
+    padding: 20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-left: 100px;
-    padding: 30px;
-    font-family: 'DM-Sans', sans-serif;
-    font-weight: 300;
-
-}
-
-.vision {
-    background-color: #2D4B73;
-    color: #99B4BF;
     border-radius: 20px;
-    width: 30%;
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 5px;
-    margin-right: 5px;
-    padding: 30px;
-    font-family: 'DM-Sans', sans-serif;
-    font-weight: 300;
+    flex-wrap: wrap;
+    width: 90%;
 
 }
 
+@media screen and (max-width:900px){
+    .container--3 {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
 
-.valores {
-    background-color: #99B4BF;
-    color: #2D4B73;
-    border-radius: 20px;
-    width: 30%;
-    height: 260px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding: 30px;
-    font-family: 'DM-Sans', sans-serif;
-    font-weight: 300;
-
+    @media screen and (max-width:500px) {
+        .img--container {
+            visibility: hidden;
+            flex-wrap: wrap;
+        }
 }
-
-/*.image {
-    width: 30%;
-    max-width: 350px;
-    position: relative;
-    top: -280px;
-    left: 0px;
-    z-index: 0;
-    padding: 0;   
-}
-
-.search {
-    width: 100%;
-    height: auto;
-}*/
-
-
-/*valores h2 {
-    text-align: center;
-}*/
-
-
-
-
-
-/* SECCION 3: CARRUSEL ESTILOS */
+/* SECCION 4: CARRUSEL ESTILOS */
 @media screen and (min-width:700px) {
     .card-fondo {
         display: flex;
         background-color: #2D4B73;
-        margin: 20px;
+        margin: 70px;
         padding: 15px;
         justify-content: space-around;
+        border-radius: 20px;
 
 
     }
 
     .cards {
-        /* cards 4 */
         display: flex;
         margin-left: 5px;
-        /* width: calc(100%/3); */
         width: 260px;
         height: 345px;
 
@@ -337,19 +213,10 @@ body {
     .imagen-carrusel {
         height: 200px;
         margin: 0 auto;
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
         background-color: #99B4BF;
     }
 }
 
-/* @media screen and (max-width:568px){
-    .card:not(:first-child) {
-        display: none;
-    }
-    
-} */
 .card-body {
     display: flex;
     flex-direction: column;
@@ -386,10 +253,11 @@ body {
 
 .button {
     font-family: "Poppins", sans-serif;
+    font-weight: bold;
     text-decoration: none;
     text-align: center;
     background-color: #D9B70D;
-    border: #ffffff solid 2px;
+    border: #253c59 solid 2px;
     color: #253c59;
     padding: 8px;
     border-radius: 20px;
@@ -398,10 +266,10 @@ body {
 }
 
 .button:hover {
-    border: solid 2px;
+    border: #D9B70D solid 2px;
     background-color: #2D4B73;
     color: #D9B70D;
-    padding: 8px;
+    padding: 7px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
@@ -409,4 +277,10 @@ body {
 
 .imagen-fondo {
     background-color: #253c59;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #D9B70D;
+
 }
