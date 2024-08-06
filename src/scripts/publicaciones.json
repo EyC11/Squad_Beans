@@ -42,6 +42,23 @@
 
     },
 
+    // Emilio y abajo el objeto
+    {
+      "nombre":"Martín", 
+      "apellido":" López Paz ", 
+     "servicio":"Electricista", 
+     "fecha":"05/06/2024", 
+     "ubicacion":"Toluca, México", 
+     "calificacion":"4", 
+     "descripcion":"Realizo instalaciones electricas en casas habitación", 
+     "adjunto":["https://img.freepik.com/fotos-premium/electricista-instala-cajas-enchufes-pared-pone-masilla_255667-47730.jpg?w=740"], 
+     "ikoni":"", // Omitir
+     "comentario":"",// Omitir
+  
+  },
+
+    
+
 
 
 
