@@ -27,6 +27,22 @@
        "ikoni":"", // Omitir
        "comentario":"",// Omitir
     
-    }
-    
+    },
+       {
+        "nombre":"Edwin",
+        "apellido":"Zamora Perez",
+       "servicio":"Carpintero",
+       "fecha":"05/06/2024",
+       "ubicacion":"Cuautitlán, México",
+       "calificacion":"4",
+       "descripcion":"Realizo el diseño e instalacion de un closet con unas medidas de 3mx2m",
+       "adjunto":[""https://scontent.fmex1-2.fna.fbcdn.net/v/t39.30808-6/240863250_4240290616061624_1739335501323499715_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=gkwj4gls5CEQ7kNvgGi0a-Z&_nc"],
+       "ikoni":"", // Omitir
+       "comentario":"",// Omitir
+
+    },
+
+
+
+
     ]
