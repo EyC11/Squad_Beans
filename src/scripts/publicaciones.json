@@ -1,0 +1,32 @@
+[
+    // Ejemplo
+    {
+        "nombre":"Felipe", 
+        "apellido":"Mejia", 
+       "servicio":"Fontaneria",
+       "fecha":"05/08/24", 
+       "ubicacion":"", 
+       "calificacion":"", 
+       "descripcion":"", 
+       "adjunto":["
+       "], 
+       "ikoni":"",
+       "comentario":"",
+    }
+    
+    // Escribe tu nombre aqui y abajo el objeto
+    {
+        "nombre":"", 
+        "apellido":"", 
+       "servicio":"", 
+       "fecha":"", 
+       "ubicacion":"", 
+       "calificacion":"", 
+       "descripcion":"", 
+       "adjunto":[""], 
+       "ikoni":"", // Omitir
+       "comentario":"",// Omitir
+    
+    }
+    
+    ]
