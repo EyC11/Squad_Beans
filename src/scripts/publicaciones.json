@@ -71,6 +71,20 @@
 
 },
 
+    // Miguel
+{
+    "nombre":"Lupe", 
+    "apellido":"Gonzalez", 
+    "servicio":"Limpieza", 
+    "fecha":"05/08/2024", 
+    "ubicacion":"Ciudad Neza", 
+    "calificacion":"5", 
+    "descripcion":"Hago limpiezas profundas de toda la casa", 
+    "adjunto":[""], 
+    "ikoni":"", // Omitir
+    "comentario":"",// Omitir
+    
+},
     
 
 
