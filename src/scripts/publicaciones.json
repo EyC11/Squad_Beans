@@ -1,95 +1,157 @@
 [
     // Ejemplo
     {
-        "proveedor": true/false;
-        "nombre":"Felipe", 
-        "apellido":"Mejia", 
+        "proveedor": true/false,
+        "nombre":"Felipe",
+        "apellido":"Mejia",
        "servicio":"Fontaneria",
-       "fecha":"05/08/24", 
-       "ubicacion":"", 
-       "calificacion":"", 
-       "descripcion":"", 
-       "adjunto":["
-       "], 
+       "date string": "05/06/2024",
+       "ubicacion":"",
+       "calificacion":"",
+       "descripcion":"",
+       "adjunto":[""],
        "ikonik":"",
-       "comentario":"",
-    }
-    
-    // Escribe tu nombre aqui y abajo el objeto
-    {
-        "nombre":"", 
-        "apellido":"", 
-       "servicio":"", 
-       "fecha":"", 
-       "ubicacion":"", 
-       "calificacion":"", 
-       "descripcion":"", 
-       "adjunto":[""], 
-       "ikoni":"", // Omitir
-       "comentario":"",// Omitir
-    
+       "comentario":[""]
     },
-       {
-        "nombre":"Edwin",
-        "apellido":"Zamora Perez",
+
+   
+      // Jorge
+    {  "proveedor":true,
+       "nombre":"Edwin",
+       "apellido":"Zamora Perez",
        "servicio":"Carpintero",
-       "fecha":"05/06/2024",
-       "ubicacion":"Cuautitlán, México",
-       "calificacion":"4",
-       "descripcion":"Realizo el diseño e instalacion de un closet con unas medidas de 3mx2m",
-       "adjunto":[""https://scontent.fmex1-2.fna.fbcdn.net/v/t39.30808-6/240863250_4240290616061624_1739335501323499715_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=gkwj4gls5CEQ7kNvgGi0a-Z&_nc"],
-       "ikoni":"", // Omitir
-       "comentario":"",// Omitir
+       "date string":"05/06/2024",
+       "ubicacion":"Cuautitlan, Mexico",
+       "calificacion":4,
+       "descripcion":"Realizo el diseño e instalacion de closet con las medidasque tu necesites",
+       "adjunto":["https://scontent.fmex1-2.fna.fbcdn.net/v/t39.30808-6/240863250_4240290616061624_1739335501323499715_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=gkwj4gls5CEQ7kNvgGi0a-Z&_nc"],
+       "ikonik":"", 
+       "comentario":["Muy buenos acabados, entrego rápido"]
 
     },
 
-    // Emilio y abajo el objeto
+    // Emilio
     {
-      "nombre":"Martín", 
-      "apellido":" López Paz ", 
-     "servicio":"Electricista", 
-     "fecha":"05/06/2024", 
-     "ubicacion":"Toluca, México", 
-     "calificacion":"4", 
-     "descripcion":"Realizo instalaciones electricas en casas habitación", 
-     "adjunto":["https://img.freepik.com/fotos-premium/electricista-instala-cajas-enchufes-pared-pone-masilla_255667-47730.jpg?w=740"], 
-     "ikoni":"", // Omitir
-     "comentario":"",// Omitir
-  
+    "proveedor": true,
+     "nombre":"Martín",
+     "apellido":"López Paz ",
+     "servicio":"Electricista",
+     "date stringf":"05/06/2024",
+     "ubicacion":"Toluca, México",
+     "calificacion":4,
+     "descripcion":"Realizo instalaciones electricas en casas habitación",
+     "adjunto":["https://img.freepik.com/fotos-premium/electricista-instala-cajas-enchufes-pared-pone-masilla_255667-47730.jpg?w=740"],
+     "ikonik":"",
+     "comentario":["Instalación muy limpia y bien conectado", ""]
+
   },
-
+   //Edgar
   {
-   "nombre":"Carlos", 
-   "apellido":" Santana ", 
-  "servicio":"Plomero", 
-  "fecha":"05/08/2024", 
-  "ubicacion":"Naucalpan, México", 
-  "calificacion":"4", 
-  "descripcion":"Arreglo todo tipo de goteras de todo tipo en general", 
-  "adjunto":["https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.plomeriaydrenajesavendano.com%2Fsabes-como-cuidar-tu-plomeria&psig=AOvVaw0crumR74DCff0pYMo6OJq1&ust=1723044365183000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPiSsczW4IcDFQAAAAAdAAAAABAE"], 
-  "ikoni":"", // Omitir
-  "comentario":"",// Omitir
-
+   
+    "proveedor": true,
+    "nombre":"Carlos",
+   "apellido":" Santana ",
+  "servicio":"Plomero",
+  "fecha":"05/08/2024",
+  "ubicacion":"Naucalpan, Mexico",
+  "calificacion": 4,
+  "descripcion":"Arreglo todo tipo de goteras de todo tipo en general",
+  "adjunto":["https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.plomeriaydrenajesavendano.com%2Fsabes-como-cuidar-tu-plomeria&psig=AOvVaw0crumR74DCff0pYMo6OJq1&ust=1723044365183000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPiSsczW4IcDFQAAAAAdAAAAABAE"],
+  "ikonik":"", 
+  "comentario":[""]
 },
 
     // Miguel
 {
-    "nombre":"Lupe", 
-    "apellido":"Gonzalez", 
-    "proveedor": true;
-    "servicio":"Limpieza", 
-    "fecha":"05/08/2024", 
-    "ubicacion":"Ciudad Neza", 
-    "calificacion":"5", 
-    "descripcion":"Hago limpiezas profundas de toda la casa", 
-    "adjunto":[""], 
-    "ikoni":"", // Omitir
-    "comentario":"",// Omitir
-    
+    "proveedor": true,
+    "nombre":"Lupe",
+    "apellido":"Gonzalez",
+    "servicio":"Limpieza",
+    "fecha":"05/08/2024",
+    "ubicacion":"Ciudad Neza",
+    "calificacion":5,
+    "descripcion":"Hago limpiezas profundas de toda la casa",
+    "adjunto":[""],
+    "ikonik":"", 
+    "comentario":[""]
+
 },
+// Aparicio
+{
+    "proveedor": true,
+    "nombre": "Cielo Patricia",
+    "apellido": "Constantine",
+    "servicio": "Carpintería",
+    "date string": "02/08/2024",
+    "ubicacion": "Xalapa, Veracruz.",
+    "calificacion": 4.8,
+    "descripcion": "Realizo trabajos a detalle de todo tipo de carpintería, principalmente muebles",
+    "adjunto": [""],
+    "ikoni" : "",
+    "comentario" : ["Aprovecha bien el material.", "Entrega a tiempo", "Realizó la reparación de un mueble bien viejo, quedó muy bien"]
+},  
+
+
+ // Saul Hdz
+{
+    "proveedor": false,
+    "nombre":"Juan Jose",
+    "apellido":"Jimenez",
+   "servicio":"Electricidad",
+   "date string": "05/06/2024",
+   "ubicacion":"Tlalpan, CDMX",
+   "calificacion": 4.5,
+   "descripcion":"Busco quien pueda realizar servicio de instalacion para  enchufes en un cuarto nuevo",
+   "adjunto":["https://www.revista.ferrepat.com/wp-content/uploads/2016/03/electricista_1.jpg"],
+   "ikonik":"", 
+    "comentario":[""]
+},
+    /* Cris */
+{
+    "proveedor" : true,
+    "nombre" : "Carlos",
+    "apellido" : "Torrez Tavarez",
+    "servicio" : "Carpintero",
+    "fecha" : "02/11/24",
+    "ubicacion" : "Calle esperansa #205",
+    "calificacion" : 4,
+    "descripcion" : "Creacion y reparacion de cualquier tipo de mueble, todo al mejor precio.",
+    "adjunto" : ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiLPZkVfoEnHWhAlpx2DABBMQOlwZ413LO9w&s"],
+    "ikonik" : "",
+    "comentario" : ["Deja unos buenos acabados.", "Es lento para entrgar los muebles, no los quiero ya", "Los muebles parecen que brillan con el barniz"]
+},
+
+
+//Cintia
+{
+    "proveedor": true,
+    "nombre":"Luis Enrique",
+    "apellido":"Gonzalez",
+   "servicio":"Plomería",
+  "date string": "05/06/2024",
+   "descripcion":":¡Hola a todos! Miren el último trabajo que realicé. Mi cliente presentaba  severas fugas en su tubería. Las fugas de agua pueden causar grandes problemas si no se detectan a tiempo. Revisa regularmente las juntas y conexiones de tus grifos y tuberías. Si necesitas ayuda, contáctame",
+   "adjunto":"https://ejemplo.com/imagen/plomerochambeando.jpg",
+      "ubicacion":"Iala,pa, CDMX.",
+   "calificacion": 4.8,
+   "ikonik":"", 
+ "comentario" : [ "Me gustó mucho el trabajo que realizó", "Sin duda alguna lo volvería a contactar"]
+},
+
     
+//Ivana 
+ {
+        "proveedor": true,
+        "nombre":"Juan",
+        "apellido":"Pérez",
+       "servicio":"Carpintería",
+       "date string":"06-08-2024",
+       "ubicacion":"Ciudad de México",
+       "calificacion":5,
+       "descripcion":"Ofrezco servicios de carpintería personalizados, incluyendo muebles a medida, reparaciones y restauraciones de madera.",
+       "adjunto":[""],
+       "ikoni":"", 
+       "comentario":["Estoy muy satisfecho con el trabajo realizado. Juan fue puntual, profesional y su atención al detalle es excepcional. Recomiendo sus servicios sin dudar."]
+ 
+       }
 
-
-
-
-    ]
+]
