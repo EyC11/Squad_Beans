@@ -11,7 +11,7 @@
        "descripcion":"", 
        "adjunto":["
        "], 
-       "ikoni":"",
+       "ikonik":"",
        "comentario":"",
     }
     
@@ -76,6 +76,7 @@
 {
     "nombre":"Lupe", 
     "apellido":"Gonzalez", 
+    "proveedor": true/false;
     "servicio":"Limpieza", 
     "fecha":"05/08/2024", 
     "ubicacion":"Ciudad Neza", 
