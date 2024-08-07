@@ -1,0 +1,130 @@
+/*Colores a usar 
+background: #EFF0F5
+azul fuerte: #2D4B73
+azul claro: #99B4BF
+oro: #D9B70D
+blanco: #FFFFFF */
+
+
+body {
+    color: #EFF0F5;
+}
+
+.container-formulario{
+background-color:#99B4BF ;
+}
+
+.container--head {
+    display: flex;
+    align-items: center;
+    color: #D9B70D;
+}
+
+.container--foto{
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;    
+    background-image: url(../p04dgkm4.jpg);
+    background-image: ;
+    background-image: cover;
+    object-fit: fill;
+    border-color: #D9B70D;
+    border-width: 3px;
+    padding: 6px;
+}
+
+.container--head--Cliente-Provedor {
+    border: none;
+    color: #2D4B73;
+}
+
+/* Estilo para la fecha */
+.container--time {
+    background-color: #99B4BF;
+    color: #2D4B73;
+    width:600px;
+    padding: 50px;
+    font-family: 'DM-Sans', sans-serif;
+    font-size: medium ;
+    font-weight: 300;
+    display: flex;
+    justify-content: center; 
+    
+}
+
+.container--descripcion input {
+    width: 39%;
+    margin-bottom: 20px;
+}
+
+.container--imagen{
+    border-color: #D9B70D;
+    border-radius: 20px;
+}
+
+
+/* Descripción---Textarea */
+.texto{
+    display: flex;
+    flex-direction: column;
+    /* width: 500px; */
+    background-color: #99B4BF;
+    
+}
+.input-text {
+    background-color: #99B4BF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    line-height: 16px;
+    resize: none; /* Para que el textarea no pueda ser redimensionado por el usuario */
+    border: none;
+    outline: none; /* Elimina contorno del textarea */
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    /* height: 100px; */
+    overflow:scroll; /* Modificar la barrascroll */
+    scrollbar-width: 0;
+}
+.input-text::-webkit-scrollbar{ /* Ocultar barra de scroll */
+    width: 0;
+}
+
+.texto label{
+    font-family: "Poppins", sans-serif;
+}
+
+/*Estilo del Div de botones y botones */
+
+.container--botones {
+    display: flex;
+    align-items: baseline;
+    
+
+}
+
+.container-bonotones--boton--formulario {
+    background-color: #D9B70D;
+    border: none;
+    color: #2D4B73;
+    font-weight:bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+}
+
+.container-bonotones--boton--formulario :hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border-color: #D9B70D;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
