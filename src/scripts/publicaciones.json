@@ -1,9 +1,9 @@
 [
     // Ejemplo
     {
+        "proveedor": true/false;
         "nombre":"Felipe", 
         "apellido":"Mejia", 
-        "proveedor": true/false;
        "servicio":"Fontaneria",
        "fecha":"05/08/24", 
        "ubicacion":"", 
@@ -76,7 +76,7 @@
 {
     "nombre":"Lupe", 
     "apellido":"Gonzalez", 
-    "proveedor": true/false;
+    "proveedor": true;
     "servicio":"Limpieza", 
     "fecha":"05/08/2024", 
     "ubicacion":"Ciudad Neza", 
