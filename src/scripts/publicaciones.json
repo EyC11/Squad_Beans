@@ -3,6 +3,7 @@
     {
         "nombre":"Felipe", 
         "apellido":"Mejia", 
+        "proveedor": true/false;
        "servicio":"Fontaneria",
        "fecha":"05/08/24", 
        "ubicacion":"", 
