@@ -41,18 +41,21 @@
     </div>    -->
 
     <!--Foto de perfíl Miguel-->
-    <div class="container--foto" >
-        <div class="container--foto-perfil" >
-            <img src="" >
-        </div>
-    
-        </div>
+<div class="container--foto">
+    <div class="container--foto--perfil">
+        <img class="foto--perfil" src="../portrait.jpg">
     </div>
+</div>
 
     <form clas="container-formulario">
 
         <!--Tipo de servicio que da / Servicio requerido Saul-->
         <div>
+            <div class="container--foto">
+                <div class="container--foto--perfil">
+                    <img class="foto--perfil" src="../portrait.jpg">
+                </div>
+            </div>
             <label for=""></label>
             <input type="text" id="servicio" name="servicio" required>
         </div>
@@ -65,21 +68,17 @@
 
             
         
-        <!--Seleccionar si es cliente o provedor Cris-->
-        <div>
-            <select name="Cliente-Provedor" class="container--head--Cliente-Provedor" placeholder="Selecciona una opción">
-                <option disabled selected>Seleciona una opción</option>
+        <!--Seleccionar si es cliente o provedor-->
+        <div class="container--head--Cliente-Provedor">
+            <select name="Cliente-Provedor" id="container--head--Cliente-Provedor--Select" placeholder="Selecciona una opción" onchange="SelectOn()">
+                <option value="Select-error" disabled selected>Seleciona una opción</option>
                 <option value="cliente">Cliente</option>
                 <option value="provedor">Proveedor</option>
             </select>
         </div>
         
-        <!-- Fecha debe ser automática a la fecha de publicación Jorge-->
-        <div class ="container--time">
-            <p id = "fecha"></p>
-        </div>
-
-                
+        
+        
         <!-- Ubicación debe poder seleccionar la ubicación automática por gps Aparicio-->
         <div class="contenedor--Ubicacion">
             <label for="ubicacionSelect" class="contenedor--Ubicacion--Label">Ubicación</label>
@@ -89,24 +88,70 @@
                 <option value="codigoPostal">Código postal</option>
             </select>
         </div><br>
-        <span id="funcionUbicacion"></span>
+        <div class="contenedor--CodigoPostal" style="display: none;" id="codigoPostalDiv">
+            <label for="codigoPostal" class="contenedor--label">C.P.
+            </label>
+            <input type="text" class="contenedor--Input" name="codigoPostal" placeholder="Ingresa tu código postal">
+        </div>
+        <div class="contenedor--Geolocalización" style="display: none;" id="geolocalizacionDiv"> Geolocalización
+        </div>
 
         <script>
-            function seleccionarUbicacion (){
-                let ubicacionSelect = document.getElementById('ubicacionSelect');
-                let Ubicacion = ubicacionSelect.value;
-                
-                documen.getElementById.innerText('funcionUbicacion') = `${Ubicacion}`;
+          document.addEventListener("DOMContentLoaded", function() {
+            const ubicacionSelect = document.getElementById("ubicacionSelect");
+            const codigoPostalDiv = document.getElementById("codigoPostalDiv");
+            const geolocalizacionDiv = document.getElementById("geolocalizacionDiv");
+            
+            ubicacionSelect.addEventListener("change", function(){
+                if (ubicacionSelect.value === "codigoPostal"){
+                    codigoPostalDiv.style.display = "block";
+                    geolocalizacionDiv.style.display = "none";
+                } else if (ubicacionSelect.value === "geolocalizacion") {
+                    codigoPostalDiv.style.display = "none";
+                    geolocalizacionDiv.style.display = "block";
+                    obtenerGeolocalizacion();
+                } else {
+                    codigoPostalDiv.style.display = "none";
+                    geolocalizacionDiv.style.display = "none";
+                }
+            });
+            
+            function obtenerGeolocalizacion() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition (mostrarPosicion, manejarError);
+                } else {
+                    geolocalizacionDiv.innerHTML = "La geolocalización nos es compatible con este navegador"
+                }
             }
-        </script>
+            function mostrarPosicion(position) {
+                geolocalizacionDiv.innerHTML = `Latitud: ${position.coords.latitude} <br> longitud: ${position.coords.longitude}`;
+            }
+            
+        }
+        
+        
+    )
+    </script>
 
+    <!-- Fecha debe ser automática a la fecha de publicación Jorge-->
+    <div class ="container--time">
+        <p id = "fecha"></p>
+    </div>
         
         <!--Descripcion  Cintia--> 
         <div class="texto">
             <label>Descripción</label>
             <textarea class="input-text" placeholder="Añade una descripción de tu publicación."></textarea>
         </div>
-        <!--Imágenes: se debe poder adjuntar diferentes tipos de archivos Brandon-->
+
+        <!--Imagenes: se debe poder adjuntar diferentes tipos de archivos Brandon-->
+        <div class="contenedor--cargarImg"> 
+
+            <p> Selecciona tus imagenes aqui :</p>
+            <input type="file"  name="archivo" accept=".jpg, .jpeg, .png" id="input--selccionaArhivo" >
+            <label   for="input--selccionaArhivo" class="label--seleccionArchivo" >Cargar imagen</label>
+            <img  id="img--vistaprevia" src="" alt="vista previa de la imagen">
+        </div>
         
 
         
@@ -117,16 +162,16 @@
             <time datetime="2024-08-07" pubdate="pubdate">2024-08-07</time>
             <p>Ubicacion</p>
         </div>
-    
+    <!--
     <div class="container--imagen">
         <img src="r" width="500" height="600">
     </div>
-
-    <div class="container--botones"es>
+-->
+    <div class="container--botones">
         <span id="contador">0</span>
-        <button class="container-bonotones--boton--formulario--ikonik"> ikonik </button>
-        <button class="container-bonotones--boton--formulario"> Comentar </button>
-        <button class="container-bonotones--boton--formulario"> ↑ Compartir </button>
+        <button class="container-botones--ikonik"> ikonik </button>
+        <button class="container-botones--Comentar"> Comentar </button>
+        <button class="container--botones--compartir"> ↑ Compartir </button>
     </div>
  </div>
 

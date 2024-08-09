@@ -152,6 +152,20 @@
        "ikoni":"", 
        "comentario":["Estoy muy satisfecho con el trabajo realizado. Juan fue puntual, profesional y su atención al detalle es excepcional. Recomiendo sus servicios sin dudar."]
  
-       }
+       },
 
+{  
+    "proveedor":true,
+    "nombre":"Javier",
+    "apellido":"Hernandez",
+    "servicio":"clases de ingles",
+    "date string":"08/08/2024",
+    "ubicacion":"Cuahutemoc, Ciudad de Mexico",
+    "calificacion":4,
+    "descripcion":"Quieres mejorar tu ingles de manera rapida y efectiva? Clases particulares individuales y en grupo  adaptadas a tu nivel. Ya sea que desees mejorar pronunciacion, aprender gramatica usar el ingles para tu trabajo o estudios. Flexibilidad de horarios y clases virtuales y presenciales disponibles. ",
+    "adjunto":[""],
+    "ikonik":"", 
+    "comentario":["Me encantan sus clases, ayudo a mejorar mi comprension de los tiempos verbales y tuve un avance super rapido, me encanta que usa muchas tecnicas de enseñanza y tiene invitados angloparlantes nativos par que puedas escuchar realmente como es la pronunciacion del ingles"]
+
+ }
 ]

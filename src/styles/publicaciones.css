@@ -20,36 +20,43 @@ background-color:#99B4BF ;
     color: #D9B70D;
 }
 
-.container--foto{
-
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;    
-    background-image: url(../p04dgkm4.jpg);
-    background-image: ;
-    background-image: cover;
-    object-fit: fill;
+.foto--perfil {
+    width: 100px;
+    border-radius: 50%;
     border-color: #D9B70D;
-    border-width: 3px;
-    padding: 6px;
+    margin: 5px;
+}
+
+.container--foto--perfil {
+    background-color: #D9B70D;
+    width: 110px;
+    margin-left: 10px;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .container--head--Cliente-Provedor {
+    text-align: center;
+}
+
+#container--head--Cliente-Provedor--Select {
     border: none;
     color: #2D4B73;
+    background-color: transparent;
 }
 
 /* Estilo para la fecha */
 .container--time {
     background-color: #99B4BF;
     color: #2D4B73;
-    width:600px;
-    padding: 50px;
+    width: 100px;
+    padding: 1px;
     font-family: 'DM-Sans', sans-serif;
     font-size: medium ;
     font-weight: 300;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    border-radius: 20px;
     
 }
 
@@ -100,11 +107,11 @@ background-color:#99B4BF ;
 
 .container--botones {
     display: flex;
-    align-items: baseline;
+    justify-content: right;
     
 
 }
-
+/*
 .container-bonotones--boton--formulario {
     background-color: #D9B70D;
     border: none;
@@ -113,11 +120,12 @@ background-color:#99B4BF ;
     padding: 5px 10px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+     display: flex; 
     font-size: 12px;
-    margin: 4px 2px;
+     margin: 4px 2px; 
     font-family: "Poppins", sans-serif;
     border-radius: 20px;
+    
 }
 
 .container-bonotones--boton--formulario :hover {
@@ -128,3 +136,120 @@ background-color:#99B4BF ;
     transition: 0.5s;
 }
 
+.container-bonotones--boton--formulario1 {
+    background-color: #D9B70D;
+    border: none;
+    color: #2D4B73;
+    font-weight:bold;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 12px;
+     margin: 4px 2px; 
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+}
+.container-bonotones--boton--formulario1 :hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border-color: #D9B70D;
+    cursor: pointer;
+    transition: 0.5s;
+}
+*/
+/* Boton de  ikonik*/
+.container-botones--ikonik {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #D9B70D;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+}
+.container-botones--ikonik :hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border-color: #D9B70D;
+    border: 2px solid;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Boton de comentar */
+.container-botones--Comentar {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #D9B70D;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+}
+.container-botones--Comentar :hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border-color: #D9B70D;
+    border: 2px solid;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Fin boton comentar*/
+
+/* Boton de compartir */
+.container--botones--compartir{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #D9B70D;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+    
+}
+.container--botones--compartir:hover{
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border-color: #D9B70D;
+    border: 2px solid;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    font-family: "Poppins", sans-serif;
+    
+}
+
+
+/*Fin boton compartir*/
+
+/****************************Fin botones *********************/
+
+/* estilos de cargar imagenes */
+
+.contenedor--cargarImg{
+    font-size: medium;
+}
+
+#img--vistaprevia{
+    display: none;
+    margin: 20px;
+    max-width:100%;
+}
+.label--seleccionArchivo{
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

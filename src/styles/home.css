@@ -1,0 +1,39 @@
+#button--card {
+    background-color: coral;
+    border: none;
+    color: darkslateblue;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+#button--card:hover {
+    background-color: darkslateblue;
+    color: coral;
+    transition: 0.5s;
+    border: solid 1px coral;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main input{
+    height: 25px;
+    padding: 5px;
+}
+
+.formulario--publicacion{
+    background-color: blueviolet;
+    border-radius: 5px;
+    border: solid 1px coral;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    margin: 20px 10px;
+}
