@@ -28,3 +28,12 @@ const crearUsuario = (user) => {
 }
 crearUsuario(user);
 
+
+    //JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
+    let mostrarFecha = document.getElementById('fecha');
+    let hoy = new Date();
+
+    let dia = hoy.getDate();
+    let mes = hoy.getMonth()+1;
+    let agnio = hoy.getFullYear();
+    mostrarFecha.innerHTML = `${dia}/${mes}/${agnio}`;

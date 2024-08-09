@@ -1,7 +1,31 @@
+/*Colores a usar 
+background: #EFF0F5
+azul fuerte: #2D4B73
+azul claro: #99B4BF
+oro: #D9B70D
+blanco: #FFFFFF 
+
+fuente - "DM Sans", sans-serif;
+fuente - 
+*/
+
+
+.post1 {
+    background-color: red;
+    
+}
+
+.userimg{
+    width: 20px;
+    height: 20px;
+}
+
 #button--card {
-    background-color: coral;
+    background-color: #D9B70D;
     border: none;
-    color: darkslateblue;
+    color: #2D4B73;
+    border-color: #2D4B73;
+    border-width: 10px;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
@@ -29,11 +53,37 @@
 }
 
 .formulario--publicacion{
-    background-color: blueviolet;
+    background-color: #2D4B73;
     border-radius: 5px;
-    border: solid 1px coral;
+    border: solid 1px #D9B70D;
+    display: flex;    
+    align-items: center;
     text-align: center;
     padding: 20px;
-    width: 250px;
+    width: 550px;
     margin: 20px 10px;
+}
+
+.post h1 {
+    font-size: 30px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-align: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #D9B70D;
+}
+
+.btn {
+    background-color: #D9B70D;
+    border: none;
+    color: #2D4B73;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 50 px;
 }
