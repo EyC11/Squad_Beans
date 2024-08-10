@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+holi que vamos a moverle primero ? deja corrijo el código xd
 
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,7 @@
 
 <body>
 
-<!--     codigo de SAUL
+    <!--     codigo de SAUL
     <button id="button--card">Hacer una publicacion</button>
 
     <div class="container" id="card--container">
@@ -52,75 +53,166 @@
 -->
 
 
-<button id="button--card">Hacer una publicacion</button>
+    <button id="button--card">Hacer una publicacion</button>
 
-<div class="container" id="card--container"></div>
+    <div class="container" id="card--container">
 
-<!-- jkk -->
-<div class="formulario--publicacion">
-    <div class="wrapper">
-        <section class="post">
-            <h1>Crea una publicación</h1>
-            <form class="form">
-                <!-- FALTA AGREGAR CÓDIGO DE LA imagen -->
-            <div class="post1">
-                <!-- <div class="userimg">
+    <!-- jkk -->
+    <div class="formulario--publicacion">
+        <div class="wrapper">
+            <section class="post">
+                <h1>Crea una publicación</h1>
+                <form class="form">
+                    <!-- FALTA AGREGAR CÓDIGO DE LA imagen -->
+                    <div class="post1">
+                        <!-- <div class="userimg">
                 <img   src="https://previews.123rf.com/images/stalkerstudent/stalkerstudent1601/stalkerstudent160101173/50961996-vector-icono-de-usuario-estilo-de-dise%C3%B1o-plano-eps-10.jpg">
                 </div> -->
-                <!-- FALTA AGREGAR CÓDIGO DEL nombre de usuario -->
-                <div class="nombre">
-                    <h2>nombre</h2>
+                        <!-- FALTA AGREGAR CÓDIGO DEL nombre de usuario -->
+                         <!-- FALTA AGREGAR CÓDIGO DEL nombre de usuario -->
+                    <div class="nombre">
+                        <h2>Nombre</h2>
+                    </div>
+                    <!-- cliente o proveedor 
+                    <div class="servicios">
+                        <div class="ingresar-servicio">
+                            <label for="Tipo de servicio">Servicio</label>
+                            <input type="text" name="username" id="username" placeholder="Ingresa tu servicio">
+                        </div>-->
+                        <!-- ingresa tu servicio -->
+                        <div class="opcion">
+                            <select name="Cliente-Provedor" id="container--head--Cliente-Provedor--Select"
+                                placeholder="Selecciona una opción" onchange="SelectOn()">
+                                <option value="Select-error" disabled selected>Seleciona una opción</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="provedor">Proveedor</option>
+                            </select>
+                        </div>
+
+                        <!-- AÑADIR CÓDIGO DE LA FECHA  -->
+                        <div class="fecha--container">
+                            <p id="fecha"></p>
+                            
+                        </div>
+                    </div> 
+
+                    <!-- tetxarea --> 
+                    <div class="textarea">
+                        <textarea id="input-text" maxlength="140" onfocus="vaciar(this)" placeholder="Añade una descripción de tu publicación."></textarea>
+                    </div>
+
+                        <!-- area de opciones para añadir foto, ubicación ... -->
+                        <div class="seleccionarImagenes">
+                            <h1>Cargar y Mostrar Imágenes</h1>
+                            <input type="file" id="archivo-input" accept="image/*" multiple style="display:none;">
+                            <label for="archivo-input" class="botonDeCarga">Cargar Documentos</label>
+                            <div class="vistaPrevia" id="vistaPrevia-container">
+                                <img src="" alt="Vista previa 1">
+                                <img src="" alt="Vista previa 2">
+                                <img src="" alt="Vista previa 3">
+                                <img src="" alt="Vista previa 4">
+                            </div>
+                        </div>
+
+                        <!-- Boton publicar -->
+                        <button class="btn" id="#">Publicar</button>
+
+                </form>
+            </section>
+        </div>
+    </div> 
+</div>
+<!-- otra card -->
+<button id="button--card">Hacer una publicacion</button>
+
+<div class="container" id="card--container">
+<main class="card--formulario">
+    <article class="estructura">
+        <header class="titulo">
+            <h1>Crea tu publicación</h1>
+
+        </header>
+        <br>
+        <section class="dentro">
+            <div class="parte1">
+
+                <div class="parte1-row">
+                    <div class="img">
+
+                        <img class="foto"
+                            src="https://previews.123rf.com/images/stalkerstudent/stalkerstudent1601/stalkerstudent160101173/50961996-vector-icono-de-usuario-estilo-de-dise%C3%B1o-plano-eps-10.jpg">
+
+                    </div>
+                    <div class="foto--perfil">
+                        <div class="datos">
+                            <label>Nombre</label>
+
+                            <p>Fecha</p>
+
+                            <p>Ubicación</p>
+                        </div>
+                    </div>
+
+                    <!-- <div class="opcion">
+                            <select name="Cliente-Provedor" id="container--head--Cliente-Provedor--Select"
+                                placeholder="Selecciona una opción" onchange="SelectOn()">
+                                <option value="Select-error" disabled selected>Seleciona una opción</option>
+                                <option value="cliente">Cliente</option>
+                                <option value="provedor">Proveedor</option>
+                        </div> -->
 
 
-                </div>  
-                <!-- cliente o proveedor -->
-            <div class="ingresar-servicio">
-                <label for="Tipo de servicio">Servicio</label>
-                <input type="text" name="username" id="username" placeholder="Ingresa tu servicio">
+                </div>
 
-               <!-- ingresa tu servicio -->
+
+
+
+            </div>
+            <br>
+            <div class="parte2">
+                <p>Tipo de publicación: </p>
                 <div class="opcion">
-                <select name="Cliente-Provedor" id="container--head--Cliente-Provedor--Select" placeholder="Selecciona una opción" onchange="SelectOn()">
-                <option value="Select-error" disabled selected>Seleciona una opción</option>
-                <option value="cliente">Cliente</option>
-                <option value="provedor">Proveedor</option>
+                    <select name="Cliente-Provedor" id="container--head--Cliente-Provedor--Select"
+                        placeholder="Selecciona una opción" onchange="SelectOn()">
+                        <option value="Select-error" disabled selected>Seleciona una opción</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="provedor">Proveedor</option>
+                    </select>
                 </div>
 
-                <div class="ingresar-servicio">
-                    <label for="Tipo de servicio">Servicio</label>
-                    <input type="text" name="username" id="username" placeholder="Ingresa tu servicio">
-                </div>
+                <br>
+                <br>
 
-                <!-- AÑADIR CÓDIGO DE LA FECHA  -->
-                <div class ="container--time">
-                    <p id = "fecha"></p>
-                </div>                
-               
-            </div>
+                <textarea id="input-text" rows="20" cols="20" maxlength="140" onfocus="vaciar(this)"
+                    placeholder="Añade una descripción de tu publicación."></textarea>
 
-            <!-- tetxarea -->
-            <textarea id="input-text" rows="20" cols="40" maxlength="140" onfocus="vaciar(this)" placeholder="Añade una descripción de tu publicación."></textarea>
-            
-            <!-- area de opciones para añadir foto, ubicación ... -->
-            <div class="options">
-                <p> Selecciona tus imagenes aqui :</p>
-                <input type="file"  name="archivo" accept=".jpg, .jpeg, .png" id="input--selccionaArhivo" >
-                <label   for="input--selccionaArhivo" class="label--seleccionArchivo" >Cargar imagen</label>
-                <img  id="img--vistaprevia" src="" alt="vista previa de la imagen">
+                <br>
+
+                <input type="file" name="archivo" accept=".jpg, .jpeg, .png" id="input--selccionaArhivo">
+
+                <br>
+
+
 
             </div>
-
+            <br>
             <!-- Boton publicar -->
-            <button class="btn" id="#">Publicar</button>
+            <button class="boton--publicar">Publicar</button>
 
-            </form>
         </section>
-    </div>
+
+
+    </article>
+
+
+</main>
 </div>
 
 
 
-<script src="../scripts/appHome.js"></script>
+
+    <script src="../scripts/appHome.js"></script>
+    <script src="../scripts/cargarImagen.js"></script>
 
 </body>
 
