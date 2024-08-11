@@ -1,21 +1,5 @@
 [
-    // Ejemplo
-    {
-        "proveedor": true/false,
-        "nombre":"Felipe",
-        "apellido":"Mejia",
-       "servicio":"Fontaneria",
-       "date string": "05/06/2024",
-       "ubicacion":"",
-       "calificacion":"",
-       "descripcion":"",
-       "adjunto":[""],
-       "ikonik":"",
-       "comentario":[""]
-    },
-
-   
-      // Jorge
+    
     {  "proveedor":true,
        "nombre":"Edwin",
        "apellido":"Zamora Perez",
@@ -30,7 +14,7 @@
 
     },
 
-    // Emilio
+   
     {
     "proveedor": true,
      "nombre":"Martín",
@@ -45,7 +29,7 @@
      "comentario":["Instalación muy limpia y bien conectado", ""]
 
   },
-   //Edgar
+   
   {
    
     "proveedor": true,
@@ -61,7 +45,7 @@
   "comentario":[""]
 },
 
-    // Miguel
+   
 {
     "proveedor": true,
     "nombre":"Lupe",
@@ -76,7 +60,7 @@
     "comentario":[""]
 
 },
-// Aparicio
+
 {
     "proveedor": true,
     "nombre": "Cielo Patricia",
@@ -92,7 +76,7 @@
 },  
 
 
- // Saul Hdz
+
 {
     "proveedor": false,
     "nombre":"Juan Jose",
@@ -106,7 +90,7 @@
    "ikonik":"", 
     "comentario":[""]
 },
-    /* Cris */
+    
 {
     "proveedor" : true,
     "nombre" : "Carlos",
@@ -122,7 +106,7 @@
 },
 
 
-//Cintia
+
 {
     "proveedor": true,
     "nombre":"Luis Enrique",
@@ -138,7 +122,7 @@
 },
 
     
-//Ivana 
+
  {
         "proveedor": true,
         "nombre":"Juan",

@@ -30,9 +30,7 @@
     <!-- POST BOX :P El bueno y elegido -->
     <button id="button--card">Hacer una publicacion</button>
 
-    <div class="container" id="card--container"></div>
-
-    <div class="formulario--publicacion">
+    <div class="formulario--publicacion" id="formulario--publicacion">
         <div class="wrapper">
             <section class="post">
                 <h2>Crear Publicación</h2>
@@ -42,15 +40,12 @@
                         <div class="details">
                             <span>Brandon Odeth</span>
                             <div class="options">
-                                <!-- <div class="ingresar-servicio">
-                            <label for="Tipo de servicio">Servicio</label>
-                            <input type="text" name="username" id="username" placeholder="Ingresa tu servicio">
-                        </div> -->
-                                <!-- ingresa tu servicio -->
 
-                                 <!-- SELECT AGREGADO DE BOOTSTRAP  -->
+
+                                <!-- SELECT AGREGADO DE BOOTSTRAP  -->
                                 <div class="opcion">
-                                    <select class="form-select form-select-sm" aria-label="Small select example">
+                                    <select class="form-select form-select-sm" aria-label="Small select example"
+                                        id="select--usuario">
                                         <option selected>Selección</option>
                                         <option value="1">Cliente</option>
                                         <option value="2">Proovedor</option>
@@ -69,21 +64,25 @@
                     </div>
                     <br>
                     <!-- TEXTAREA AGREGADA DE BOOTSTRAP  -->
+                    <textarea class="form-control"
+                        placeholder="Tipo de servicio (carpinteria, plomeria, electricidad...)" id="floatingTextarea1"
+                        style="height: 20px"></textarea>
+                    <br>
                     <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
-                <br>
-                <div class="seleccionarImagenes">
-                    
-                    <input type="file" id="archivo-input" accept="image/*" multiple style="display:none;">
-                    <label for="archivo-input" class="botonDeCarga">Cargar Documentos</label>
-                    <div class="vistaPrevia" id="vistaPrevia-container">
-                        <img src="" alt="Vista previa 1">
-                        <img src="" alt="Vista previa 2">
-                        <img src="" alt="Vista previa 3">
-                        <img src="" alt="Vista previa 4">
+                        style="height: 100px"></textarea>
+                    <br>
+                    <div class="seleccionarImagenes">
+
+                        <input type="file" id="archivo-input" accept="image/*" multiple style="display:none;">
+                        <label for="archivo-input" class="botonDeCarga">Cargar Documentos</label>
+                        <div class="vistaPrevia" id="vistaPrevia-container">
+                            <img src="" alt="Vista previa 1">
+                            <img src="" alt="Vista previa 2">
+                            <img src="" alt="Vista previa 3">
+                            <img src="" alt="Vista previa 4">
+                        </div>
                     </div>
-                </div>
-                    <button class="btn" id="#">Publicar</button>
+                    <button class="btn" id="buttton--publicar" onclick="publicar()">Publicar</button>
                 </form>
             </section>
         </div>
@@ -114,6 +113,7 @@
 
 
     <script src="../scripts/appHome.js"></script>
+    <script src="../scripts/appHomebutton.js"></script>
     <script src="../scripts/cargarImagen.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

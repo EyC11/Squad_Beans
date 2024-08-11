@@ -1,6 +1,6 @@
 // Acceder a los elementos que voy a manipular (botón y el div container)
 const input = document.getElementById('button--card');
-const container = document.getElementById('card--container');
+const container = document.getElementById('formulario--publicacion');
 
 // Agregar estilos para visibilidad
 container.style.visibility = 'hidden';
