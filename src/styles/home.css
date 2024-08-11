@@ -1,29 +1,19 @@
-/*Colores a usar 
-background: #EFF0F5
-azul fuerte: #2D4B73
-azul claro: #99B4BF
-oro: #D9B70D
-blanco: #FFFFFF 
 
-fuente - "DM Sans", sans-serif;
-fuente - 
-*/
+/**********************Estilos Cintia *****************************/
 
-
-.post1 {
-    background-color: red;
-    
-}
-
-.userimg{
-    width: 20px;
-    height: 20px;
+body {
+    background-color: #EFF0F5;  
+    /*Centrar los elementos de la página*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #button--card {
     background-color: #D9B70D;
     border: none;
-    color: #2D4B73;
+    color: #253C59;
     border-color: #2D4B73;
     border-width: 10px;
     padding: 10px;
@@ -31,14 +21,16 @@ fuente -
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    margin: 10px 0px;
+    margin: 20px 0px 10px 0px;
 }
+
 #button--card:hover {
-    background-color: darkslateblue;
-    color: coral;
+    background-color: #253C59;
+    color: #D9B70D;
     transition: 0.5s;
-    border: solid 1px coral;
+    border: solid 1px #D9B70D;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -47,149 +39,131 @@ fuente -
     gap: 12px;
 }
 
-.main input{
+.main input {
     height: 25px;
     padding: 5px;
 }
 
-.formulario--publicacion{
+/* INICIAN ESTILOS DEL POST BOX */
+.formulario--publicacion {
     background-color: #2D4B73;
-    border-radius: 5px;
-    border: solid 1px #D9B70D;
-    display: flex;    
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    width: 550px;
-    margin: 20px 10px;
-}
-
-.post h1 {
-    font-size: 30px;
-    font-family: 'Poppins';
-    font-weight: bold;
-    text-align: center;
-    padding: 8px 0;
-    border-bottom: 1px solid #D9B70D;
-}
-
-.btn {
-    background-color: #D9B70D;
-    border: none;
-    color: #2D4B73;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-    width: 50 px;
-}
-
-
-/* otra parte del la card  */
-
-.card--formulario {
-    background-color: red;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    width: 550px;
-    margin: 20px 10px;
-}
-
-.estructura {
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    width: 550px;
-    margin: auto;
-}
-
-.foto--perfil {
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    text-align: center;
-    background-color: #2D4B73;
-    width: auto;
-    
-}
-
-.foto {
-    width: 90px;
-}
-
-.titulo h1{
-    text-align: center;
-    width: 100%;
-    
-}
-
-.datos {
-    display: flex;
-    flex-direction: row ;/*cambiando esta parte de la posicion */
-    width: 100%;
-    padding:10px;
-    justify-content: space-between;
-    
-}
-
-.parte1{
-    display: flex;
-    flex-direction: row;
-    background-color: #D9B70D;
-    width: 100%;
-}
-
-.parte1-row {
-    display: flex;
-    flex-direction: row;
-    
-    background-color: yellow; 
-}
-
-.parte2{
-    display: flex;
-    flex-direction: column;
-}
-.zona--texto {
-    height: 40px;
-}
-
-.boton--publicar {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
     border-radius: 20px;
+    border: solid 2px #D9B70D;
+    /*     display: flex;    
+        align-items: center;
+        text-align: center; */
+    padding: 15px 0px 0px 0px;
+    width: 500px;
+    margin: 20px 0px;
+}
+
+.post h2 {
+    font-size: 25px;
+    font-family: "Poppins";
+    font-weight: bold;
     text-align: center;
-    border: 2px;
-    color: #253C59;
-    background-color: #D9B70D;
+    padding: 17px 0;
+    border-bottom: 2px solid #D9B70D;
+    color: #EFF0F5;
+
+}
+.post #imagen{
+    border-radius: 50%;
+}
+
+.post form {
+    margin: 20px 25px;
+}
+
+.post form .content {
+    display: flex;
+    align-items: center;
+}
+
+.post form .content img {
+    max-width: 110px;
+}
+
+.post form .content .details {
+    margin: -3px 0 0 12px;
+}
+
+form .content .details span {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #EFF0F5;
+}
+
+form .content .details .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 12px;
+    color: #EFF0F5;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 8px;
+}
+
+
+.details .options select {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+    background-color: #2D4B73;
+    color: #EFF0F5;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-.boton--publicar:hover{
-    border:2px solid #D9B70D;
-    color: #D9B70D;
-    background-color: #253C59;
-    transition: 0.5s;
-}
-/* cargar imagenes*/
-body {
-    font-family: Arial, sans-serif;
+
+
+/* ESTILOS textarea */
+.texto {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 15px;
-    margin: 0;
+    background-color: #99B4BF;
+
 }
-.seleccionarImagenes {
+
+.texto  {
+    background-color: #99B4BF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    resize: none;
+    /* Para que el textarea no pueda ser redimensionado por el usuario */
+    border: none;
+    outline: none;
+    /* Elimina contorno del textarea */
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 140px;
+    /* height: 100px; */
+    overflow: scroll;
+    /* Modificar la barrascroll */
+    scrollbar-width: 0;
+}
+
+.form-control:-webkit-scrollbar {
+   /*  Ocultar barra de scroll  */
+   overflow: hidden !important;
+}
+
+
+/* Estilos sección de Selecciona tus imagenes */
+
+
+.seleccionarImagenes h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins';
     text-align: center;
 }
 .vistaPrevia {
@@ -199,14 +173,14 @@ body {
     margin-top: 20px;
 }
 .vistaPrevia img {
-    max-width: 100px;
+    max-width: 100px important;
     max-height: 100px;
     display: none;
 }
 .botonDeCarga {
     padding: 10px 20px;
     background-color:#253C59;
-    color: white;
+    color: #EFF0F5;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -215,33 +189,52 @@ body {
     background-color: #D9B70D;
 }
 
+.seleccionarImagenes img {
+    width: auto;
+    float: inline-start;
+}
 
-/* Descripción---Textarea */
-.texto{
+/* .optiones {
     display: flex;
-    flex-direction: column;
-    width: 500px;
-    background-color: #99B4BF;
-    
-}
-#input-text {
-    background-color: #99B4BF;
-    font-family: "DM Sans", sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    resize: none; /* Para que el textarea no pueda ser redimensionado por el usuario */
-    border: none;
-    outline: none; /* Elimina contorno del textarea */
-    border-radius: 5px;
-    padding: 10px;
-    box-sizing: border-box;
-    width: 100%; 
-    /* height: 100px; */
-    overflow:scroll; /* Modificar la barrascroll */
-    scrollbar-width: 0;
-}
-#input-text::-webkit-scrollbar{ /* Ocultar barra de scroll */
-    width: 0;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif !important;;
+    color: #D9B70D;
+    margin: 15px 0;
+
 }
 
- 
+.optiones input {
+    background-color: #2D4B73 !important;;
+    color: #EFF0F5;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+} */
+
+/* ESTILOS DEL BOTÓN PUBLICAR */
+.btn {
+    background-color: #D9B70D !important;
+    border: none;
+    color: #3d4146;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px !important;
+    width: 100%;
+    font-weight: bold;
+}
+.btn :hover{
+    background-color: #3d4146 !important;
+    color: #D9B70D;
+}
+
+
+
+/*  !important; */

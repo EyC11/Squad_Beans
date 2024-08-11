@@ -13,7 +13,7 @@ archivoInput.addEventListener("change",function(event){
     const a=archivos.lenght;
     console.log(a);
 
-    if (archivos.lenght > 4){
+    if (archivos.lenght > 3){
         alert("solo puedes cargar un maximo de 4 imagenes");
         archivoInput.value='';
         console.log(archivos.lenght);

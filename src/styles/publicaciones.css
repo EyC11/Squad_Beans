@@ -15,7 +15,7 @@ background-color:#99B4BF ;
 }
 
 .container--head {
-    display: flex;
+    display: flex; 
     align-items: center;
     color: #D9B70D;
 }
