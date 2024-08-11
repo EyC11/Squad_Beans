@@ -1,4 +1,4 @@
-//Objetos en formato JSON agregados en javascript 
+//Objetos en formato JSON agregados en javascript
 const publicaciones = ` [
     {  "proveedor":true,
        "nombre":"Edwin",
@@ -135,24 +135,57 @@ const publicaciones = ` [
 }]
     `;
 //Las instancias agregadas en formato JSON  a un archivo de js nativamente los reconoce como un "array",  se debe aplicar el metodo "parse" para que sean reconocidos como objetos
-const jsonData = JSON.parse(publicaciones); 
+const jsonData = JSON.parse(publicaciones);
 console.log(typeof jsonData);
 
 
+
 //Aplicando un metodo filter sobre el objeto jsonData para validar el funcionamiento de los key:value a la hora de retornar informacion
-const publicacionesCalif = jsonData.filter(
+/*const publicacionesCalif = jsonData.filter(
     (publicaciones) => publicaciones.calificacion > 4.5 && publicaciones.calificacion <= 5
 );
-console.log (publicacionesCalif);
+console.log (publicacionesCalif); */
+
+//Alertas en el llenado de campos necesarios
+//No aplica aun para el: select class="form-select form-select-sm" aria-label="Small select example"  id="select--usuario"!!
+const buttonPublicar = document.getElementById('buttton--publicar');
+buttonPublicar.addEventListener('click', () => {
+
+  var inputTipo = document.getElementById("select--usuario").value;
+  //Aqui ya se extraen los valores de los inputs servicio y descripcion
+  var inputServicio = document.getElementById("floatingTextarea1").value;
+  var inputDescripcion = document.getElementById("floatingTextarea2").value;
+  var inputArchivosAdjuntos = document.getElementById("archivo-input").value;
+  if (inputTipo == "" || inputServicio == "" || inputDescripcion == "") {
+    alert("Es necesario llenar el campo");
+  } else {
+    alert("Los campos han sido llenados correctamente");
+  }
+
+  //Con la informacion adquirida de los inputs se crea un objeto de javascript
+  const publicacionesObject = {
+    servicio: inputServicio,
+    descripcion: inputDescripcion 
+
+}
+console.log (publicacionesObject);
+});
 
 
-   /* //JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
+
+const fs = require('fs');
+const nuevaPublicacion = JSON.stringify(publicacionesObject);
+fs.writeFile('nuevasPublicaciones.json',nuevaPublicacion, (error)=>{
+    if (error) throw error;
+    console.log('Informacion recibida'); 
+
+})
+    
+/* //JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
     let mostrarFecha = document.getElementById('fecha');
     let hoy = new Date();
 
     let dia = hoy.getDate();
     let mes = hoy.getMonth()+1;
     let agnio = hoy.getFullYear();
-    mostrarFecha.innerHTML = `${dia}/${mes}/${agnio}`; */
-
-
+    mostrarFecha.innerHTML = `${dia}/${mes}/${agnio}`; */ 
