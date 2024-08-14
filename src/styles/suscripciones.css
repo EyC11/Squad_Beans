@@ -36,10 +36,16 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    transition: box-shadow 0.3s ease; /* Para suavizar la transición */
 
 
 
 }
+.tarjetas--planes section:hover{
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
 .titulos--tarjetas{
     font-family: "Poppins", sans-serif;
     font-size: x-large;
