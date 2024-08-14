@@ -11,14 +11,12 @@ Breakpoint debajo de los 500px
 Usar porcentajes 
 */
 
-
 body {
     background-color: #EFF0F5;
 }
 
-
 /*SECCION 1: Acerca de nosotros*/
-.container {
+.contenedor {
     background-color: #2D4B73;
     border-radius: 20px;
     max-width: 1140px;
@@ -28,33 +26,30 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
-    margin: 20px;
-    /* margin: auto;
-    padding-top: 50px; */
     justify-items: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;  /*Cambio permitir el ajuste de línea */   
 }
 
-@media screen and (max-width: 500px) {
-    .container {
-        min-height: 300px;
-    }
-}
-
-.container-h1 {
+.contenedor--h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
+    margin-top: 20px;
 }
 
-.container-p {
+.contenedor--p {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-family: 'DM-Sans', sans-serif;
     font-weight: 300;
+    margin-top: 15px;
 }
 
-.empezar--boton {
+.contenedor--boton--empezar {
     background-color: #D9B70D;
     color: #2D4B73;
     cursor: pointer;
@@ -70,18 +65,18 @@ body {
     transition-duration: 0.5s;
 }
 
-.empezar--boton:hover {
+.contenedor--boton--empezar:hover {
     background-color: #2D4B73;
     color: #D9B70D;
     border: solid 2px #D9B70D;
 }
 
-.like {
+.img--like {
     width: 100%;
     height: auto;
 }
 
-.img--container {
+.contenedor--img {
     width: 30%;
     max-width: 350px;
     position: absolute;
@@ -91,77 +86,67 @@ body {
     padding: 0;
 }
 
-@media screen and (max-width: 1350px) {
-    .img--container {
-        visibility: hidden;
-    }
-}
-
-
 
 
 /*SECCION 2: Por que usas Konikapp*/
-.container--2 {
+.contenedor2 {
     background-color: #99B4BF;
     padding: 20px;
     margin: 20px;
     border-radius: 20px;
-    max-width: 1336px;
+    max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
     justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
+    height: 350px;
 }
 
-
-.container--h1 {
+.contenedor2--h1 {
     font-family: "Poppins", sans-serif;
+    font-size: 40px;
     font-weight: 600;
     text-align: center;
-    color: #253c59;
+    color: #2D4B73;
     text-align: center;
     align-items: center;
+    margin-top: 40px;
+    margin-left:35px;
+    width: fit-content;
 }
 
-.contenido {
+.contenedor2--contenido {
     display: flex;
     align-items: center;
     
 }
 
-.contenido p {
+.contenedor2--contenido p {
     font-family: 'DM-Sans', sans-serif;
+    font-size: 18p;
     text-align: center;
-    color: #253c59;
+    color: #2D4B73;
     margin-right: 20px;
-    
+    max-width: 650px;
+    font-weight: 300;
 }
- .image{
+
+ .contenedor2--imagen{
      flex-wrap: wrap;
+     position: absolute;
+     margin-left: 700px;
+     margin-top: -150px;
 }
-
-@media screen and (max-width:800px) {
-    .contenido{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    
-}
-
-
 
 /*Sección 3: Mision, Vision y Valores */
-.container--3 {
+.contenedor3 {
     display: flex;
     justify-content: space-around;
-    margin:20px;
-    
-    
+    margin:20px; 
 }
 
-.card-k {
+.contenedor3--card-k {
     background-color: #99B4BF;
     color: #2D4B73;
     padding: 20px;
@@ -172,51 +157,15 @@ body {
     border-radius: 20px;
     flex-wrap: wrap;
     width: 90%;
-
 }
 
-@media screen and (max-width:900px){
-    .container--3 {
-      display: block;
-      width: 100%;
-      margin-left: 0;
-    }
-  }
-
-    @media screen and (max-width:500px) {
-        .img--container {
-            visibility: hidden;
-            flex-wrap: wrap;
-        }
+.contenedor3--card-k ul{
+    list-style-type: none;
+    padding-left: 0;
 }
+
+
 /* SECCION 4: CARRUSEL ESTILOS */
-@media screen and (min-width:700px) {
-    .card-fondo {
-        display: flex;
-        background-color: #2D4B73;
-        margin: 70px;
-        padding: 15px;
-        justify-content: space-around;
-        border-radius: 20px;
-
-
-    }
-
-    .cards {
-        display: flex;
-        margin-left: 5px;
-        width: 260px;
-        height: 345px;
-
-    }
-
-    .imagen-carrusel {
-        height: 200px;
-        margin: 0 auto;
-        background-color: #99B4BF;
-    }
-}
-
 .card-body {
     display: flex;
     flex-direction: column;
@@ -225,17 +174,15 @@ body {
 }
 
 .card-body H5 {
-    color: #253c59;
+    color: #2D4B73;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 16px;
-
 }
 
 .imagen-carrusel img {
     max-width: 100%;
     max-height: 100%;
-
 }
 
 .card-title {
@@ -244,11 +191,9 @@ body {
 }
 
 .card-text {
-    color: #253c59;
+    color: #2D4B73;
     font-family: "DM Sans", sans-serif;
     text-align: center;
-
-
 }
 
 .button {
@@ -257,12 +202,13 @@ body {
     text-decoration: none;
     text-align: center;
     background-color: #D9B70D;
-    border: #253c59 solid 2px;
-    color: #253c59;
+    border: #2D4B73 solid 2px;
+    color: #2D4B73;
     padding: 8px;
     border-radius: 20px;
     cursor: pointer;
     width: 100%;
+    margin-left: 1px;
 }
 
 .button:hover {
@@ -276,11 +222,70 @@ body {
 }
 
 .imagen-fondo {
-    background-color: #253c59;
+    background-color: #2D4B73;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #D9B70D;
+/*Media para contenedor Seccion 1*/
+@media screen and (max-width: 500px) {
+    .contenedor {
+        min-height: 400px;
+    }
+}
 
+/*Media para la imagen like Seccion 1*/
+@media screen and (max-width: 1350px) {
+    .contenedor--img {
+        visibility: hidden;
+    }
+}
+
+/*Media por que konikapp Seccion 2*/
+@media screen and (max-width:800px) {
+    .contenerdor2--contenido{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+ 
+/*Media para la imagen search Seccion 2*/
+@media screen and (max-width: 800px) {
+    .contenedor2--imagen {
+        visibility: hidden;
+    }
+}
+
+/*Media para mision vision Seccion 3*/
+@media screen and (max-width:900px){
+    .contenedor3 {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+/*Media para el carrusel Seccion 4*/
+@media screen and (min-width:700px) {
+    .card-fondo {
+        display: flex;
+        background-color: #2D4B73;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 15px;
+        justify-content: space-around;
+        border-radius: 20px;
+    }
+
+    .cards {
+        display: flex;
+        margin-left: 5px;
+        width: 260px;
+        height: 345px;
+    }
+
+    .imagen-carrusel {
+        height: 200px;
+        margin: 0 auto;
+        background-color: #99B4BF;
+    }
 }
