@@ -1,0 +1,130 @@
+/*
+Colores a usar
+#99B4BF azul claro
+#D9B70D dorado
+#253C59 azul mas oscuro
+#2D4B73 azul oscuro
+#EFF0F5 backgroud
+
+*/
+body{
+    background-color: #EFF0F5;
+}
+
+h1{
+    display: flex;
+    justify-content:center;
+}
+.container--pago{
+    min-height: 600px;
+    /*background-color: #EFF0F5;*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    margin-bottom: 300px;
+}
+
+.container--pago form{
+    width: 350px;
+    padding: 20px;
+    background-color: #99B4BF;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.container--pago h3{
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+}
+
+.container--pago label{
+    padding: 1px;
+    margin: auto;
+}
+
+.donar--botones{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+
+.donar--botones button{
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    display: inline;
+    cursor: pointer;
+}
+
+.donar--botones button:hover{
+    background-color: #2D4B73;
+    color: #FFFFFF;
+    border: solid 2px #2D4B73;
+    transition-duration: 0.5s; 
+}
+
+.donar--title{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #2D4B73;
+}
+
+
+#pago--btnC {
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+   
+}
+
+#pago--btnC:hover{
+    background-color: #2D4B73;
+    color: #FFFFFF;
+    border: solid 2px #2D4B73;
+    transition-duration: 0.5s;   
+}
+
+#pago--btnS {
+    background: #D9B70D;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    
+}
+
+#pago--btnS:hover{
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border: solid 2px #D9B70D;
+    transition-duration: 0.5s;   
+}
+ 
+
+@media screen and (max-width: 800px) {
+    .container--pago {
+        margin-bottom: 650px;
+    }
+}
+    
