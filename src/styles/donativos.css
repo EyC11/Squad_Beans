@@ -14,7 +14,35 @@ body{
 h1{
     display: flex;
     justify-content:center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
 }
+
+h3{
+    display: flex;
+    justify-content:center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+h4{
+    display: flex;
+    justify-content:center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+label{
+    color: #2D4B73;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
 .container--pago{
     min-height: 650px;
     
@@ -101,6 +129,7 @@ h1{
 
 #pago--btnCancelar {
     background: #FFFFFF;
+    color: #2D4B73;
     border-radius: 20px;
     border: solid 2px #253C59;
     margin: 2px;
@@ -120,6 +149,7 @@ h1{
 
 #pago--btnSubmit {
     background: #D9B70D;
+    color: #2D4B73;
     border-radius: 20px;
     border: solid 2px #253C59;
     margin: 2px;
