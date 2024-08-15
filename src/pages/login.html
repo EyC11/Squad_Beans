@@ -46,21 +46,20 @@
                             <img id="logo" src="../../public/assets/konijapp-logo.png" alt="">
                         </div>
                     </div>
-                    <form action="#">
+                    <form action="#" id="loginForm">
                         <div class="usuario--position">
                             <div class="usuario">
-                                <label for="" class="labels--inputs">Correo</label>
-                                <input type="email" placeholder="usuario@mail.com" class="inputs--form" id="username"
-                                    name="username" required>
+                                <label for="" class="labels--inputs">Correo: </label>
+                                <input type="email" placeholder="usuario@mail.com" class="inputs--form" id="email"
+                                    name="email" required>
                             </div>
 
                             <br>
                             <div class="contraseña">
-                                <label for="" class="labels--inputs">Contraseña</label>
-                                <input type="password" class="inputs--form" id="password" name="password" required>
-
-                                <!-- <i class="fa-duotone fa-solid fa-eye"></i>
-                            <i class="fa-duotone fa-solid fa-eye-slash"></i> -->
+                                <label for="contraseña" class="labels--inputs">Contraseña: </label>
+                                <input type="password" class="inputs--form" id="contraseña" name="contrasena" required>
+                                <i class="fa-solid fa-eye" id="toggle-password"></i>
+                                <i class="fa-solid fa-eye-slash hide" id="toggle-password-hide"></i>
                             </div>
                             <div class="forgot--password">
                                 <a href="#">Olvidé mi contraseña</a>

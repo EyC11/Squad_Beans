@@ -84,9 +84,36 @@ form .username .password{
     font-family: "Poppins", sans-serif;
     font-style: 15px;
 }
-.inputs--forms{
-    border-radius: 15px !important;
-    border: 2px solid;
+
+.i {
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer; 
+}
+
+/* .contraseña i {
+    position: absolute;
+    right: 570px;
+    top: 550px;
+    cursor: pointer;
+} */
+
+.fa-eye {
+    color: #D9B70D;
+    cursor: pointer;
+}
+
+.fa-eye-slash {
+    color: #99B4BF;
+    cursor: pointer;
+
+}
+
+.hide{
+    display: none;
+    
+}
+.inputs--form{
     font-family: "DM Sans", sans-serif;
 }
 .forgot--password{
@@ -164,6 +191,7 @@ justify-content: center;
 
 }
 
+
 /*Estilos del checkbox "No soy un robot"*/
 .remember-me {
     font-family: 'Poppins',sans-serif;
@@ -173,7 +201,7 @@ justify-content: center;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    background-color: #D9D9D9;
+    background-color: #99B4BF;
     color: #2D4B73;
     /*padding-left: 2px;
     padding-right: 2px;*/
