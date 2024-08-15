@@ -1,0 +1,182 @@
+/*CSS*/
+body {
+    background-color: #EFF0F5;  
+    /*Centrar los elementos de la página*/
+    
+}
+
+
+/* INICIAN ESTILOS FORMULARIo */
+
+.all--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.formulario--Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D4B73;
+    border-radius: 20px;
+    border: solid 2px #D9B70D;
+    /*     display: flex;    
+        align-items: center;
+        text-align: center; */
+    padding: 15px 0px 0px 0px;
+    width: 500px;
+    margin: 20px 0px;
+}
+
+.post h2 {
+    font-size: 30px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 2px solid #D9B70D;
+    color: #EFF0F5;
+
+}
+
+.form-redes h3 {
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    padding: 17px 0;
+    border-top: 2px solid #D9B70D;
+    color: #EFF0F5;
+}
+.post form {
+    margin: 20px 25px;
+}
+
+.post form .content {
+    display: flex;
+    align-items: center;
+}
+
+
+form .username .password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 12px;
+    color: #EFF0F5;
+    font-family: "Poppins", sans-serif;
+    margin-top: 8px;
+}
+.usuario--position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.labels--inputs{
+    color: #EFF0F5;
+    font-family: "Poppins", sans-serif;
+    font-style: 15px;
+}
+.inputs--forms{
+    border-radius: 15px !important;
+    border: 2px solid;
+    font-family: "DM Sans", sans-serif;
+}
+.forgot--password{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*Estilos del logo */
+#logo{
+    width: 25%;
+    margin-left: 35%;
+    margin-top: 15px;
+}
+
+.contenedor--logo{
+    display:inline;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    padding: 0;
+    
+}
+
+/* Estilos contenedor wrapper*/
+.wrapper{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/*Estilos boton inicio sesion*/
+.btn{
+    color: #EFF0F5;
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal;
+
+}
+#buttton--inicio--sesion {
+    background-color: #D9B70D;
+    border: none;
+    color: #253C59;
+    border-color: #2D4B73;
+    border-width: 10px;
+    padding: 13px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0px 10px 0px;
+    width:250px;
+}
+
+#buttton--inicio--sesion:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+}
+.form-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.remember-me--position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+/*Estilos del checkbox "No soy un robot"*/
+.remember-me {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    color: #2D4B73;
+    /*padding-left: 2px;
+    padding-right: 2px;*/
+    padding: 13px;
+    width:230px;
+}
