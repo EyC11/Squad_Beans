@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Navegación y Footer</title>
+    <link rel="stylesheet" href="../styles/navbar.css">
+     <!--Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <!--favicon-->
+    <link rel="shortcut icon" href="../../public/assets/konijapp-logo.png" type="image/x-icon">
+     <!--Estilos de boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--estilos de CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+        
+</head>
+
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="navbar--container">
+            <div class="responsive--container">
+                <!-- Caja contenedora del logo principial y el menu de hamburgesa-->
+                <div class="subcontainer1--navbar">
+                    <div class="logoKonikapp">
+                        <a href="../pages/home.html">
+                            <img src="../../public/assets/konijapp_nombre.png" alt="logo--texto" class="navbar--logo">
+                        </a>
+                    </div> 
+
+                    <!-- Caja contenedora del menu de hamburguesa desplegable-->
+                    <div class="dropdown" >
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:transparent; border-style:none;margin: 0;">
+                            <img src="../../public/assets/menuHamburgesa.png" alt="" class="menuHamburgesa" >
+                        </button>
+                        <!-- Lista desordenada con las opciones dentro del menu de hamburguesa-->
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="faq.html">
+                                    <button class="dropdown-item" type="button">
+                                        Preguntas frecuentes
+                                    </button>
+                                </a>
+                            </li>
+
+                            <hr>
+
+                            <li>
+                                <a href="comunidad.html">
+                                    <button class="dropdown-item" type="button">
+                                        Sugerencias
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="subcontainer2--navbar">            
+                    <div class="navbar--search-cuadroAzul">
+                        <div>
+                            <a href="#" name="bonton_busqueda" class="navbar-button--busqueda">
+                                <img src="../../public/assets/logoBusqueda.png" alt="" class="logo--busqueda">
+                             </a>
+                        </div>
+
+                        <div class="cuadro--busqueda">
+                            <!-- Input para la busqueda por texto-->
+                            <input type="text" placeholder="Busca albañiles, choferes, limpieza de hogar..."  >
+
+                        </div>
+
+                        <!-- Caja de un div para el menu de "Mas categorias"-->
+                        <div class="dropdown" style="margin:0;">
+                            
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#2D4B73 ; width:100% ;border-color: #2D4B73;border-radius: 20px;"> <!-- se colocaron los estilos en linea para esta clase debido a su peculiar nombre que no es aceptado en una hoja de CSS-->
+                                    Mas categorias
+                            </button>
+                            
+
+                            <!-- Lista desordenada con las opciones dentro del menu "Mas categorias"-->
+                            <ul class="dropdown-menu">
+                                <li>
+                                    
+                                        <button class="dropdown-item" type="button">
+                                            Hogar
+                                        </button>
+                                    
+                                </li>
+
+                                <hr>
+
+                                <li>
+                                        <button class="dropdown-item" type="button">
+                                            Construccion
+                                        </button>     
+                                </li>
+
+                                <hr>
+
+                                <li>
+                                    <button class="dropdown-item" type="button">electronica y electricidad</button></li>
+                                <hr>
+
+                                <li>
+                                        <button class="dropdown-item" type="button">
+                                            Clases
+                                        </button>            
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+
+
+            <!-- Caja de un div contendor de las 4 botones -->
+            <div class="navbar-buttons">
+                <!-- Caja de un div contendor de los 2 primeros botones acomodados en columnas -->
+                <div class="navbar--buttons--type12">
+                    <div class="botonDonativos">
+                        
+                            <button >
+                                Donativos
+                            </button>
+                        
+                    </div>
+                
+
+                    <div class="botonAyuda">
+                        
+                            <button >
+                                Ayuda
+                            </button>
+                       
+                    </div>                   
+                </div> <!--botones12-->
+
+                <!-- Caja de un div contendor de los 2 primeros botones acomodados en fila -->
+                <div class="navbar--buttons--type34">
+                    <div class="botonMensajes">
+                        
+                            <button > 
+                                Mensajes
+                            </button>
+                        
+                    </div>
+
+                    <div class="botonCerrar">
+                        
+                            <button >
+                                Cerrar Sesion
+                            </button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="contenidoPrincipa">
+        
+
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer id="footer">
+        <!-- Contenedor principial del footer-->
+        <div class=" footer--container">
+            <div>
+                 <!-- Caja de texto footer, apartado Acerca de nosotros-->
+                <p class="subtitulo--footer">Acerca de nosotros</p>
+                <ul class="anchor--footer">
+                    <li><a href="acerca_nosotros.html" target="_blank" >Acerca de la empresa</a></li>
+                    <li><a href="acerca_nosotros.html"  >Mision</a></li>
+                    <li><a href="acerca_nosotros.html"  >Vision</a></li>
+                    <li><a href="acerca_nosotros.html"  >Valores</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <!-- Caja de texto footer, apartado Contactanos-->
+                <p class="subtitulo--footer">Contactanos</p>
+                <ul class="anchor--footer">
+                    <li> <a href="contacto.html" >Formulario</a></li>
+                    <li> <a href="contacto.html" >Trabaja con nosotros</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <!-- Caja de texto footer, apartado Reportar un problema-->
+                <p class="subtitulo--footer">Reportar un problema</p>
+                <ul class="anchor--footer">
+                    <li><a href="reportar_un_problema.html" >Problemas con la aplicacion</a></li>
+                    <li><a href="reportar_un_problema.html" >Problemas con mi cuenta</a></li>
+                    <li><a href="reportar_un_problema.html" >Quiero reportar una cuenta</a></li>
+                    <li><a href="reportar_un_problema.html" >Contactar a soporte técnico</a></li>
+
+                </ul>
+            </div>
+
+            <div>
+                <!-- Caja de texto footer, apartado Comunidad-->
+                <p class="subtitulo--footer">Comunidad</p>
+                <ul class="anchor--footer">
+                    <li><a href="comunidad.html" >Sugerencias</a></li>
+                    <li><a href="comunidad.html" >Avisos</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <!-- Caja de texto footer, apartado Preguntas Frecuentes-->
+                <p class="subtitulo--footer">Preguntas frecuentes</p>
+                <ul class="anchor--footer">
+                    <li><a href="faq.html" >Preguntas frecuentes</a></li>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <!-- Caja de texto footer, apartado Sigue en contacto con nosotros-->
+                <p class="subtitulo--footer">Sigue en contacto con nosotros</p>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/?locale=es_LA" > <i class="fab fa-facebook-f"></i></a>
+                    <br>
+                    <a href="https://www.instagram.com/" > <i class="fab fa-instagram"></i></a>
+                    <br>
+                    <a href="https://x.com/?lang=es&mx=2"> <i class="fab fa-twitter"></i></a>
+                    <br>
+                    <a href="https://mx.linkedin.com/" > <i class="fab fa-linkedin"></i></a>
+                    
+                </div>
+            </div>
+            <br>
+            <div>
+                <p class="subtitulo--footer">Idioma</p>
+
+                <p class="subtitulo--footer">Paises</p>
+            </div>
+        </div>
+        <!-- Caja de texto footer, apartado derechos de autor-->
+        <div class="footer--container--2">
+            <p>&copy;CopYright 2024 Koniapp.org todos los derechos reservados .</p>
+            <p><a href="TyC.html" >Terminos y Condiciones</p></a>
+            <p><a href="aviso_de_privacidad.html" >Aviso de privacidad</p></a>
+        </div>
+    </footer>
+
+
+
+
+    <!--script de boostrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+
+</html>
+
+
+
