@@ -1,0 +1,291 @@
+/*Creacion de pagina styles Acerca de nosotros.*/
+/*Colores a usar 
+background: #EFF0F5
+azul fuerte: #2D4B73
+azul claro: #99B4BF
+oro: #D9B70D
+blanco: #FFFFFF
+Documentacion: https://www.w3schools.com
+
+Breakpoint debajo de los 500px
+Usar porcentajes 
+*/
+
+body {
+    background-color: #EFF0F5;
+}
+
+/*SECCION 1: Acerca de nosotros*/
+.contenedor {
+    background-color: #2D4B73;
+    border-radius: 20px;
+    max-width: 1140px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-items: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;  /*Cambio permitir el ajuste de línea */   
+}
+
+.contenedor--h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor--p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 15px;
+}
+
+.contenedor--boton--empezar {
+    background-color: #D9B70D;
+    color: #2D4B73;
+    cursor: pointer;
+    width: 300px;
+    padding: 7px;
+    border: solid 2px #2D4B73;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+.contenedor--boton--empezar:hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border: solid 2px #D9B70D;
+}
+
+.img--like {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor--img {
+    width: 30%;
+    max-width: 350px;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+    z-index: 2;
+    padding: 0;
+}
+
+
+
+/*SECCION 2: Por que usas Konikapp*/
+.contenedor2 {
+    background-color: #99B4BF;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
+    justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
+    height: 350px;
+}
+
+.contenedor2--h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #2D4B73;
+    text-align: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-left:35px;
+    width: fit-content;
+}
+
+.contenedor2--contenido {
+    display: flex;
+    align-items: center;
+    
+}
+
+.contenedor2--contenido p {
+    font-family: 'DM-Sans', sans-serif;
+    font-size: 18p;
+    text-align: center;
+    color: #2D4B73;
+    margin-right: 20px;
+    max-width: 650px;
+    font-weight: 300;
+}
+
+ .contenedor2--imagen{
+     flex-wrap: wrap;
+     position: absolute;
+     margin-left: 700px;
+     margin-top: -150px;
+}
+
+/*Sección 3: Mision, Vision y Valores */
+.contenedor3 {
+    display: flex;
+    justify-content: space-around;
+    margin:20px; 
+}
+
+.contenedor3--card-k {
+    background-color: #99B4BF;
+    color: #2D4B73;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.contenedor3--card-k ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+/* SECCION 4: CARRUSEL ESTILOS */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    /* Botones */
+    background-color: #99B4BF;
+}
+
+.card-body H5 {
+    color: #2D4B73;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.imagen-carrusel img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-title {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.card-text {
+    color: #2D4B73;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+}
+
+.button {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #D9B70D;
+    border: #2D4B73 solid 2px;
+    color: #2D4B73;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-left: 1px;
+}
+
+.button:hover {
+    border: #D9B70D solid 2px;
+    background-color: #2D4B73;
+    color: #D9B70D;
+    padding: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imagen-fondo {
+    background-color: #2D4B73;
+}
+
+/*Media para contenedor Seccion 1*/
+@media screen and (max-width: 500px) {
+    .contenedor {
+        min-height: 400px;
+    }
+}
+
+/*Media para la imagen like Seccion 1*/
+@media screen and (max-width: 1350px) {
+    .contenedor--img {
+        visibility: hidden;
+    }
+}
+
+/*Media por que konikapp Seccion 2*/
+@media screen and (max-width:800px) {
+    .contenerdor2--contenido{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+ 
+/*Media para la imagen search Seccion 2*/
+@media screen and (max-width: 800px) {
+    .contenedor2--imagen {
+        visibility: hidden;
+    }
+}
+
+/*Media para mision vision Seccion 3*/
+@media screen and (max-width:900px){
+    .contenedor3 {
+      display: block;
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+/*Media para el carrusel Seccion 4*/
+@media screen and (min-width:700px) {
+    .card-fondo {
+        display: flex;
+        background-color: #2D4B73;
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 15px;
+        justify-content: space-around;
+        border-radius: 20px;
+    }
+
+    .cards {
+        display: flex;
+        margin-left: 5px;
+        width: 260px;
+        height: 345px;
+    }
+
+    .imagen-carrusel {
+        height: 200px;
+        margin: 0 auto;
+        background-color: #99B4BF;
+    }
+}
