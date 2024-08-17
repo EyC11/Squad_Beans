@@ -13,6 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 50px;
 }
 .formulario--Login {
     display: flex;
@@ -179,5 +180,4 @@ justify-content: center;
     padding: 13px;
     width:230px;
 }
-
 

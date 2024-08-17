@@ -1,0 +1,136 @@
+/* 
+USO DE COLORES 
+ - #253C59: Para subtítulos o para resaltar el
+texto cuando el fondo sea color.
+ - #2D4B73: Resaltar algún cuadro o figura que
+contenga texto (botones).
+ - #99B4BF: Resaltar algún cuadro o figura que
+contenga texto (botones)
+ - #D9B70D: Para resaltar texto cuando el fondo
+sea #2D4B73. También se puede
+usar para resaltar detalles de los
+botones.
+
+
+***** css *****
+
+/*
+#D9B70D -- Dorado
+#253C59 -- Azul obscuro
+#4C5973 -- Azul 
+#99B4BF -- Azul claro
+#FFFFFF -- !Negro
+
+//Falta descargar tipo de letra 
+font-family: "DM Sans", sans-serif; 
+Titulos 
+font-family: "Poppins", sans-serif;
+*/
+
+*/ body {
+    font-family: "DM Sans", sans-serif;
+    color: #FFFFFF;
+}
+
+i {
+    width: 50px;
+    text-align: center;
+}
+
+.container--general {
+    background-color: #253C59;
+    color: #FFFFFF;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/************Titulo**********/
+.container--general--titulo h1 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+input, select, label {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#fecha-nacimiento {
+    text-align: center;
+}
+/*Modificacion del boton*/
+.div--boton {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+/***********Estilos del boton*************/
+.boton--registrarse {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #D9B70D;
+    cursor: pointer;
+    padding: 3px, 3px,3px,3px;
+    cursor: pointer;
+    padding: 3px, 3px,3px,3px;
+    width: 200px;
+    
+}
+
+.boton--registrarse:hover {
+
+    border: 2px solid #D9B70D;
+    color: #D9B70D;
+    background-color: #253C59;
+    transition: 0.5s;
+}
+
+.redes {
+    font-size: x-large;
+    /* width: 250px; */
+    text-align:center;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin:auto;
+
+}
+
+
+.columna1-fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+@media (max-width: 500px){
+    .redes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .columna1-fila {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
