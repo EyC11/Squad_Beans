@@ -18,8 +18,6 @@ hideEl.addEventListener("click", () => {
 });
 
 
-
-
 /** LocalStorage. Permite almacenar datos en la memoria local mediante la Storage API. */
 
 // Crear constantes para los formularios
@@ -47,26 +45,6 @@ inicioFormulario.addEventListener('submit', () => {
     }
 });
 
-/*
-const registroFormulario = document.querySelector('#registerForm');
-//--- Creando evento en formulario para Registrar nuevos Usuarios
-registroFormulario.addEventListener('submit', () => {
-
-    // Guardar los inputs en constantes
-    const nuevoUsuario = document.getElementById('username').value;
-    const nuevoPassword = document.getElementById('password').value;
-
-    // Guardamos los valores de los inputs en el almacenamiento local (Local Storage)
-    // Sintaxis para guardarlos: localStorage.setItem("nombreItem", valor);
-    // localStorage(key-value)
-    localStorage.setItem("username", nuevoUsuario);
-    localStorage.setItem("password", nuevoPassword);
-
-    alert('Registro exitoso!!!');
-
-    registroFormulario.reset();
-
-});*/
 
 
 
