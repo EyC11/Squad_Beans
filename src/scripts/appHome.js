@@ -1,3 +1,5 @@
+
+
 //Objetos en formato JSON agregados en javascript
 const publicaciones = ` [
     {  "proveedor":true,
@@ -190,3 +192,4 @@ fs.writeFile('nuevasPublicaciones.json',nuevaPublicacion, (error)=>{
     let mes = hoy.getMonth()+1;
     let agnio = hoy.getFullYear();
     mostrarFecha.innerHTML = `${dia}/${mes}/${agnio}`; */ 
+

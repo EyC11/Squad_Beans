@@ -1,3 +1,4 @@
+
 // Seleccionar elementos específicos
 const inputEl = document.querySelector("#contraseña");
 const showEl = document.querySelector("#toggle-password");
@@ -23,11 +24,11 @@ hideEl.addEventListener("click", () => {
 // Crear constantes para los formularios
 const inicioFormulario = document.querySelector('#loginForm');
 
-
 // Creando evento para formulario que me permite iniciar sesión con la información almacenada en localStorage
 inicioFormulario.addEventListener('submit', () => {
 
     // Guardar los inputs en constantes
+
     const email = document.getElementById('email').value;
     const contrasena = document.getElementById('contrasena').value;
 
@@ -38,24 +39,11 @@ inicioFormulario.addEventListener('submit', () => {
 
     // Validar mediante sentencias condicionales si el usuario existe en localStorage
     if(email === getUsername && contrasena === getPassword) {
+
         alert(`Bienvenido ${getUsername}, inicio de sesión exitoso`);
         inicioFormulario.reset();
     } else {
         alert(`Usuario o contraseña incorrecto`);
     }
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
