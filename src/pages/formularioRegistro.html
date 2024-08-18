@@ -26,8 +26,8 @@
 </head>
 
 <body>
-     <!-- Barra de navegación -->
-     <div id="navbar--contenido"></div>
+    <!-- Barra de navegación -->
+    <div id="navbar--contenido"></div>
 
     <div class="container--general col-8">
         <div class="container--general--titulo">
@@ -39,7 +39,7 @@
                     <label for="Nombre" class="nombre" novalidate>Nombre (s):</label> <br>
                     <input type="text" placeholder="Escribe tu nombre (s)" id="nombreInput" required> <br>
                     <span id="nombreSpan"></span> <br>
-                    
+
                     <label for="Apellido" class="apellido" novalidate>Apellidos:</label> <br>
                     <input id="apellidoInput" type="text" placeholder="Escribe tus apellidos" required> <br>
                     <span id="apellidoSpan"></span>
@@ -63,16 +63,19 @@
                         <select id="mes" name="mes" class="col-3"></select>
                         <select id="año" name="año" class="col-3"></select>
                     </div> <br>
-
-
                     <label for="contrasena">Contraseña</label> <br>
-                    <input type="password" name="password"  placeholder="Escribe tu contraseña" id="contrasena" required>
+                    <input type="password" name="password" placeholder="Escribe tu contraseña" id="contrasena"
+                        required>
+                    <i class="fa-solid fa-eye" id="toggle-password"></i>
+                    <i class="fa-solid fa-eye-slash hide" id="toggle-password-hide"></i>
                     <br>
                     <div id="errorP"></div>
 
                     <label for="contrasena2">Confirma tu constaseña </label> <br>
-                    <input type="password" name="password" placeholder="Escribe nuevamente tu contraseña"
+                    <input type="password" name="password2" placeholder="Escribe nuevamente tu contraseña"
                         id="contrasena2" required><br>
+                    <i class="fa-solid fa-eye" id="toggle-password2"></i>
+                    <i class="fa-solid fa-eye-slash hide" id="toggle-password-hide2"></i>
                     <div class="error"></div>
 
 
@@ -141,22 +144,21 @@
                         <h3>Utiliza una red social para registro rápido</h3>
                     </div><br>
                     <div class="form-redes">
-                            <div class="row">
-                                <div class="col">
-                                    <a href="https://www.facebook.com/?locale=es_LA"> <i
-                                            class="fab fa-facebook-f"></i></a>
-                                    <br>
-                                </div>
-                                <div class="col">
-                                    <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="https://x.com/?lang=es&mx=2"> <i class="fab fa-twitter"></i></a>
-                                </div>
-                                <div class="col">
-                                    <a href="https://mx.linkedin.com/"> <i class="fab fa-linkedin"></i></a>
-                                </div>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.facebook.com/?locale=es_LA"> <i class="fab fa-facebook-f"></i></a>
+                                <br>
                             </div>
+                            <div class="col">
+                                <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://x.com/?lang=es&mx=2"> <i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://mx.linkedin.com/"> <i class="fab fa-linkedin"></i></a>
+                            </div>
+                        </div>
                     </div>
 
 

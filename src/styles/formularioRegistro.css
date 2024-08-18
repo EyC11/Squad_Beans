@@ -118,6 +118,17 @@ input, select, label {
     gap: 20px;
 }
 
+
+.fa-eye {
+    color: #D9B70D;
+    cursor: pointer;
+}
+
+.fa-eye-slash {
+    color: #99B4BF;
+    cursor: pointer;
+}
+
 @media (max-width: 500px){
     .redes{
         display: flex;
