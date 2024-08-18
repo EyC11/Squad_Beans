@@ -158,15 +158,15 @@ function validacionApellido() {
        
        });
 
-
+//Valores de los inputs correo y contraseña guardados en el LocalStorage para el inicio de sesion
        const registroFormulario = document.querySelector('#registerForm');
 
        //--- Creando evento en formulario para Registrar nuevos Usuarios
 registroFormulario.addEventListener('submit', () => {
 
     // Guardar los inputs en constantes
-    let nuevoUsuario = document.getElementById("email").value;
-    let nuevoPassword = document.getElementById('contrasena').value;
+    const nuevoUsuario = document.getElementById("email").value;
+    const nuevoPassword = document.getElementById('contrasena').value;
 
     // Guardamos los valores de los inputs en el almacenamiento local (Local Storage)
     // Sintaxis para guardarlos: localStorage.setItem("nombreItem", valor);

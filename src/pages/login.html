@@ -52,7 +52,7 @@
                     <form action="#" id="loginForm">
                         <div class="usuario--position">
                             <div class="usuario">
-                                <label for="" class="labels--inputs">Correo: </label>
+                                <label for="email" class="labels--inputs">Correo: </label>
                                 <input type="email" placeholder="usuario@mail.com" class="inputs--form" id="email"
                                     name="email" required>
 
@@ -62,8 +62,8 @@
                             <br>
                             <div class="contraseña">
 
-                                <label for="contraseña" class="labels--inputs">Contraseña: </label>
-                                <input type="password" class="inputs--form" id="contraseña" name="contrasena" required>
+                                <label for="password" class="labels--inputs">Contraseña: </label>
+                                <input type="password" class="inputs--form" id="password" name="password" required>
                                 <i class="fa-solid fa-eye" id="toggle-password"></i>
                                 <i class="fa-solid fa-eye-slash hide" id="toggle-password-hide"></i>
 
@@ -88,12 +88,12 @@
                         <br>
                         <div class="remember-me--position">
                             <div class="remember-me">
-                                <input type="checkbox" id="robot-check" name="robot-check" required>
                                 <label for="robot-check">No soy un robot</label>
+                                <input type="checkbox" id="robot-check" name="robot-check" required>
                             </div>
                         </div>
                         <div class="form-button">
-                            <button class="btn" id="buttton--inicio--sesion">Iniciar Sesion</button>
+                            <button class="btn"  type="submit"   id="buttton--inicio--sesion">Iniciar Sesion</button>
                         </div>
                     </form>
                 </section>

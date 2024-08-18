@@ -1,6 +1,6 @@
 
 // Seleccionar elementos específicos
-const inputEl = document.querySelector("#contraseña");
+const inputEl = document.querySelector("#password");
 const showEl = document.querySelector("#toggle-password");
 const hideEl = document.querySelector("#toggle-password-hide");
 
@@ -29,8 +29,8 @@ inicioFormulario.addEventListener('submit', () => {
 
     // Guardar los inputs en constantes
 
-    const email = document.getElementById('email').value;
-    const contrasena = document.getElementById('contrasena').value;
+    const emailInput = document.getElementById('email').value;
+    const contrasenaInput = document.getElementById('password').value;
 
     // Obtener los valores del localStorage
     // Sintaxis: localStorage.getItem('nombreItem');
@@ -38,7 +38,7 @@ inicioFormulario.addEventListener('submit', () => {
     const getPassword = localStorage.getItem('contrasena');
 
     // Validar mediante sentencias condicionales si el usuario existe en localStorage
-    if(email === getUsername && contrasena === getPassword) {
+    if(emailInput === getUsername && contrasenaInput === getPassword) {
 
         alert(`Bienvenido ${getUsername}, inicio de sesión exitoso`);
         inicioFormulario.reset();
