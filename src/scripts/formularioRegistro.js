@@ -171,3 +171,38 @@ registroFormulario.addEventListener('submit', (event) => {
     registroFormulario.reset();
 
 });
+
+
+//  Mostrar ocultar contraseña
+
+// Seleccionar los elementos
+const togglePassword = document.getElementById('toggle-password');
+const togglePasswordHide = document.getElementById('toggle-password-hide');
+const passwordField = document.getElementById('contrasena');
+
+const togglePassword2 = document.getElementById('toggle-password2');
+const togglePasswordHide2 = document.getElementById('toggle-password-hide2');
+const passwordField2 = document.getElementById('contrasena2');
+
+// Función para mostrar/ocultar contraseña
+const toggleVisibility = (field, showIcon, hideIcon) => {
+    if (field.type === 'password') {
+        field.type = 'text';
+        showIcon.classList.add('hide');
+        hideIcon.classList.remove('hide');
+    } else {
+        field.type = 'password';
+        hideIcon.classList.add('hide');
+        showIcon.classList.remove('hide');
+    }
+};
+
+// Agregar eventos de clic para cambiar la visibilidad
+togglePassword.addEventListener('click', () => toggleVisibility(passwordField, togglePassword, togglePasswordHide));
+togglePasswordHide.addEventListener('click', () => toggleVisibility(passwordField, togglePassword, togglePasswordHide));
+
+togglePassword2.addEventListener('click', () => toggleVisibility(passwordField2, togglePassword2, togglePasswordHide2));
+togglePasswordHide2.addEventListener('click', () => toggleVisibility(passwordField2, togglePassword2, togglePasswordHide2));
+
+
+

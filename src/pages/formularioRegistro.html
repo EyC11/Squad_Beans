@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario 2 </title>
-    <link rel="stylesheet" href="../styles/formularioRegistro.css">
     <!--Links de topografía-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/formularioRegistro.css">
 
 </head>
 
@@ -63,6 +63,8 @@
                         <select id="mes" name="mes" class="col-3"></select>
                         <select id="año" name="año" class="col-3"></select>
                     </div> <br>
+
+                    <div class="icon-container">
                     <label for="contrasena">Contraseña</label> <br>
                     <input type="password" name="password" placeholder="Escribe tu contraseña" id="contrasena"
                         required>
@@ -77,8 +79,8 @@
                     <i class="fa-solid fa-eye" id="toggle-password2"></i>
                     <i class="fa-solid fa-eye-slash hide" id="toggle-password-hide2"></i>
                     <div class="error"></div>
-
-
+                    </div>
+                      
 
 
                     <script>

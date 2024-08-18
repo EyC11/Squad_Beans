@@ -119,6 +119,25 @@ input, select, label {
 }
 
 
+.icon-container {
+   
+    gap: 10px; /* Espacio entre los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    padding: 10px; /* Espacio interior */
+   
+   
+}
+
+.icon-container i {
+    font-size: 17px; /* Tamaño de los íconos */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el ícono */
+}
+
+.icon-container i.hide {
+    display: none; /* Oculta los íconos con clase 'hide' */
+}
+
+
 .fa-eye {
     color: #D9B70D;
     cursor: pointer;
@@ -128,6 +147,12 @@ input, select, label {
     color: #99B4BF;
     cursor: pointer;
 }
+
+.hide{
+    display: none;
+    
+}
+
 
 @media (max-width: 500px){
     .redes{
