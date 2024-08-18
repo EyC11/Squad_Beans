@@ -1,0 +1,240 @@
+
+/**********************Estilos Cintia *****************************/
+
+body {
+    background-color: #EFF0F5;  
+    /*Centrar los elementos de la página*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#button--card {
+    background-color: #D9B70D;
+    border: none;
+    color: #253C59;
+    border-color: #2D4B73;
+    border-width: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0px 10px 0px;
+}
+
+#button--card:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 1px #D9B70D;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main input {
+    height: 25px;
+    padding: 5px;
+}
+
+/* INICIAN ESTILOS DEL POST BOX */
+.formulario--publicacion {
+    background-color: #2D4B73;
+    border-radius: 20px;
+    border: solid 2px #D9B70D;
+    /*     display: flex;    
+        align-items: center;
+        text-align: center; */
+    padding: 15px 0px 0px 0px;
+    width: 500px;
+    margin: 20px 0px;
+}
+
+.post h2 {
+    font-size: 25px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 2px solid #D9B70D;
+    color: #EFF0F5;
+
+}
+.post #imagen{
+    border-radius: 50%;
+}
+
+.post form {
+    margin: 20px 25px;
+}
+
+.post form .content {
+    display: flex;
+    align-items: center;
+}
+
+.post form .content img {
+    max-width: 110px;
+}
+
+.post form .content .details {
+    margin: -3px 0 0 12px;
+}
+
+form .content .details span {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #EFF0F5;
+}
+
+form .content .details .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 12px;
+    color: #EFF0F5;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 8px;
+}
+
+
+.details .options select {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+    background-color: #2D4B73;
+    color: #EFF0F5;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+/* ESTILOS textarea */
+.texto {
+    display: flex;
+    flex-direction: column;
+    background-color: #99B4BF;
+
+}
+
+.texto  {
+    background-color: #99B4BF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    resize: none;
+    /* Para que el textarea no pueda ser redimensionado por el usuario */
+    border: none;
+    outline: none;
+    /* Elimina contorno del textarea */
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 140px;
+    /* height: 100px; */
+    overflow: scroll;
+    /* Modificar la barrascroll */
+    scrollbar-width: 0;
+}
+
+.form-control:-webkit-scrollbar {
+   /*  Ocultar barra de scroll  */
+   overflow: hidden !important;
+}
+
+
+/* Estilos sección de Selecciona tus imagenes */
+
+
+.seleccionarImagenes h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.vistaPrevia {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.vistaPrevia img {
+    max-width: 100px important;
+    max-height: 100px;
+    display: none;
+}
+.botonDeCarga {
+    padding: 10px 20px;
+    background-color:#253C59;
+    color: #EFF0F5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botonDeCarga:hover {
+    background-color: #D9B70D;
+}
+
+.seleccionarImagenes img {
+    width: auto;
+    float: inline-start;
+}
+
+/* .optiones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif !important;;
+    color: #D9B70D;
+    margin: 15px 0;
+
+}
+
+.optiones input {
+    background-color: #2D4B73 !important;;
+    color: #EFF0F5;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+} */
+
+/* ESTILOS DEL BOTÓN PUBLICAR */
+.btn {
+    background-color: #D9B70D !important;
+    border: none;
+    color: #3d4146;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px !important;
+    width: 100%;
+    font-weight: bold;
+}
+.btn :hover{
+    background-color: #3d4146 !important;
+    color: #D9B70D;
+}
+
+
+
+/*  !important; */

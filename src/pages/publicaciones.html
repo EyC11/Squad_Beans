@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicacion</title>
+    <!-- icons -->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/publicaciones.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+
+
+    <!--Foto de perfíl Miguel-->
+<div class="container--foto">
+    <div class="container--foto--perfil">
+        <img class="foto--perfil" src="../portrait.jpg">
+    </div>
+</div>
+
+    <form clas="container-formulario">
+
+        <!--Tipo de servicio que da / Servicio requerido Saul-->
+        <div>
+            <div class="container--foto">
+                <div class="container--foto--perfil">
+                    <img class="foto--perfil" src="../portrait.jpg">
+                </div>
+            </div>
+            <label for=""></label>
+            <input type="text" id="servicio" name="servicio" required>
+        </div>
+        <!--Nombre debe ser automátio al nombre del usuario Edgar-->
+        
+            <form id="registerForm" action="/register" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            </form>
+
+            
+        
+        <!--Seleccionar si es cliente o provedor-->
+        <div class="container--head--Cliente-Provedor">
+            <select name="Cliente-Provedor" id="container--head--Cliente-Provedor--Select" placeholder="Selecciona una opción" onchange="SelectOn()">
+                <option value="Select-error" disabled selected>Seleciona una opción</option>
+                <option value="cliente">Cliente</option>
+                <option value="provedor">Proveedor</option>
+            </select>
+        </div>
+        
+        
+        
+        <!-- Ubicación debe poder seleccionar la ubicación automática por gps Aparicio-->
+        <div class="contenedor--Ubicacion">
+            <label for="ubicacionSelect" class="contenedor--Ubicacion--Label">Ubicación</label>
+            <select id="ubicacionSelect" class="form-select" required>
+                <option disabled selected>Selecciona una opción</option>
+                <option value="geolocalizacion">Mi ubicación</option>
+                <option value="codigoPostal">Código postal</option>
+            </select>
+        </div><br>
+        <div class="contenedor--CodigoPostal" style="display: none;" id="codigoPostalDiv">
+            <label for="codigoPostal" class="contenedor--label">C.P.
+            </label>
+            <input type="text" class="contenedor--Input" name="codigoPostal" placeholder="Ingresa tu código postal">
+        </div>
+        <div class="contenedor--Geolocalización" style="display: none;" id="geolocalizacionDiv"> Geolocalización
+        </div>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const ubicacionSelect = document.getElementById("ubicacionSelect");
+            const codigoPostalDiv = document.getElementById("codigoPostalDiv");
+            const geolocalizacionDiv = document.getElementById("geolocalizacionDiv");
+            
+            ubicacionSelect.addEventListener("change", function(){
+                if (ubicacionSelect.value === "codigoPostal"){
+                    codigoPostalDiv.style.display = "block";
+                    geolocalizacionDiv.style.display = "none";
+                } else if (ubicacionSelect.value === "geolocalizacion") {
+                    codigoPostalDiv.style.display = "none";
+                    geolocalizacionDiv.style.display = "block";
+                    obtenerGeolocalizacion();
+                } else {
+                    codigoPostalDiv.style.display = "none";
+                    geolocalizacionDiv.style.display = "none";
+                }
+            });
+            
+            function obtenerGeolocalizacion() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition (mostrarPosicion, manejarError);
+                } else {
+                    geolocalizacionDiv.innerHTML = "La geolocalización nos es compatible con este navegador"
+                }
+            }
+            function mostrarPosicion(position) {
+                geolocalizacionDiv.innerHTML = `Latitud: ${position.coords.latitude} <br> longitud: ${position.coords.longitude}`;
+            }
+            
+        }
+        
+        
+    )
+    </script>
+
+    <!-- Fecha debe ser automática a la fecha de publicación Jorge-->
+    <div class ="container--time">
+        <p id = "fecha"></p>
+    </div>
+        
+        <!--Descripcion  Cintia--> 
+        <div class="texto">
+            <label>Descripción</label>
+            <textarea class="input-text" placeholder="Añade una descripción de tu publicación."></textarea>
+        </div>
+
+        <!--Imagenes: se debe poder adjuntar diferentes tipos de archivos Brandon-->
+        <div class="contenedor--cargarImg"> 
+
+            <p> Selecciona tus imagenes aqui :</p>
+            <input type="file"  name="archivo" accept=".jpg, .jpeg, .png" id="input--selccionaArhivo" >
+            <label   for="input--selccionaArhivo" class="label--seleccionArchivo" >Cargar imagen</label>
+            <img  id="img--vistaprevia" src="" alt="vista previa de la imagen">
+        </div>
+        
+
+        
+        <!--Botones Emilio-->
+
+        <div class="container--info">
+                <p>Nombre</p>
+            <time datetime="2024-08-07" pubdate="pubdate">2024-08-07</time>
+            <p>Ubicacion</p>
+        </div>
+    <!--
+    <div class="container--imagen">
+        <img src="r" width="500" height="600">
+    </div>
+-->
+    <div class="container--botones">
+        <span id="contador">0</span>
+        <button class="container-botones--ikonik"> ikonik </button>
+        <button class="container-botones--Comentar"> Comentar </button>
+        <button class="container--botones--compartir"> ↑ Compartir </button>
+    </div>
+ </div>
+
+
+
+
+ 
+
+
+
+
+
+ 
+ <script src="../scripts/publicaciones.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
