@@ -45,17 +45,7 @@ function validacionCodigoPostal() {
 
 }
 
-/*
-<div clase="col">
-<label for="teléfono">Número de Teléfono:</label>
-<input id="tel" type="tel" onkeyup="validacionTelefono()" placeholder="Escribe tu número de teléfono" minlength="10" maxlength="10" required>
-<span id="telefono-estado"></span>
- </div>
 
-<label for="cp">Código postal</label> <br>
-<input id="codigo--postal" type="text" placeholder="Escribe tu código postal" required> 
-<span id="codigo--postal-estado"></span>
-*/
 
 
 // Validación Aparicio
@@ -69,12 +59,12 @@ const validarCampo = (inputId, spanId) => {
     if (valor === "") {
         resultadoSpan.textContent = "El campo no puede estar vacío.";
         resultadoSpan.style.color = "#EE3A3A";
-    } 
+    }
     // Validación de solo letras y espacios
     else if (caracteres.test(valor)) {
         resultadoSpan.textContent = "Datos válidos";
         resultadoSpan.style.color = "#62CF3D";
-    } 
+    }
     // Mensaje de error si contiene caracteres no permitidos
     else {
         resultadoSpan.textContent = "Introduce caracteres válidos";
@@ -101,79 +91,81 @@ function validacionApellido() {
 }
 
 
-
-
-
 //Evento para que una vez validados los inputs guarde todo en variables al pulsar registrarse
 //const buttonRegistro = document.getElementById('registerForm');
 //const buttonPublicar = document.addEventListener('click', () => {
-    document.getElementById('registerForm').addEventListener('submit',function (event){
-        event.preventDefault();//previniendo comportamiento por defento del formulario       
-           //Adaptar variables de acuerdo a los inputs
-           
-           //Aqui ya se extraen los valores de los inputs del formulario
-           var inputNombre = document.getElementById("nombreInput").value;
-           var inputApellido = document.getElementById("apellidoInput").value;
-           var inputCorreo = document.getElementById("email").value;
-           var inputTelefono = document.getElementById("tel").value;
-           var inputDia = document.getElementById("dia").value;
-           var inputMes = document.getElementById("mes").value;
-           var inputAño = document.getElementById("año").value;
-           var inputContraseña = document.getElementById("contrasena");
-           var inputEstado = document.getElementById("estado").value;
-           var inputCuidad = document.getElementById("ciudad").value;
-           var inputCodigoPostal = document.getElementById("codigo--postal").value;
-           var inputDireccion = document.getElementById("direccion").value;
-       
-       
-           //dia mes año errorP contrasena2 estado ciudad codigo--postal direccion 
-       
-           //Filtro final por si falta de llenar algun campo (se puede borrar)
-           if (inputNombre == " " || inputApellido == "" || inputCorreo == "" || inputTelefono == ""|| inputDia == ""|| inputMes == ""|| inputAño == ""|| inputContraseña == ""|| inputEstado == "" || inputCuidad == ""|| inputCodigoPostal == ""|| inputDireccion == "") {
-               alert("Es necesario llenar el campo");
-           } else {
-               alert("Los campos han sido llenados correctamente");
-           }
-       
-           //Con la informacion adquirida de los inputs se crea un objeto JSON de javascript
-           const registrosObject = {
-               nombre: inputNombre,
-               apellido: inputApellido,
-               correo: inputCorreo,
-               telefono: inputTelefono,
-               dia: inputDia,
-               mes: inputMes,
-               año: inputAño,
-               contraseña: inputContraseña,
-               estado: inputEstado,
-               cuidad: inputCuidad,
-               codigopostal: inputCodigoPostal,
-               direccion: inputDireccion
-       
-           };
-       
-           //Muestra el objeto creado en consola se guarda solamente en la sesionStorage
-           console.log('Objeto JSON:',JSON.stringify(registrosObject));
-       
-       
-       });
+document.getElementById('registerForm').addEventListener('submit', function (event) {
+    event.preventDefault();//previniendo comportamiento por defento del formulario       
+    //Adaptar variables de acuerdo a los inputs
+
+    //Aqui ya se extraen los valores de los inputs del formulario
+    var inputNombre = document.getElementById("nombreInput").value;
+    var inputApellido = document.getElementById("apellidoInput").value;
+    var inputCorreo = document.getElementById("email").value;
+    var inputTelefono = document.getElementById("tel").value;
+    var inputDia = document.getElementById("dia").value;
+    var inputMes = document.getElementById("mes").value;
+    var inputAño = document.getElementById("año").value;
+    var inputContraseña = document.getElementById("contrasena").value;
+    var inputEstado = document.getElementById("estado").value;
+    var inputCuidad = document.getElementById("ciudad").value;
+    var inputCodigoPostal = document.getElementById("codigo--postal").value;
+    var inputDireccion = document.getElementById("direccion").value;
+
+
+    //dia mes año errorP contrasena2 estado ciudad codigo--postal direccion 
+
+    //Filtro final por si falta de llenar algun campo (se puede borrar)
+    if (inputNombre == " " || inputApellido == "" || inputCorreo == "" || inputTelefono == "" || inputDia == "" || inputMes == "" || inputAño == "" || inputContraseña == "" || inputEstado == "" || inputCuidad == "" || inputCodigoPostal == "" || inputDireccion == "") {
+        alert("Es necesario llenar el campo");
+    } else {
+        alert("Los campos han sido llenados correctamente");
+    }
+
+    //Con la informacion adquirida de los inputs se crea un objeto JSON de javascript
+    const registrosObject = {
+        nombre: inputNombre,
+        apellido: inputApellido,
+        correo: inputCorreo,
+        telefono: inputTelefono,
+        dia: inputDia,
+        mes: inputMes,
+        año: inputAño,
+        contraseña: inputContraseña,
+        estado: inputEstado,
+        cuidad: inputCuidad,
+        codigopostal: inputCodigoPostal,
+        direccion: inputDireccion
+
+    };
+
+    //Muestra el objeto creado en consola se guarda solamente en la sesionStorage
+    console.log('Objeto JSON:', JSON.stringify(registrosObject));
+
+
+});
 
 //Valores de los inputs correo y contraseña guardados en el LocalStorage para el inicio de sesion
-       const registroFormulario = document.querySelector('#registerForm');
+const registroFormulario = document.querySelector('#registerForm');
 
-       //--- Creando evento en formulario para Registrar nuevos Usuarios
-registroFormulario.addEventListener('submit', () => {
-
+//--- Creando evento en formulario para Registrar nuevos Usuarios
+registroFormulario.addEventListener('submit', (event) => {
+    event.preventDefault();
     // Guardar los inputs en constantes
+    const nombreUsuario = document.getElementById("nombreInput").value;
     const nuevoUsuario = document.getElementById("email").value;
     const nuevoPassword = document.getElementById('contrasena').value;
 
     // Guardamos los valores de los inputs en el almacenamiento local (Local Storage)
     // Sintaxis para guardarlos: localStorage.setItem("nombreItem", valor);
     // localStorage(key-value)
-    localStorage.setItem("email", nuevoUsuario);
-    localStorage.setItem("contrasena", nuevoPassword);
+    /* localStorage.setItem("email", nuevoUsuario);
+    localStorage.setItem("contrasena", nuevoPassword); */
+    let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
+    usuarios.push({nombreInput:nombreUsuario,email:nuevoUsuario, contrasena:nuevoPassword});
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    
     alert('Registro exitoso!!!');
 
     registroFormulario.reset();

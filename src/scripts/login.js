@@ -25,8 +25,8 @@ hideEl.addEventListener("click", () => {
 const inicioFormulario = document.querySelector('#loginForm');
 
 // Creando evento para formulario que me permite iniciar sesión con la información almacenada en localStorage
-inicioFormulario.addEventListener('submit', () => {
-
+inicioFormulario.addEventListener('submit', (event) => {
+    event.preventDefault();
     // Guardar los inputs en constantes
 
     const emailInput = document.getElementById('email').value;
@@ -34,16 +34,21 @@ inicioFormulario.addEventListener('submit', () => {
 
     // Obtener los valores del localStorage
     // Sintaxis: localStorage.getItem('nombreItem');
-    const getUsername = localStorage.getItem('email');
-    const getPassword = localStorage.getItem('contrasena');
-
+    /* const getUsername = localStorage.getItem('email');
+    const getPassword = localStorage.getItem('contrasena'); */
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
     // Validar mediante sentencias condicionales si el usuario existe en localStorage
-    if(emailInput === getUsername && contrasenaInput === getPassword) {
 
-        alert(`Bienvenido ${getUsername}, inicio de sesión exitoso`);
+    const usuarioValido = usuarios.find(usuario => 
+        usuario.email === emailInput && usuario.contrasena === contrasenaInput
+    );
+    
+    if (usuarioValido) {
+        alert(`Bienvenide ${usuarioValido.nombreInput}, inicio de sesión exitoso`);
         inicioFormulario.reset();
     } else {
-        alert(`Usuario o contraseña incorrecto`);
+        alert('Usuario o contraseña incorrecto');
     }
-
 });
+
+
