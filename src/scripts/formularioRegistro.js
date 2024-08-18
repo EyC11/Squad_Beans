@@ -102,105 +102,80 @@ function validacionApellido() {
 
 
 
-//Validacion de teléfono Emilio 
-/*const inputTelefono = document.getElementById('tel');
-const verificarBoton = document.getElementById('revisar');
-const resultado = document.getElementById('telefono-estado');
-verificarBoton.addEventListener('click', function(){
-    const numero =inputTelefono.value;// borra
-    if (/^\d{10}$/.test(numero)){
-        // alert('Numero Valido');
-        resultado.textContent = 'El numero es valido';
-        resultado.style.color ='yellow';
-    } else {
-       // alert('Error');
-        resultado.textContent = 'El numero no es valido';
-        resultado.style.color ='red';
-    }
-});*/
-/*
-inputTelefono.addEventListener("submit",validarTelefono);
-let largoMax = /^\d{10}$/;
-longitud = () =>{
-if (/^\d{10}$/==inputTelefono){
-alert("Telefono valido")
-} else {
-    alert("Telefono  no valido")    
-}
-}
-
-if (NaN(telefono)){
-
-}
-
-const expresiones = {
-    telefono: /^\d{10}$/ //10 numeros
-}
-
-function validarTelefono (parametro) {
-if(!/^([0-9])*$/.test(parametro)){
-    return false;
-    console.log("Hols");
-   } else {
-    return true; 
-    alert(" no hola");
-   }
-}
-*/
-
-
-
 
 
 //Evento para que una vez validados los inputs guarde todo en variables al pulsar registrarse
-const buttonRegistro = document.getElementById('revisar');
-const buttonPublicar = document.addEventListener('click', () => {
-    //Adaptar variables de acuerdo a los inputs
-    
-    //Aqui ya se extraen los valores de los inputs
-    var inputNombre = document.getElementById("nombreInput").value;
-    var inputApellido = document.getElementById("apellidoInput").value;
-    var inputCorreo = document.getElementById("email").value;
-    var inputTelefono = document.getElementById("tel").value;
-    var inputDia = document.getElementById("dia").value;
-    var inputMes = document.getElementById("mes").value;
-    var inputAño = document.getElementById("año").value;
-    var inputContraseña = document.getElementById("contrasena");
-    var inputEstado = document.getElementById("estado").value;
-    var inputCuidad = document.getElementById("cuidad").value;
-    var inputCodigoPostal = document.getElementById("codigo--postal").value;
-    var inputDireccion = document.getElementById("direccion").value;
+//const buttonRegistro = document.getElementById('registerForm');
+//const buttonPublicar = document.addEventListener('click', () => {
+    document.getElementById('registerForm').addEventListener('submit',function (event){
+        event.preventDefault();//previniendo comportamiento por defento del formulario       
+           //Adaptar variables de acuerdo a los inputs
+           
+           //Aqui ya se extraen los valores de los inputs del formulario
+           var inputNombre = document.getElementById("nombreInput").value;
+           var inputApellido = document.getElementById("apellidoInput").value;
+           var inputCorreo = document.getElementById("email").value;
+           var inputTelefono = document.getElementById("tel").value;
+           var inputDia = document.getElementById("dia").value;
+           var inputMes = document.getElementById("mes").value;
+           var inputAño = document.getElementById("año").value;
+           var inputContraseña = document.getElementById("contrasena");
+           var inputEstado = document.getElementById("estado").value;
+           var inputCuidad = document.getElementById("ciudad").value;
+           var inputCodigoPostal = document.getElementById("codigo--postal").value;
+           var inputDireccion = document.getElementById("direccion").value;
+       
+       
+           //dia mes año errorP contrasena2 estado ciudad codigo--postal direccion 
+       
+           //Filtro final por si falta de llenar algun campo (se puede borrar)
+           if (inputNombre == " " || inputApellido == "" || inputCorreo == "" || inputTelefono == ""|| inputDia == ""|| inputMes == ""|| inputAño == ""|| inputContraseña == ""|| inputEstado == "" || inputCuidad == ""|| inputCodigoPostal == ""|| inputDireccion == "") {
+               alert("Es necesario llenar el campo");
+           } else {
+               alert("Los campos han sido llenados correctamente");
+           }
+       
+           //Con la informacion adquirida de los inputs se crea un objeto JSON de javascript
+           const registrosObject = {
+               nombre: inputNombre,
+               apellido: inputApellido,
+               correo: inputCorreo,
+               telefono: inputTelefono,
+               dia: inputDia,
+               mes: inputMes,
+               año: inputAño,
+               contraseña: inputContraseña,
+               estado: inputEstado,
+               cuidad: inputCuidad,
+               codigopostal: inputCodigoPostal,
+               direccion: inputDireccion
+       
+           };
+       
+           //Muestra el objeto creado en consola se guarda solamente en la sesionStorage
+           console.log('Objeto JSON:',JSON.stringify(registrosObject));
+       
+       
+       });
 
 
-    //dia mes año errorP contrasena2 estado ciudad codigo--postal direccion 
+       const registroFormulario = document.querySelector('#registerForm');
 
-    //Filtro final por si falta de llenar algun campo (se puede borrar)
-    if (inputNombre == " " || inputApellido == "" || inputCorreo == "" || inputTelefono == ""|| inputDia == ""|| inputMes == ""|| inputAño == ""|| inputContraseña == ""|| inputEstado == "" || inputCuidad == ""|| inputCodigoPostal == ""|| inputDireccion == "") {
-        alert("Es necesario llenar el campo");
-    } else {
-        alert("Los campos han sido llenados correctamente");
-    }
+       //--- Creando evento en formulario para Registrar nuevos Usuarios
+registroFormulario.addEventListener('submit', () => {
 
-    //Con la informacion adquirida de los inputs se crea un objeto de javascript
-    const registrosObject = {
-        nombre: inputNombre,
-        apellido: inputApellido,
-        correo: inputCorreo,
-        contraseña: inputContraseña,
-        telefono: inputTelefono,
-        dia: inputDia,
-        mes: inputMes,
-        año: inputAño,
-        contraseña: inputContraseña,
-        estado: inputEstado,
-        cuidad: inputCuidad,
-        codigopostal: inputCodigoPostal,
-        direccion: inputDireccion
+    // Guardar los inputs en constantes
+    let nuevoUsuario = document.getElementById("email").value;
+    let nuevoPassword = document.getElementById('contrasena').value;
 
+    // Guardamos los valores de los inputs en el almacenamiento local (Local Storage)
+    // Sintaxis para guardarlos: localStorage.setItem("nombreItem", valor);
+    // localStorage(key-value)
+    localStorage.setItem("email", nuevoUsuario);
+    localStorage.setItem("contrasena", nuevoPassword);
 
+    alert('Registro exitoso!!!');
 
-    }
-    //Muestra el objeto creado en consola se guarda solamente en la sesionStorage
-    console.log(publicacionesObject);
+    registroFormulario.reset();
+
 });
-
