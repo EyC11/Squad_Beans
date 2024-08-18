@@ -170,16 +170,17 @@ buttonPublicar.addEventListener('click', () => {
 }
 console.log (publicacionesObject);
 });
+console.log(publicacionesObject.json());
+//fetch("./nuevasPublicaciones.json").then
 
-
-
+/*
 const fs = require('fs');
 const nuevaPublicacion = JSON.stringify(publicacionesObject);
 fs.writeFile('nuevasPublicaciones.json',nuevaPublicacion, (error)=>{
     if (error) throw error;
     console.log('Informacion recibida'); 
 
-})
+})  */
     
 /* //JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
     let mostrarFecha = document.getElementById('fecha');
