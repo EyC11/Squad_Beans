@@ -39,7 +39,10 @@ body {
     padding: 17px 0;
     border-bottom: 2px solid #D9B70D;
     color: #EFF0F5;
+}
 
+.contraseña{
+    margin-top: 12px;
 }
 
 .form-redes h3 {
@@ -75,8 +78,7 @@ form .username .password{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .labels--inputs{
@@ -203,8 +205,6 @@ justify-content: center;
     border-radius: 20px;
     background-color: #99B4BF;
     color: #2D4B73;
-    /*padding-left: 2px;
-    padding-right: 2px;*/
     padding: 13px;
     width:230px;
 }
