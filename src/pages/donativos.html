@@ -6,13 +6,110 @@
     <title>Donativos</title>
     <!--favicon-->
     <link rel="shortcut icon" href="../../public/assets/konijapp-logo.png" type="image/x-icon">
+    <!--Link hoja de estilos-->
+    <link rel="stylesheet" href="donativos.css">
+
 </head>
 <body>
      <!-- Barra de navegación -->
      <div id="navbar--contenido"></div>
+
+     <h1>Donar</h1>
+     <div class="container--pago">
+         <form action="">
+             <div class="donar--row">
+                 <div class="donar--column">
+                     <h3 class="donar--title">Informacion de servicio contratado</h3>
+                     <h4 class="donar--title">Concepto</h4>
+                     <div class="donar--input">
+                         <label>Contratacion de: </label>
+                         <input type="text" placeholder="Albañileria, Electricista...etc ">
+                         <input type="number" placeholder="$000.00">
+                     </div>
+                     <div class="donar--btn">
+                         <label>Donaciones</label>
+                         <button>$100.00</button>
+                         <button>$200.00</button>
+                         <button>$500.00</button>
+                         <button>No donar</button>
+                         <label>Otro monto: </label>
+                         <input type="number" placeholder="$000.00">
+                     </div>
+                     <h4 class="donar--title">Desgloce</h4>
+                     <div class="donar--input">
+                         <label>Donaciones: </label>
+                         <input type="number" placeholder="$000.00">
+                     </div>
+                     <div class="donar--input">
+                         <label>Monto de servicio: </label>
+                         <input type="number" placeholder="$000.00">
+                     </div>
+                     <div class="donar--input">
+                         <label>Monto total a pagar: </label>
+                         <input type="number" placeholder="$000.00">
+                     </div>
+                 </div>
+             </div>
+         </form>
+         <form action="">
+             <div class="pago--row">
+                 <div class="pago--column">
+                     <h3 class="pago--title">Pago</h3>
+                     <div class="pago--input">
+                         <label>Correo Electrónico: </label>
+                         <input type="email" placeholder="usuario@gmail.com">
+                     </div>
+                     <div class="pago--input">
+                         <label>Nombre Completo: </label>
+                         <input type="text" placeholder="">
+                     </div>
+                     <div class="pago--input">
+                         <label>País / Región</label>
+                         <input type="text" placeholder="">
+                     </div>
+                     <div class="pago--input">
+                         <label>Dirección de facturación: </label>
+                         <input type="text" placeholder="">
+                     </div>
+                     <div class="pago--input">
+                         <h3 class="donar--title">Informacion de la Tarjeta: </h3>
+                         <label>Numeros de la tarjeta: <label>
+                         <input type="number" placeholder="1234 1234 1234 1234">
+                         <label>Vigencia: <label>
+                         <input type="number" placeholder="10/29">
+                         <label>CVV: <label></label>
+                         <input type="number" placeholder="123">
+                     </div>
+                     <div class="pago--btn">
+                         <button type="sumbit" id="pago--btnC">Cancelar</button>
+                         <button type="sumbit" id="pago--btnS">Submit</button>
+                     </div>
+                 </div>
+             </div>
+         </form>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
      <!--scripts-->
      <script src="../scripts/insertarNavBar.js"></script>
      <script src="../scripts/footer.js"></script>
     
+
+
+
 </body>
 </html>

@@ -1,0 +1,80 @@
+/*
+Colores a usar
+#99B4BF azul claro
+#D9B70D dorado
+#253C59 azul mas oscuro
+#2D4B73 azul oscuro
+#EFF0F5 backgroud
+
+*/
+body{
+    background-color: #EFF0F5;
+}
+h1{
+    display: flex;
+    justify-self:center;
+}
+.container--pago{
+    min-height: 600px;
+    background-color: #EFF0F5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+}
+
+.container--pago form{
+    width: 350px;
+    padding: 20px;
+    background-color: #99B4BF;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.container--pago h3{
+    display: flex;
+    justify-content: center;
+}
+
+.container--pago label{
+    padding: 1px;
+}
+
+.donar-btn{
+    display:inline-block;
+    align-items:center;
+    justify-content: center;
+}
+
+.donar--btn button{
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    /*flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+
+#pago--btnC {
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+}
+
+#pago--btnS {
+    background: #D9B70D;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+}
+
