@@ -16,7 +16,6 @@ h1{
 }
 .container--pago{
     min-height: 600px;
-    background-color: #EFF0F5;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
