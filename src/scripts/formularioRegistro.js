@@ -169,7 +169,7 @@ registroFormulario.addEventListener('submit', (event) => {
     alert('Registro exitoso!!!');
 
     registroFormulario.reset();
-
+    window.location.href = 'login.html'
 });
 
 

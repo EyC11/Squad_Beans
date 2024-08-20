@@ -230,6 +230,9 @@ body {
     .contenedor {
         min-height: 400px;
     }
+    .contenedor2{
+        min-height: 500px;
+    }
 }
 
 /*Media para la imagen like Seccion 1*/
