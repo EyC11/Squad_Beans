@@ -42,6 +42,7 @@ font-family: "Poppins", sans-serif;
     align-items: row;
     text-align: center;
     justify-content: space-around;
+    gap: 15px; /*Agregue este gap si separa mucho rn la media Query puede quitarse*/
 }
 
 .form-container--contenedor--grupo-datos {
@@ -77,6 +78,7 @@ font-family: "Poppins", sans-serif;
 
 #from-div--img-contactanos {
     width: 350px;
+    padding: 10px;
 }
 /***********************Botones*****************************/
 
@@ -147,6 +149,10 @@ font-family: "Poppins", sans-serif;
     color: #253C59;
     background-color: #D9B70D;
     cursor: pointer;
+    /*Subiendo el tamaño al boton de enviar*/
+    font-size: 18px;
+    padding: 3px, 3px,3px,3px;
+    width: 90px;
 
 }
 
