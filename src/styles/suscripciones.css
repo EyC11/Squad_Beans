@@ -1,8 +1,11 @@
 /* XX-Large devices (larger desktops) */
 /* No media query since the xxl breakpoint has no upper bound on its width */
 
+
 body{
     min-width:400px;
+
+
 }
 .container--principal{
     
