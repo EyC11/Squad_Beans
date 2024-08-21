@@ -248,7 +248,7 @@ main {
 
 
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 
     .navbar{
         width: 100%;
@@ -301,6 +301,7 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin: 30px;
        
     }
 
@@ -312,4 +313,6 @@ main {
         justify-content:center;
         gap: 0;
     }
+   
+
 }
