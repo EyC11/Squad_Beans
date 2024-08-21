@@ -45,18 +45,18 @@
         <!-- row y col clases del Bootstrap del formulario, no se deben modificar ya que esto causaría error -->
         <div class="row">
             <div class="col">
-                <form id="form--contacto" class="form-container">
+                <form id="form--contacto" class="form-container" action="https://formsubmit.co/048c14f717bfae3812407424d4c11768" method="POST">
                     <div class="form-container--contenedor">
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="nombres">Nombre (s):</label>
-                            <input type="text" id="form-container--contenedor--grupo-datos--nombres" required
+                            <input type="text" name="nomnbre" id="form-container--contenedor--grupo-datos--nombres" required
                                 placeholder="Escribe tu nombre (s)">
                             <span id="nombre--contacto"></span>
                             <!-- Se agrega span y id al nombre-->
                         </div>
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="apellidos">Apellidos:</label>
-                            <input type="text" id="form-container--contenedor--grupo-datos--apellidos" required
+                            <input type="text" name="apellidos" id="form-container--contenedor--grupo-datos--apellidos" required
                                 placeholder="Escribe tus apellidos">
                             <span id="apellido--contacto"></span>
                             <!-- Se agrega span y id al apellido-->
@@ -65,7 +65,7 @@
                     <div class="form-container--contenedor">
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="email">Email:</label>
-                            <input type="email" id="inputMail"
+                            <input type="email" id="inputMail" name="email"
                                 placeholder="Ejemplo correo@gmail.com" onkeyup="validacion2()" required>
                                 <br>
                             <span id="email--contacto"></span>
@@ -74,7 +74,7 @@
 
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="ubicacion">Ubicación:</label>
-                            <input type="text" id="form-container--contenedor--grupo-datos--ubicacion"
+                            <input type="text" id="form-container--contenedor--grupo-datos--ubicacion" name="direccion"
                                 placeholder="Coloca tu ubicación" required>
                             <span id="ubicacion--contacto"></span>
                             <!-- Se agrega span y id de ubicación-->
@@ -96,7 +96,7 @@
 
                     <div class="form-container--contenedor--grupo-datos">
                         <label for="Ayuda">¿Cómo podemos ayudar?</label>
-                        <textarea type="text" id="form-container--contenedor--grupo-datos--Ayuda" placeholder="Describe que problema tienes...
+                        <textarea type="text" id="form-container--contenedor--grupo-datos--Ayuda" name="descripcion" placeholder="Describe que problema tienes...
     * Problemas con la aplicacion
     * Problemas con mi cuenta
     * Quiero reportar una cuenta
@@ -105,7 +105,7 @@
                         <!-- Se agrega span y id al textarea-->
                     </div>
                     <div class="form-container--btn-enviar">
-                        <button type="submit" class="form-container--btn-enviar--botonEnviarForm">Enviar</button>
+                        <input type="submit" class="form-container--btn-enviar--botonEnviarForm"></input>
 
                     </div>
 

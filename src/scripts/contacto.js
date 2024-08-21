@@ -71,7 +71,7 @@ function validacion2() {
 //const buttonRegistro = document.getElementById('registerForm');
 //const buttonPublicar = document.addEventListener('click', () => {
     document.getElementById('form--contacto').addEventListener('submit', function (event) {
-        event.preventDefault();//previniendo comportamiento por defento del formulario       
+        //event.preventDefault();//previniendo comportamiento por defento del formulario       
         //Adaptar variables de acuerdo a los inputs
     
         //Aqui ya se extraen los valores de los inputs del formulario
@@ -91,7 +91,7 @@ function validacion2() {
         if (inputNombreContacto == "" || inputApellidoContacto == "" || inputCorreoContacto == "" || inputUbicacionContacto == "" || inputTopicoContacto == "" || inputAyudaContacto == "" ) {
             alert("Es necesario llenar el campo");
         } else {
-            alert("Los campos han sido llenados correctamente");
+           // alert("Los campos han sido llenados correctamente");
         }
     
         //Con la informacion adquirida de los inputs se crea un objeto JSON de javascript
@@ -112,3 +112,17 @@ function validacion2() {
     
     
     });
+
+
+    //funcion para neviar formulario a correo electronico
+   const $d = document;
+   
+
+    $d.addEventListener("submit",(e)=>{
+
+        //e.preventDefault();
+        alert("Enviando formulario" );
+        
+
+    } )
+    
