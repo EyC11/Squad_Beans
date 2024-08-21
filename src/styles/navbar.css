@@ -249,6 +249,7 @@ main {
 
 
 @media (max-width: 900px) {
+@media (max-width: 900px) {
 
     .navbar{
         width: 100%;
@@ -312,4 +313,6 @@ main {
         justify-content:center;
         gap: 0;
     }
+   
+
 }

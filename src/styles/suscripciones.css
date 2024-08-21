@@ -1,0 +1,105 @@
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
+
+body{
+    min-width:400px;
+}
+.container--principal{
+    
+   /* border: solid black;*/
+    height: 100%;
+}
+.container--principal h1{
+    text-align: center;
+    color:#2D4B73;
+    /*background-color: yellow;*/
+    text-decoration: underline;
+}
+.tarjetas--planes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   /* border: solid red;*/
+    
+}
+
+.tarjetas--planes section{
+    
+    width:45vh;
+    margin: 1rem;
+    border-radius: 20px;
+    background-color: #2D4B73;
+    text-align: center;
+    height: 70vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: box-shadow 0.3s ease; /* Para suavizar la transición */
+
+
+
+}
+.tarjetas--planes section:hover{
+     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.titulos--tarjetas{
+    font-family: "Poppins", sans-serif;
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+
+}
+.container--principal ul{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    /*border: solid red;*/
+}
+main button{
+    color: #2D4B73;
+    background-color:#D9B70D ;
+    font-family:"Poppins", sans-serif ;
+    font-size: larger;
+    border-radius: 20px;
+    border:none;
+    font-weight: 500;
+    width: 20vh;
+    border: solid #2D4B73;
+ }
+ main button:hover{
+    color: #D9B70D;
+    background-color:#2D4B73 ;
+    border: solid #D9B70D;
+  
+ }
+
+
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    /* Estilos para dispositivos menores a 1400px */
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+    /* Estilos para dispositivos menores a 1200px */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    /* Estilos para dispositivos menores a 992px */
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    /* Estilos para dispositivos menores a 768px */
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* Estilos para dispositivos menores a 576px */
+}

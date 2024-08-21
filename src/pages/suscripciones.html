@@ -4,15 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suscripciones</title>
+    <!--Importacion Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="../../public/assets/konijapp-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/suscripciones.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <div id="navbar--contenido"></div>
-    <!--scripts-->
-    <script src="../scripts/insertarNavBar.js"></script>
-    <script src="../scripts/footer.js"></script>
+
+   <main class="container--principal">
+        <h1>Planes de suscripción</h1>
+        
+        <div class="tarjetas--planes">
+            <section class="tarjeta--gratis">
+                <p class="titulos--tarjetas">
+                    Gratis
+                </p>
+            
+                <p class="titulos--tarjetas">
+                    $0
+                </p>
+              
+                <p class="titulos--tarjetas">
+                    <ul>Beneficios
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </p>
+                <button id="boton--gratis">Obtener</button>
+             
+
+            </section>
+
+
+            <section class="tarjeta--mensual">
+                <p class="titulos--tarjetas">
+                    Mensual
+                </p>
+                
+                <p class="titulos--tarjetas">
+                    $100.0
+                </p>
+               
+                <p class="titulos--tarjetas">
+                    <ul>Beneficios
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </p>
+                <button id="boton--mensual">Obtener</button>
+                
+            </section>
+
+
+            <section class="tarjeta--anual">
+                <p class="titulos--tarjetas">
+                    Anual
+                </p>
+
+        
+                
+                <p class="titulos--tarjetas">
+                    $1,000.
+                </p>
+             
+                <p class="titulos--tarjetas">
+                    <ul>Beneficios
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </p>
+                
+                <button id="boton--anual">Obtener</button>
+                
+            </section>
+        </div>
+        <br><br><br>
+
+        
+        <div id="footer--contenido"></div>
+
+   </main>
+
+   <script src="../scripts/insertarNavBar.js"></script>
+   <script src="../scripts/footer.js"></script>
+   
+    
     
 </body>
 </html>
