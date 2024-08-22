@@ -50,23 +50,23 @@
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="nombres">Nombre (s):</label>
                             <input type="text" name="nomnbre" id="form-container--contenedor--grupo-datos--nombres" required
-                                placeholder="Escribe tu nombre (s)">
+                                placeholder="Escribe tu nombre (s)" maxlength="30">
                             <span id="nombre--contacto"></span>
-                            <!-- Se agrega span y id al nombre-->
+                            <!-- Se agrega span e id al nombre-->
                         </div>
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="apellidos">Apellidos:</label>
                             <input type="text" name="apellidos" id="form-container--contenedor--grupo-datos--apellidos" required
-                                placeholder="Escribe tus apellidos">
+                                placeholder="Escribe tus apellidos" maxlength="30">
                             <span id="apellido--contacto"></span>
-                            <!-- Se agrega span y id al apellido-->
+                            <!-- Se agrega span e id al apellido-->
                         </div>
                     </div>
                     <div class="form-container--contenedor">
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="email">Email:</label>
                             <input type="email" id="inputMail" name="email"
-                                placeholder="Ejemplo correo@gmail.com" onkeyup="validacion2()" required>
+                                placeholder="Ejemplo correo@gmail.com" onkeyup="validacion2()" maxlength="35" required>
                                 <br>
                             <span id="email--contacto"></span>
                             
@@ -75,9 +75,9 @@
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="ubicacion">Ubicación:</label>
                             <input type="text" id="form-container--contenedor--grupo-datos--ubicacion" name="direccion"
-                                placeholder="Coloca tu ubicación" required>
+                                placeholder="Coloca tu ubicación"  maxlength="30" required>
                             <span id="ubicacion--contacto"></span>
-                            <!-- Se agrega span y id de ubicación-->
+                            <!-- Se agrega span e id de ubicación-->
                         </div>
                     </div>
 
@@ -102,7 +102,7 @@
     * Quiero reportar una cuenta
     * Contactar a soporte tecnico" required></textarea>
                         <span id="apellido--contacto"></span>
-                        <!-- Se agrega span y id al textarea-->
+                        <!-- Se agrega span e id al textarea-->
                     </div>
                     <div class="form-container--btn-enviar">
                         <button type="submit" class="form-container--btn-enviar--botonEnviarForm">Enviar</button>
@@ -125,7 +125,7 @@
                         <h3>Nos encontramos en:</h3>
 
                         <h4>Nuestro E-mail</h4>
-                        <p>squadbeans@gmail.com</p>
+                        <p>oficial.squadbeans@gmail.com</p><!--Se agrega correo oficial de SquadBeans-->
 
                         <h4>Nuestro Teléfono</h4>
                         <p>+52 (55) 12-34-56-78</p>

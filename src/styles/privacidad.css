@@ -1,0 +1,17 @@
+.div-principal {
+    background-color: #2D4B73;
+    border-radius: 25px;
+}
+
+.div-principal--subt, .div-principal p{
+    font-family: "DM Sans", sans-serif;
+    color: #ffffff;
+    margin: 0px 10px;
+}
+
+.div-principal--titulo {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 30px;
+    color: #ffffff;
+}

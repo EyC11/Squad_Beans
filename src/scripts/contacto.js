@@ -99,9 +99,10 @@ function validacion2() {
             nombreC: inputNombreContacto,
             apellidoC: inputApellidoContacto,
             correoC: inputCorreoContacto,
-            ubicacion: inputUbicacionContacto,
+            ubicacionC: inputUbicacionContacto,
             topicoC: inputTopicoContacto,
-            ayudaC: inputAyudaContacto
+            ayudaC: inputAyudaContacto,
+            esCliente: esCliente
             //falta agregar boolean botones
             
     

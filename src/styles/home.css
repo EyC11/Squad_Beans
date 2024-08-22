@@ -240,3 +240,164 @@ form .content .details .options {
 
 /*  !important; */
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFF0F5;
+    
+}
+
+.header-container {
+    background-color: #2D4B73;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.user-carousel {
+    display: flex;
+    gap: 40px !important; 
+}
+
+.user-icon img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.service-title h2 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+    
+    
+}
+
+.post-container {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 60%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+   
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.post-info h4 {
+    margin: 0;
+    color: #D9B70D;
+    font-weight: bold;
+}
+
+.post-info p {
+    color: #2D4B73;
+    margin: 0;
+    
+}
+
+.post-icon img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.post-body {
+    color: #2D4B73;
+    margin-top: 20px;
+    
+}
+
+.post-body img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+}
+
+.post-footer {
+    display: flex;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.btn {
+    background-color: #ffd700;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    
+}
+
+.btn2 {
+    background-color: #ffd700;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    
+}
+
+.advertisements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pub{
+    font-weight: bold;
+}
+
+.ad {
+    
+    
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ad1 {
+    background-color: #FFD700;
+    color: black;
+}
+
+.premium{
+    font-weight: bold;
+}
+
+
+.ad2 {
+    background-color: #aac8f0;
+    width: 210px;
+    height: 300px;
+    color: #2D4B73;
+    font-weight: bold;
+}

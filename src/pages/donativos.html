@@ -1,115 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donativos</title>
     <!--favicon-->
     <link rel="shortcut icon" href="../../public/assets/konijapp-logo.png" type="image/x-icon">
+
+    <!-- Links de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <!--Link hoja de estilos-->
     <link rel="stylesheet" href="../styles/donativos.css">
 
 </head>
+
 <body>
-     <!-- Barra de navegación -->
-     <div id="navbar--contenido"></div>
+    <!-- Barra de navegación -->
+    <div id="navbar--contenido"></div>
 
-     <h1>Donar</h1>
-     <div class="container--pago">
-         <form action="">
-             <div class="donar--row">
-                 <div class="donar--column">
-                     <h3 class="donar--title">Informacion de servicio contratado</h3>
-                     <h4 class="donar--title">Concepto</h4>
-                     <div class="donar--input">
-                         <label>Contratacion de: </label>
-                         <input type="text" placeholder="Albañileria, Electricista...etc ">
-                         <input type="number" placeholder="$000.00">
-                     </div>
-                     <div class="donar--btn">
-                         <label>Donaciones</label>
-                         <button>$100.00</button>
-                         <button>$200.00</button>
-                         <button>$500.00</button>
-                         <button>No donar</button>
-                         <label>Otro monto: </label>
-                         <input type="number" placeholder="$000.00">
-                     </div>
-                     <h4 class="donar--title">Desgloce</h4>
-                     <div class="donar--input">
-                         <label>Donaciones: </label>
-                         <input type="number" placeholder="$000.00">
-                     </div>
-                     <div class="donar--input">
-                         <label>Monto de servicio: </label>
-                         <input type="number" placeholder="$000.00">
-                     </div>
-                     <div class="donar--input">
-                         <label>Monto total a pagar: </label>
-                         <input type="number" placeholder="$000.00">
-                     </div>
-                 </div>
-             </div>
-         </form>
-         <form action="">
-             <div class="pago--row">
-                 <div class="pago--column">
-                     <h3 class="pago--title">Pago</h3>
-                     <div class="pago--input">
-                         <label>Correo Electrónico: </label>
-                         <input type="email" placeholder="usuario@gmail.com">
-                     </div>
-                     <div class="pago--input">
-                         <label>Nombre Completo: </label>
-                         <input type="text" placeholder="">
-                     </div>
-                     <div class="pago--input">
-                         <label>País / Región</label>
-                         <input type="text" placeholder="">
-                     </div>
-                     <div class="pago--input">
-                         <label>Dirección de facturación: </label>
-                         <input type="text" placeholder="">
-                     </div>
-                     <div class="pago--input">
-                         <h3 class="donar--title">Informacion de la Tarjeta: </h3>
-                         <label>Numeros de la tarjeta: <label>
-                         <input type="number" placeholder="1234 1234 1234 1234">
-                         <label>Vigencia: <label>
-                         <input type="number" placeholder="10/29">
-                         <label>CVV: <label></label>
-                         <input type="number" placeholder="123">
-                     </div>
-                     <div class="pago--btn">
-                         <button type="sumbit" id="pago--btnC">Cancelar</button>
-                         <button type="sumbit" id="pago--btnS">Submit</button>
-                     </div>
-                 </div>
-             </div>
-         </form>
-     </div>
+    <!--Seccion de donar, servicio, comentario-->
+    <h1 style="color: #2D4B73;">Donar</h1>
+    <div class="container--pago">
+        <form action="">
+            <div class="donar--row">
+                <div class="donar--column">
+                    <h3 style="color: #2D4B73;">Información de servicio contratado</h3>
+                    <br>
+                    <h4 class="donar--title">Concepto</h4>
 
+                    <div class="donar--input">
+                        <label>Contratación de: </label>
+                        <textarea class="form-control" placeholder="Tipo de servicio" id="floatingTextarea1"
+                            style="height: 20px"></textarea>
+                        <label>Descripcion: </label>
+                        <textarea class="form-control" placeholder="Albañileria, Electricista...etc"
+                            id="floatingTextarea2" style="height: 100px"></textarea>
+                    </div>
 
+                    <br>
+                    <!--Empieza seccion de botones donaciones-->
+                    <h4 class="donar--title">Donaciones</h4>
+                    <div class="donar--botones">
+                        <button type="button" class="btn-donation" data-amount="20">$20.00</button>
+                        <button type="button" class="btn-donation" data-amount="50">$50.00</button>
+                        <button type="button" class="btn-donation" data-amount="100">$100.00</button>
+                        <button type="button" class="btn-donation" data-amount="200">$200.00</button>
+                        <div style="margin-top: 20px;">
+                            <label>Otro cantidad: </label>
+                            <input type="number" name="otroMonto" placeholder="$000.00" id="input-donaciones" min="0">
+                        </div>
+                    </div>
 
+                    <br>
 
+                    <!--Sección de desglose-->
+                    <h4 class="donar--title">Desgloce</h4>
+                    <div class="donar--input">
+                        <label>Tu donación es de: </label>
+                        <h5 style="color: #2D4B73;" id="donaciones-amount">$ 0.00</h5>
+                    </div>
+                </div>
+            </div>
 
+            <!--Sección de datos de usuario y tarjeta-->
+        </form>
+        <form action="">
+            <div class="pago--row">
+                <h3 class="donar--title">Pago</h3>
+                <div class="pago--column" style="margin-left: 20px;">
+                    <br>
+                    <div class="pago--input">
+                        <label>Correo Electrónico: </label>
+                        <input type="email" class="imput--ancho" placeholder="usuario@mail.com" required>
+                    </div>
+                    <br>
+                    <h4 class="donar--title">Información de la Tarjeta: </h4>
+                    <div>
+                        <label>Numero de la tarjeta: </label>
+                        <input type="text" class="imput--ancho" placeholder="1234 1234 1234 1234" required>
+                    </div>
+                    <div>
+                        <label>Vigencia: </label>
+                        <input type="text" class="imput--ancho" placeholder="10/99" maxlength="4" required>
+                    </div>
+                    <div>
+                        <label>CVV: </label>
+                        <br>
+                        <input type="password" class="imput--ancho" placeholder="123" maxlength="4" required>
+                    </div>
+                    <div class="pago--input">
+                        <label>Nombre Completo: </label>
+                        <input name="nombre" class="imput--ancho" type="text" placeholder="" required>
+                    </div>
+                    <div class="pago--input">
+                        <label>País / Región: </label>
+                        <br>
+                        <input name="pais" class="imput--ancho" type="text" placeholder="" required>
+                    </div>
+                    <div class="pago--input">
+                        <label>Dirección de facturación: </label>
+                        <input name="direccion" class="imput--ancho" type="text" placeholder="" required>
+                    </div>
+                    <br>
+                    <br><br>
+                    <div class="pago--btn" style="display: flex; flex-direction: column; align-items: end;">
+                        <button type="submit" id="pago--btnCancelar">Cancelar</button>
+                        <button type="submit" id="pago--btnSubmit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
 
+     <!-- footer -->
+     <div id="footer--contenido"></div>
 
+    <!--scripts-->
+    <script src="../scripts/insertarNavBar.js"></script>
+    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/donativos.js"></script> <!-- Enlace al nuevo archivo JS -->
 
+    <!-- Links de Bootstrap adicionales -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-
-
-
-
-
-
-
-     <!--scripts-->
-     <script src="../scripts/insertarNavBar.js"></script>
-     <script src="../scripts/footer.js"></script>
-    
-
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </body>
+
 </html>
