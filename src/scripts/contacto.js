@@ -70,59 +70,71 @@ function validacion2() {
 //Evento para que una vez validados los inputs guarde todo en variables al pulsar registrarse
 //const buttonRegistro = document.getElementById('registerForm');
 //const buttonPublicar = document.addEventListener('click', () => {
-    document.getElementById('form--contacto').addEventListener('submit', function (event) {
-        //event.preventDefault();//previniendo comportamiento por defento del formulario       
-        //Adaptar variables de acuerdo a los inputs
+    const botonCliente = document.getElementById('boton--cliente');
+    const botonProveedor = document.getElementById('boton--proveedor');
+    const mensajeRol = document.getElementById('roll-cliente-proveedor');
+    let esCliente = null;
     
-        //Aqui ya se extraen los valores de los inputs del formulario
+    botonCliente.addEventListener('click', () => {
+        esCliente = true;
+        botonCliente.disabled = true;
+        botonProveedor.disabled = false;
+        mensajeRol.textContent = ""; // Limpiar el mensaje de error
+    });
+    
+    botonProveedor.addEventListener('click', () => {
+        esCliente = false;
+        botonProveedor.disabled = true;
+        botonCliente.disabled = false;
+        mensajeRol.textContent = ""; // Limpiar el mensaje de error
+    });
+    
+    document.getElementById('form--contacto').addEventListener('submit', function (event) {
+        // Validar si se seleccionó un rol
+        if (esCliente === null) {
+            event.preventDefault(); // Evitar el envío del formulario
+            mensajeRol.textContent = "Por favor selecciona un rol"; // Mostrar mensaje de error
+            return; // Salir de la función para no continuar con el envío
+        }
+    
+        // Si se seleccionó un rol, continúa con la lógica normal
         var inputNombreContacto = document.getElementById("form-container--contenedor--grupo-datos--nombres").value;
         var inputApellidoContacto = document.getElementById("form-container--contenedor--grupo-datos--apellidos").value;
         var inputCorreoContacto = document.getElementById("inputMail").value;
         var inputUbicacionContacto = document.getElementById("form-container--contenedor--grupo-datos--ubicacion").value;
         var inputTopicoContacto = document.getElementById("form-container--contenedor--grupo-datos--topicos").value;
         var inputAyudaContacto = document.getElementById("form-container--contenedor--grupo-datos--Ayuda").value;
-        
-       
     
-    
-        //dia mes año errorP contrasena2 estado ciudad codigo--postal direccion 
-    
-        //Filtro final por si falta de llenar algun campo (se puede borrar)
-        if (inputNombreContacto == "" || inputApellidoContacto == "" || inputCorreoContacto == "" || inputUbicacionContacto == "" || inputTopicoContacto == "" || inputAyudaContacto == "" ) {
-            alert("Es necesario llenar el campo");
-        } else {
-           // alert("Los campos han sido llenados correctamente");
+        // Filtro final por si falta de llenar algún campo
+        if (inputNombreContacto == "" || inputApellidoContacto == "" || inputCorreoContacto == "" || inputUbicacionContacto == "" || inputTopicoContacto == "" || inputAyudaContacto == "") {
+            alert("Es necesario llenar todos los campos.");
+            return; // Salir de la función para no continuar con el envío
         }
     
-        //Con la informacion adquirida de los inputs se crea un objeto JSON de javascript
+        // Crear el objeto JSON si todo está bien
         const contactoObject = {
             nombreC: inputNombreContacto,
             apellidoC: inputApellidoContacto,
             correoC: inputCorreoContacto,
             ubicacion: inputUbicacionContacto,
             topicoC: inputTopicoContacto,
-            ayudaC: inputAyudaContacto
-            //falta agregar boolean botones
-            
-    
+            ayudaC: inputAyudaContacto,
+            esCliente: esCliente
         };
     
-        //Muestra el objeto creado en consola se guarda solamente en la sesionStorage
         console.log('Objeto JSON:', JSON.stringify(contactoObject));
-    
-    
+        // El formulario se envía aquí si no hay errores
     });
-
-
-    //funcion para neviar formulario a correo electronico
-   const $d = document;
-   
-
-    $d.addEventListener("submit",(e)=>{
-
-        //e.preventDefault();
-        alert("Enviando formulario" );
-        
-
-    } )
     
+    
+    
+//     //funcion para neviar formulario a correo electronico
+//    const $d = document;
+   
+//     $d.addEventListener("submit",(e)=>{
+        
+//         //e.preventDefault();
+//         alert("Enviando formulario" );
+        
+ 
+//     } );
