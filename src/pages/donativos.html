@@ -24,7 +24,7 @@
     <!--Seccion de donar, servicio, comentario-->
     <h1 style="color: #2D4B73;">Donar</h1>
     <div class="container--pago">
-        <form action="">
+        <form id="serviceForm">
             <div class="donar--row">
                 <div class="donar--column">
                     <h3 style="color: #2D4B73;">Información de servicio contratado</h3>
@@ -32,12 +32,12 @@
                     <h4 class="donar--title">Concepto</h4>
 
                     <div class="donar--input">
-                        <label>Contratación de: </label>
-                        <textarea class="form-control" placeholder="Tipo de servicio" id="floatingTextarea1"
-                            style="height: 20px"></textarea>
-                        <label>Descripcion: </label>
-                        <textarea class="form-control" placeholder="Albañileria, Electricista...etc"
-                            id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label>Agradecimiento por: </label>
+                        <textarea class="form-control" placeholder="Servicio" id="floatingTextarea1"
+                            style="height: 20px" required></textarea>
+                        <label>Descripción: </label>
+                        <textarea class="form-control" placeholder="Motivos de la donación..."
+                            id="floatingTextarea2" style="height: 100px" required></textarea>
                     </div>
 
                     <br>
@@ -64,50 +64,49 @@
                     </div>
                 </div>
             </div>
-
-            <!--Sección de datos de usuario y tarjeta-->
         </form>
-        <form action="">
+
+        <form id="paymentForm">
             <div class="pago--row">
                 <h3 class="donar--title">Pago</h3>
                 <div class="pago--column" style="margin-left: 20px;">
                     <br>
                     <div class="pago--input">
                         <label>Correo Electrónico: </label>
-                        <input type="email" class="imput--ancho" placeholder="usuario@mail.com" required>
+                        <input type="email" class="imput--ancho" placeholder="usuario@mail.com" id="email" required>
                     </div>
                     <br>
                     <h4 class="donar--title">Información de la Tarjeta: </h4>
                     <div>
                         <label>Numero de la tarjeta: </label>
-                        <input type="text" class="imput--ancho" placeholder="1234 1234 1234 1234" required>
+                        <input type="text" class="imput--ancho" placeholder="1234 1234 1234 1234" id="cardNumber" required>
                     </div>
                     <div>
                         <label>Vigencia: </label>
-                        <input type="text" class="imput--ancho" placeholder="10/99" maxlength="4" required>
+                        <input type="text" class="imput--ancho" placeholder="10/30" maxlength="5" id="expiryDate" required>
                     </div>
                     <div>
                         <label>CVV: </label>
                         <br>
-                        <input type="password" class="imput--ancho" placeholder="123" maxlength="4" required>
+                        <input type="password" class="imput--ancho" placeholder="123" maxlength="4" id="cvv" required>
                     </div>
                     <div class="pago--input">
                         <label>Nombre Completo: </label>
-                        <input name="nombre" class="imput--ancho" type="text" placeholder="" required>
+                        <input name="nombre" class="imput--ancho" type="text" id="fullName" placeholder="" required>
                     </div>
                     <div class="pago--input">
                         <label>País / Región: </label>
                         <br>
-                        <input name="pais" class="imput--ancho" type="text" placeholder="" required>
+                        <input name="pais" class="imput--ancho" type="text" id="country" placeholder="" required>
                     </div>
                     <div class="pago--input">
                         <label>Dirección de facturación: </label>
-                        <input name="direccion" class="imput--ancho" type="text" placeholder="" required>
+                        <input name="direccion" class="imput--ancho" type="text" id="billingAddress" placeholder="" required>
                     </div>
                     <br>
                     <br><br>
                     <div class="pago--btn" style="display: flex; flex-direction: column; align-items: end;">
-                        <button type="submit" id="pago--btnCancelar">Cancelar</button>
+                        <button type="button" id="pago--btnCancelar">Cancelar</button>
                         <button type="submit" id="pago--btnSubmit">Submit</button>
                     </div>
                 </div>
@@ -115,8 +114,8 @@
         </form>
     </div>
 
-     <!-- footer -->
-     <div id="footer--contenido"></div>
+    <!-- footer -->
+    <div id="footer--contenido"></div>
 
     <!--scripts-->
     <script src="../scripts/donativos.js"></script> 
