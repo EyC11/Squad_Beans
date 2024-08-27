@@ -1,7 +1,7 @@
 
 const $confirmar = document.getElementById("contrasena2")
 const $error1 = document.getElementById("errorP")
-console.log($constrasenia);
+//console.log($constrasenia);
 console.log($confirmar);
 console.log($error1);
 
