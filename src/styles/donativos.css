@@ -171,7 +171,8 @@ label{
 /*Media para los contenedores*/
 @media screen and (max-width: 400px) {
     .container--pago {
-        height:  1500px;   
+        height:  1500px;  
+        margin-bottom: 200px; 
     }
 }
 

@@ -19,7 +19,7 @@ body {
 .contenedor {
     background-color: #2D4B73;
     border-radius: 20px;
-    max-width: 1140px;
+    margin: 40px;
     height: 260px;
     display: flex;
     flex-direction: column;
@@ -28,8 +28,6 @@ body {
     padding: 20px;
     justify-items: auto;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;  /*Cambio permitir el ajuste de línea */   
 }
 
@@ -38,6 +36,7 @@ body {
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
+    width: 95%;
 }
 
 .contenedor--p {
@@ -47,6 +46,7 @@ body {
     font-family: 'DM-Sans', sans-serif;
     font-weight: 300;
     margin-top: 15px;
+    width: 95%;
 }
 
 .contenedor--boton--empezar {
@@ -92,13 +92,10 @@ body {
 .contenedor2 {
     background-color: #99B4BF;
     padding: 20px;
-    margin: 20px;
     border-radius: 20px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px;
     display: flex;
-    flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
+    flex-direction: column;
     justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
     height: 350px;
 }
@@ -118,13 +115,14 @@ body {
 
 .contenedor2--contenido {
     display: flex;
-    align-items: center;
-    
+    flex-direction: row;
+    align-items:center;
+    justify-items:center;
 }
 
 .contenedor2--contenido p {
     font-family: 'DM-Sans', sans-serif;
-    font-size: 18p;
+    font-size: 18px;
     text-align: center;
     color: #2D4B73;
     margin-right: 20px;
@@ -135,11 +133,11 @@ body {
  .contenedor2--imagen{
      flex-wrap: wrap;
      position: absolute;
-     margin-left: 700px;
-     margin-top: -150px;
+     margin-left: 1000px;
+     margin-top: -230px;
 }
 
-/*Sección 3: Mision, Vision y Valores */
+/*SECCION 3: Mision, Vision y Valores */
 .contenedor3 {
     display: flex;
     justify-content: space-around;
@@ -159,9 +157,16 @@ body {
     width: 90%;
 }
 
+.contenedor3--card-k p{
+    font-size: 18px;
+    font-family: 'DM-Sans', sans-serif;
+}
+
 .contenedor3--card-k ul{
     list-style-type: none;
     padding-left: 0;
+    font-size: 18px;
+    font-family: 'DM-Sans', sans-serif;
 }
 
 
@@ -174,7 +179,6 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #99B4BF;
-    
 }
 
 .card-body H5 {
@@ -232,15 +236,18 @@ body {
     transition: 0.5s;
 }
 
-
-
 /*Media para contenedor Seccion 1*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .contenedor {
         min-height: 400px;
     }
-    .contenedor2{
-        min-height: 500px;
+   
+    .contenedor2--h1{
+        margin: 0;
+        margin-top: 25px;
+    }
+    .contenedor--boton--empezar{
+        width: 250px;
     }
 }
 
@@ -252,19 +259,38 @@ body {
 }
 
 /*Media por que konikapp Seccion 2*/
+@media screen and (max-width:360px) {
+    .contenedor2{
+        min-height: 650px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .contenedor2{
+        min-height: 700px;
+    }
+}
+
+@media screen and (max-width:585px) {
+.contenedor2{
+    min-height: 450px;
+    }
+}
+
 @media screen and (max-width:800px) {
     .contenerdor2--contenido{
         display: flex;
-        flex-wrap: wrap;
+        /*flex-wrap: wrap;*/
         flex-direction: column;
     }
 }
  
 /*Media para la imagen search Seccion 2*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1350px) {
     .contenedor2--imagen {
         visibility: hidden;
     }
+   
 }
 
 /*Media para mision vision Seccion 3*/
@@ -291,17 +317,16 @@ body {
         margin:5px;
         width: 300px;
         height: 345px;
-        
     }
+
     .imagen-carrusel {
         margin: auto;
         background-color: #99B4BF;
     }
+    
     .imagen-carrusel-img {
         max-width: 100%;
-        height: 200px;
-        
-    } 
-
-    
+        height: 200px;  
+    }     
 }
+
