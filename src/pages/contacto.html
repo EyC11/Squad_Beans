@@ -34,30 +34,25 @@
                 <div>
                     <h1 class="contacto--titulo">Contáctanos</h1>
                 </div>
-                <!-- Botones Soy Cliente y Soy Proveedor -->
-                <!-- Se uso camel case en esete div para englobar los botones de Soy Cliente y Soy Usuario -->
-                <div class="botonesUsers">
-                    <button type="reset" id="boton--cliente" class="botonUsers--Cliente">Soy Cliente</button>
-                    <button type="reset" id="boton--proveedor" class="botonUsers--Proveedor">Soy Proveedor</button>
-                </div>
             </div>
         </div>
         <!-- row y col clases del Bootstrap del formulario, no se deben modificar ya que esto causaría error -->
         <div class="row">
             <div class="col">
-                <form id="form--contacto" class="form-container" action="https://formsubmit.co/048c14f717bfae3812407424d4c11768" method="POST">
+                <form id="form--contacto" class="form-container"
+                    action="https://formsubmit.co/8e630e9a523bd73555101810cdebac80" method="POST">
                     <div class="form-container--contenedor">
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="nombres">Nombre (s):</label>
-                            <input type="text" name="nomnbre" id="form-container--contenedor--grupo-datos--nombres" required
-                                placeholder="Escribe tu nombre (s)" maxlength="30">
+                            <input type="text" name="nombre" id="form-container--contenedor--grupo-datos--nombres"
+                                required placeholder="Escribe tu nombre (s)">
                             <span id="nombre--contacto"></span>
                             <!-- Se agrega span e id al nombre-->
                         </div>
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="apellidos">Apellidos:</label>
-                            <input type="text" name="apellidos" id="form-container--contenedor--grupo-datos--apellidos" required
-                                placeholder="Escribe tus apellidos" maxlength="30">
+                            <input type="text" name="apellidos" id="form-container--contenedor--grupo-datos--apellidos"
+                                required placeholder="Escribe tus apellidos">
                             <span id="apellido--contacto"></span>
                             <!-- Se agrega span e id al apellido-->
                         </div>
@@ -65,11 +60,11 @@
                     <div class="form-container--contenedor">
                         <div class="form-container--contenedor--grupo-datos">
                             <label for="email">Email:</label>
-                            <input type="email" id="inputMail" name="email"
-                                placeholder="Ejemplo correo@gmail.com" onkeyup="validacion2()" maxlength="35" required>
-                                <br>
+                            <input type="email" id="inputMail" name="email" placeholder="Ejemplo correo@gmail.com"
+                                onkeyup="validacion2()" required>
+                           
                             <span id="email--contacto"></span>
-                            
+
                         </div>
 
                         <div class="form-container--contenedor--grupo-datos">
@@ -79,8 +74,18 @@
                             <span id="ubicacion--contacto"></span>
                             <!-- Se agrega span e id de ubicación-->
                         </div>
+                        
                     </div>
-
+                    <!-- Botones Soy Cliente y Soy Proveedor -->
+                    <!-- Se uso camel case en esete div para englobar los botones de Soy Cliente y Soy Usuario -->
+                    <label for="">Selecciona el rol que tienes en la plataforma:</label><br>
+                    <div class="botonesUsers">
+                    
+                    <button name= "roll-cliente" type="input" id="boton--cliente" class="botonUsers--Cliente">Soy Cliente</button>
+                    <button name= "roll-proveedor" type="reset" id="boton--proveedor" class="botonUsers--Proveedor">Soy Proveedor</button>
+                    <span id="roll-cliente-proveedor" style="color: #EE3A3A;"></span>
+                    </div>
+                    
                     <div class="form-container--contenedor--grupo-datos">
                         <label for="topicos">Tópico:</label>
                         <select name="topicos" id="form-container--contenedor--grupo-datos--topicos" required
@@ -96,7 +101,8 @@
 
                     <div class="form-container--contenedor--grupo-datos">
                         <label for="Ayuda">¿Cómo podemos ayudar?</label>
-                        <textarea type="text" id="form-container--contenedor--grupo-datos--Ayuda" name="descripcion" placeholder="Describe que problema tienes...
+                        <textarea type="text" id="form-container--contenedor--grupo-datos--Ayuda" name="descripcion"
+                            placeholder="Describe que problema tienes...
     * Problemas con la aplicacion
     * Problemas con mi cuenta
     * Quiero reportar una cuenta
@@ -106,8 +112,12 @@
                     </div>
                     <div class="form-container--btn-enviar">
                         <button type="submit" class="form-container--btn-enviar--botonEnviarForm">Enviar</button>
+                        
+                        
 
                     </div>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/src/pages/landing.html">
+                    <input type="hidden" name="_captcha" value="false">
 
 
                 </form>
