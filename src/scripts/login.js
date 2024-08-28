@@ -44,8 +44,20 @@ inicioFormulario.addEventListener('submit', (event) => {
     );
     
     if (usuarioValido) {
-        alert(`Bienvenide ${usuarioValido.nombreInput}, inicio de sesión exitoso`);
+        if (usuarioValido.login === "out") {
+            
+            usuarioValido.login = "in";
+        }
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
+        alert(`Bienvenide ${usuarioValido.nombre}, inicio de sesión exitoso`);
+
+        
+        
+        
         inicioFormulario.reset();
+
+       
+        
         
     } else {
         alert('Usuario o contraseña incorrecto');

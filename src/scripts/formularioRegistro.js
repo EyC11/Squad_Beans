@@ -13,6 +13,67 @@ function validacion() {
     }
 }
 
+//------------------------------------------------------
+function validatePassword() {
+    const password = document.getElementById('password').value;
+    const passwordValidation = document.getElementById('password-validation');
+
+    const hasUppercase = /[A-Z]/.test(password);
+    const hasNumber = /[0-9]/.test(password);
+    const isLengthValid = password.length >= 8;
+    const isLengthValid2 = password.length <= 15 ;
+
+
+    let message = '';
+    if ((!hasUppercase)||(!hasNumber)||(!(isLengthValid && isLengthValid2))){
+         message += 'Debe contener al menos una letra mayúscula un numero y entre 8 y15 caracteres ';
+         // Cambiar el color del texto a rojo
+        passwordValidation.style.color = '#EE3A3A';
+    }else{
+        message+="Contraseña correcta"
+        passwordValidation.style.color = '#62CF3D';
+
+    }
+    
+    
+    passwordValidation.textContent = message;
+
+    if (password === '') {
+        passwordValidation.textContent = 'Este campo no puede estar vacío.';
+        return;
+    }
+}
+
+function validateConfirmPassword() {
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+    const confirmPasswordValidation = document.getElementById('confirm-password-validation');
+
+    
+    
+    if (password !== confirmPassword) {
+        confirmPasswordValidation.textContent = 'Las contraseñas no coinciden.';
+    } else {
+        confirmPasswordValidation.textContent = ' Las contraseñas coinciden';
+        confirmPasswordValidation.style.color = '#62CF3D';
+        
+    }
+
+}
+
+document.getElementById('password').addEventListener('input', validatePassword);
+document.getElementById('confirm-password').addEventListener('input', validateConfirmPassword);
+
+
+
+
+//-------------------------------------------------
+
+
+
+
+
+
 
 
 function validacionTelefono() {
@@ -106,8 +167,8 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     var inputDia = document.getElementById("dia").value;
     var inputMes = document.getElementById("mes").value;
     var inputAnio = document.getElementById("año").value;
-    var inputContrasenia = document.getElementById("contrasena").value;
-    var inputValidarContrasenia = document.getElementById("contrasena2").value;
+    var inputContrasenia = document.getElementById("password").value;
+    var inputValidarContrasenia = document.getElementById("confirm-password").value;
     var inputEstado = document.getElementById("estado").value;
     var inputCuidad = document.getElementById("ciudad").value;
     var inputCodigoPostal = document.getElementById("codigo--postal").value;
@@ -137,7 +198,7 @@ registroFormulario.addEventListener('submit', (event) => {
     // Guardar los inputs en constantes
     const nombreUsuario = document.getElementById("nombreInput").value;
     const nombreEmail = document.getElementById("email").value;
-    const nuevoPassword = document.getElementById('contrasena').value;
+    const nuevoPassword = document.getElementById('password').value;
 
     // Guardamos los valores de los inputs en el almacenamiento local (Local Storage)
     // Sintaxis para guardarlos: localStorage.setItem("nombreItem", valor);
@@ -146,7 +207,7 @@ registroFormulario.addEventListener('submit', (event) => {
     localStorage.setItem("contrasena", nuevoPassword); */
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    usuarios.push({nombre:nombreUsuario,email:nombreEmail, contrasena:nuevoPassword});
+    usuarios.push({nombre:nombreUsuario,email:nombreEmail, contrasena:nuevoPassword, login:"out"});
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
     
     alert('Registro exitoso!!!');
@@ -161,11 +222,11 @@ registroFormulario.addEventListener('submit', (event) => {
 // Seleccionar los elementos
 const togglePassword = document.getElementById('toggle-password');
 const togglePasswordHide = document.getElementById('toggle-password-hide');
-const passwordField = document.getElementById('contrasena');
+const passwordField = document.getElementById('password');
 
 const togglePassword2 = document.getElementById('toggle-password2');
 const togglePasswordHide2 = document.getElementById('toggle-password-hide2');
-const passwordField2 = document.getElementById('contrasena2');
+const passwordField2 = document.getElementById('confirm-password');
 
 // Función para mostrar/ocultar contraseña
 const toggleVisibility = (field, showIcon, hideIcon) => {
