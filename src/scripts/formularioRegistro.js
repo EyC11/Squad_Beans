@@ -95,7 +95,7 @@ function validacionApellido() {
 //const buttonRegistro = document.getElementById('registerForm');
 //const buttonPublicar = document.addEventListener('click', () => {
 document.getElementById('registerForm').addEventListener('submit', function (event) {
-    event.preventDefault();//previniendo comportamiento por defento del formulario       
+    //event.preventDefault();//previniendo comportamiento por defento del formulario       
     //Adaptar variables de acuerdo a los inputs
 
     //Aqui ya se extraen los valores de los inputs del formulario
@@ -105,8 +105,9 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     var inputTelefono = document.getElementById("tel").value;
     var inputDia = document.getElementById("dia").value;
     var inputMes = document.getElementById("mes").value;
-    var inputAño = document.getElementById("año").value;
-    var inputContraseña = document.getElementById("contrasena").value;
+    var inputAnio = document.getElementById("año").value;
+    var inputContrasenia = document.getElementById("contrasena").value;
+    var inputValidarContrasenia = document.getElementById("contrasena2").value;
     var inputEstado = document.getElementById("estado").value;
     var inputCuidad = document.getElementById("ciudad").value;
     var inputCodigoPostal = document.getElementById("codigo--postal").value;
@@ -116,31 +117,13 @@ document.getElementById('registerForm').addEventListener('submit', function (eve
     //dia mes año errorP contrasena2 estado ciudad codigo--postal direccion 
 
     //Filtro final por si falta de llenar algun campo (se puede borrar)
-    if (inputNombre == " " || inputApellido == "" || inputCorreo == "" || inputTelefono == "" || inputDia == "" || inputMes == "" || inputAño == "" || inputContraseña == "" || inputEstado == "" || inputCuidad == "" || inputCodigoPostal == "" || inputDireccion == "") {
+    if (inputNombre == "" || inputApellido == "" || inputCorreo == "" || inputTelefono == "" || inputDia == "" || inputMes == "" || inputAnio == "" || inputContrasenia == "" || inputValidarContrasenia == "" || inputEstado == "" || inputCuidad == "" || inputCodigoPostal == "" || inputDireccion == "") {
         alert("Es necesario llenar el campo");
     } else {
         alert("Los campos han sido llenados correctamente");
     }
 
-    //Con la informacion adquirida de los inputs se crea un objeto JSON de javascript
-    const registrosObject = {
-        nombre: inputNombre,
-        apellido: inputApellido,
-        correo: inputCorreo,
-        telefono: inputTelefono,
-        dia: inputDia,
-        mes: inputMes,
-        año: inputAño,
-        contraseña: inputContraseña,
-        estado: inputEstado,
-        cuidad: inputCuidad,
-        codigopostal: inputCodigoPostal,
-        direccion: inputDireccion
-
-    };
-
-    //Muestra el objeto creado en consola se guarda solamente en la sesionStorage
-    console.log('Objeto JSON:', JSON.stringify(registrosObject));
+   
 
 
 });
@@ -153,17 +136,17 @@ registroFormulario.addEventListener('submit', (event) => {
     event.preventDefault();
     // Guardar los inputs en constantes
     const nombreUsuario = document.getElementById("nombreInput").value;
-    const nuevoUsuario = document.getElementById("email").value;
+    const nombreEmail = document.getElementById("email").value;
     const nuevoPassword = document.getElementById('contrasena').value;
 
     // Guardamos los valores de los inputs en el almacenamiento local (Local Storage)
     // Sintaxis para guardarlos: localStorage.setItem("nombreItem", valor);
     // localStorage(key-value)
-    /* localStorage.setItem("email", nuevoUsuario);
+    /* localStorage.setItem("email", nombreEmail);
     localStorage.setItem("contrasena", nuevoPassword); */
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    usuarios.push({nombreInput:nombreUsuario,email:nuevoUsuario, contrasena:nuevoPassword});
+    usuarios.push({nombre:nombreUsuario,email:nombreEmail, contrasena:nuevoPassword});
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
     
     alert('Registro exitoso!!!');

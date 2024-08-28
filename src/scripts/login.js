@@ -46,9 +46,18 @@ inicioFormulario.addEventListener('submit', (event) => {
     if (usuarioValido) {
         alert(`Bienvenide ${usuarioValido.nombreInput}, inicio de sesión exitoso`);
         inicioFormulario.reset();
+        
     } else {
         alert('Usuario o contraseña incorrecto');
     }
+
+
+
+window.location.href = 'home.html'
+
+
+
+
 });
 
 

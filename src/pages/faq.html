@@ -1,18 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ's</title>
     <!--favicon-->
     <link rel="shortcut icon" href="../../public/assets/konijapp-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Links de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../styles/faq.css">
+
 </head>
+
 <body>
+
     <!-- Barra de navegación -->
-    <div id="navbar--contenido"></div>
+    <div id="navbar--contenido" style="background-color: #ffffff !important;"></div>
+
+    <div class="contenedor--general">
+    <main class="vh-100 bg-light d-flex align-items-center" style="background-color: #ffffff !important;">
+
+        <!-- El contenedor de la categorias -->
+        <section id="principal" class="h-75 container-sm mx-auto bg-light" style="max-width: 800px; background-color: #ffffff !important;">
+
+            <h1 class="#">Preguntas Frecuentes</h1>
+
+
+            <!-- La primera categoria -->
+            <div class="accordion" id="accordionExample">
+
+
+                <div class="accordion-item my-4 border-0">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="#"></i>
+                            <span class="#">Inicio de Sesión</span>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-6 fw-semibold">¿Cómo puedo crear una cuenta para iniciar sesión en la plataforma?</h2>
+                            <div class="my-2">
+                                <p style='color: #2D4B73'>Para crear una cuenta, dirígete a la página principal de la plataforma o bien, desde la barra de navegación y selecciona "Registrarse". Completa el formulario con tus datos personales, como nombre, correo electrónico, y contraseña.Una vez activada, podrás iniciar sesión con tu correo y contraseña.
+                                </p>
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Cómo puedo solucionar problemas de inicio de sesión?</h2>
+                            <div class="my-2">
+                                <p style='color: #2D4B73'>Si tienes problemas para iniciar sesión, verifica que estés utilizando el correo electrónico y la contraseña correctos. Si el problema persiste, contacta al soporte técnico de la plataforma para recibir ayuda.
+                                </p>
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Puedo iniciar sesión usando mis redes sociales?</h2>
+                            <div class="my-2">
+                                <p style='color: #2D4B73'>Sí, puedes iniciar sesión utilizando tus cuentas de redes sociales. Simplemente selecciona la opción de la red social que prefieras en la página de inicio de sesión y sigue las instrucciones para conectarte.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La segunda Categoria  -->
+
+                <div class="accordion-item my-4 border-0" >
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="bi bi-credit-card"></i>
+                            <span class="#">Registro de Usuario</span>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-6 fw-semibold">¿Cómo puedo registrarme en la plataforma?</h2>
+                            <div class="my-2">Para registrarte, dirígete a la página principal de la plataforma y selecciona "Registrarse". Completa el formulario con tu nombre, correo electrónico y crea una contraseña segura. Luego, confirma tu correo electrónico a través del enlace que recibirás para activar tu cuenta.
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Qué requisitos debe cumplir mi contraseña al registrarme?</h2>
+                            <div class="my-2">Para garantizar la seguridad de tu cuenta, tu contraseña debe tener al menos 8 caracteres e incluir una combinación de letras mayúsculas, letras minúsculas, números, y símbolos. Evita utilizar contraseñas comunes o información personal fácilmente identificable.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La tercera categoria  -->
+
+                <div class="accordion-item my-4 border-0">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                            <i class="bi bi-arrow-return-left"></i>
+                            <span class="#">Registro de Servicios</span>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-6 fw-semibold">¿Hay algún costo por registrar mis servicios en la plataforma?</h2>
+                            <div class="my-2">El registro de servicios en la plataforma es gratuito.
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Qué tipo de servicios puedo registrar en la plataforma?</h2>
+                            <div class="my-2">Puedes registrar una amplia variedad de servicios, siempre y cuando cumplan con las políticas y términos de la plataforma. 
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La cuarta categoria  -->
+
+                <div class="accordion-item my-4 border-0">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i class="bi bi-percent"></i>
+                            <span class="#">Formas de pago </span>
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="heading4"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-6 fw-semibold">¿Qué métodos de pago acepta la plataforma?</h2>
+                            <div class="my-2">La plataforma acepta diversos métodos de pago, incluyendo tarjetas de crédito, tarjetas de débito y transferencias bancarias.
+                            </div>
+                            <h2 class="fs-6 fw-semibold"> ¿Puedo guardar mis datos de pago para futuras compras?</h2>
+                            <div class="my-2">Sí, la plataforma te ofrece la opción de guardar tus datos de pago para futuras compras.
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Qué hago si mi pago es rechazado?</h2>
+                            <div class="my-2">Si tu pago es rechazado, verifica que la información de tu tarjeta o método de pago esté correcta y asegúrate de que tienes fondos suficientes. También puedes intentar con otro método de pago o contactar a tu banco o al soporte técnico de la plataforma para obtener ayuda.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- La quinta categoria  -->
+
+                <div class="accordion-item border-0">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i class="bi bi-percent"></i>
+                            <span class="#">Reseñas </span>
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="heading5"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h2 class="fs-6 fw-semibold">¿Cómo puedo dejar una reseña para un servicio o proveedor?</h2>
+                            <div class="my-2">Para dejar una reseña inicia sesión en tu cuenta, dirígete al perfil del proveedor del que deseas reseñar, y busca la sección de "Reseñas". Escribe tu reseña, califica el servicio, y envíala para que sea publicada.
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Puedo editar o eliminar una reseña después de publicarla?</h2>
+                            <div class="my-2">Sí, puedes editar o eliminar una reseña después de publicarla. Ve a la sección de reseñas en el perfil del proveedor, busca tu comentario, y selecciona la opción para editar o eliminar. 
+                            </div>
+                            <h2 class="fs-6 fw-semibold">¿Cómo puedo mejorar mi calificación y recibir más reseñas positivas?</h2>
+                            <div class="my-2">Para mejorar tu calificación y recibir más reseñas positivas, enfócate en proporcionar un servicio de alta calidad y en ofrecer una excelente atención al cliente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- La sexta categoria  -->
+
+                <div class="accordion-item my-4 border-0">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <i class="bi bi-percent"></i>
+                            <span class="#">Suscripcion Premium </span>
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="heading6"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            <h2 class="fs-6 fw-semibold">¿Dónde está mi pedido?</h2>
+                            <div class="my-2">Al suscribirte a la versión Premium, obtienes acceso a características exclusivas como herramientas avanzadas, sin anuncios y te brinda la oportunidad de darle más visibilidad a tu perfil y publicaciones.
+                            </div>
+                            <h2 class="fs-6 fw-semibold"> ¿Puedo cancelar mi suscripción Premium en cualquier momento?</h2>
+                            <div class="my-2">Sí, puedes cancelar tu suscripción Premium en cualquier momento desde la configuración de tu cuenta.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
+
+    </main>
+</div>
+    <br>
+    <div id="div--vacio">
+       <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+    </div>
+
+    <div id="footer--contenido"></div>
     <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="../scripts/insertarNavBar.js"></script>
     <script src="../scripts/footer.js"></script>
-    
 </body>
+
 </html>

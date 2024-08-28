@@ -116,7 +116,7 @@ function validacion2() {
             nombreC: inputNombreContacto,
             apellidoC: inputApellidoContacto,
             correoC: inputCorreoContacto,
-            ubicacionC: inputUbicacionContacto,
+            ubicacion: inputUbicacionContacto,
             topicoC: inputTopicoContacto,
             ayudaC: inputAyudaContacto,
             esCliente: esCliente

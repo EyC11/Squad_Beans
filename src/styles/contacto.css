@@ -35,6 +35,7 @@ font-family: "Poppins", sans-serif;
     width: 100%; /* Cambio: ajustar ancho al 100% del contenedor */
     max-width: 600px; /* Cambio: máximo ancho de 600px para responsividad */
     box-sizing: border-box; /* Cambio de content-box a border-box para mejor manejo del padding */
+    border: solid 2px #D9B70D;
 }
 
 .form-container--contenedor {
