@@ -628,3 +628,18 @@ body {
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
   }
+
+  @media (max-width:1400px) {
+    
+    .contenedor--general{
+
+        margin-bottom: 350px;
+    
+    }
+    
+    .ad .ad3 .ad4{
+        
+        margin-bottom: 50px;
+    }
+
+}

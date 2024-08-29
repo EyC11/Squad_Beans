@@ -78,17 +78,17 @@ button:visited{
     
         .contenedor--general{
 
-            margin-bottom: 350px;
+            margin-bottom: 450px;
         
         }
 
     }
 
-    @media (max-width:600px) {
+    @media (max-width:750px) {
     
         .contenedor--general{
 
-            margin-bottom: 450px;
+            margin-bottom: 600px;
         
         }
 
@@ -98,7 +98,7 @@ button:visited{
     
         .contenedor--general{
             margin-top: -125px;
-            margin-bottom: 550px;
+            margin-bottom: 650px;
         
         }
 
