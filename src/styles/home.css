@@ -1,14 +1,5 @@
-/*
-Estilos de letra:
-font-family: 'Poppins', sans-serif;
-font-family: 'DM-Sans', sans-serif;
-*/
-/**********************Estilos Cintia *****************************/
-
-
 .contenido--general{
     background-color: #EFF0F5;  
-    /*Centrar los elementos de la página*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,10 +7,9 @@ font-family: 'DM-Sans', sans-serif;
 }
 #button--card {
     background-color: #D9B70D;
-    border: none;
+    border: solid 2px #253C59;
     color: #253C59;
-    border-color: #2D4B73;
-    border-width: 10px;
+
     padding: 10px;
     border-radius: 20px;
     font-size: 16px;
@@ -187,15 +177,21 @@ form .content .details .options {
     padding: 10px 20px;
     background-color:#253C59;
     color: #D9B70D !important;
-    border: none;
-    border-radius: 5px;
+    border: solid 2px #D9B70D;
+    border-radius: 20px;
     cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 .botonDeCarga:hover {
     background-color: #D9B70D;
-    color: #253C59;
-    border:solid 2px #D9B70D;
+    color: #253C59!important;
+    border:solid 2px #253C59;
     transition: 0.5s;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .seleccionarImagenes img {
@@ -203,25 +199,7 @@ form .content .details .options {
     float: inline-start;
 }
 
-/* .optiones {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-    font-family: "DM Sans", sans-serif !important;;
-    color: #D9B70D;
-    margin: 15px 0;
 
-}
-
-.optiones input {
-    background-color: #2D4B73 !important;;
-    color: #EFF0F5;
-    font-size: 12px;
-    font-family: "DM Sans", sans-serif;
-    border-radius: 20px;
-    cursor: pointer;
-} */
 
 /* ESTILOS DEL BOTÓN PUBLICAR */
 .btn--publicar{
@@ -232,6 +210,7 @@ form .content .details .options {
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Poppins',sans-serif;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -248,21 +227,13 @@ form .content .details .options {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
-/*
-.btn :hover{
-    background-color: #3d4146 !important;
-    color: #D9B70D;
-}?este no se que era ? 
-Quien sabe que era lo comentamos*/
 
-
-
-/*  !important; */
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #EFF0F5;
-    
+    margin: 0;
+    padding: 0;
 }
 
 .header-container {
@@ -297,21 +268,25 @@ body {
 
 .content-container {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    
-    
-    
+    max-width: 100%;
+    box-sizing: border-box;
+      
 }
 
 .post-container {
     background-color: white;
     border-radius: 30px;
     padding: 20px;
-    max-width: 60%;
+    max-width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
     border-width: 2px;
     border-style: solid;
     border-color: #D9B70D;
+    box-sizing: border-box;
    
 }
 
@@ -353,24 +328,28 @@ body {
     border-width: 2px;
     border-style: solid;
     border-color: #D9B70D;
+    max-height: 300px;
+    object-fit: cover;
 }
 
 .post-footer {
     display: flex;
     margin-top: 20px;
-    display: flex;
     gap: 10px;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 .reaccion--btn {
-    background-color: #D9B70D ;/*#ffd700*/
+    background-color: #D9B70D;
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
     color: #2D4B73;
     font-weight: bold;
+    text-align: center;
+    flex: 1; /* Los botones ocupan el mismo espacio */
+    max-width: 100px; /* Ancho máximo de cada botón */
     /*
      background-color: #D9B70D;
     border: none;
@@ -392,10 +371,10 @@ body {
     transition: 0.5s;
     border: solid 1px #D9B70D;
 }
-/***** Botones de la publicacion ***********/
+/** Botones de la publicacion ****/
 /* Boton ikonik*/
 .reaccion--btn--ikonik {
-    background-color: #D9B70D ;/*#ffd700*/
+    background-color: #D9B70D;
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -403,6 +382,7 @@ body {
     color: #2D4B73;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    
 }
 .reaccion--btn--ikonik:hover {
     background-color: #253C59;
@@ -414,7 +394,7 @@ body {
 
 /* Boton comentar*/
 .reaccion--btn--comentar {
-    background-color: #D9B70D ;/*#ffd700*/
+    background-color: #D9B70D ;
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -422,6 +402,7 @@ body {
     color: #2D4B73;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+   
 }
 
 .reaccion--btn--comentar:hover{
@@ -434,7 +415,7 @@ body {
 
 /* Boton compartir*/
 .reaccion--btn--compartir{
-    background-color: #D9B70D ;/*#ffd700*/
+    background-color: #D9B70D;
     border: none;
     padding: 8px 16px;
     border-radius: 20px;
@@ -442,6 +423,7 @@ body {
     color: #2D4B73;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .reaccion--btn--compartir:hover {
@@ -464,6 +446,7 @@ body {
     font-family: 'Poppins', sans-serif;
     
 }
+
 .btn2Premium:hover {
     background-color: #253C59;
     color: #D9B70D;
@@ -471,6 +454,27 @@ body {
     border: solid 2px #D9B70D;
     font-family: 'Poppins', sans-serif;
 }
+
+.reaccion--btn--publicar:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reaccion--btn--publicar {
+    background-color: #D9B70D;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
 
 .advertisements {
     display: flex;
@@ -480,18 +484,21 @@ body {
 }
 
 /* Ajuste para pantallas más grandes */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .advertisements {
-        flex-direction: column; /* Se mantiene en columna en pantallas grandes también */
         gap: 20px; /* Espacio entre los elementos */
         margin-left: 40px; /* Aumenta el margen izquierdo para mayor separación en pantallas grandes */
+    }
+        
+
     }
 
     .ad-container {
         display: flex; /* Utilizar flex para organizar ad2 y ad3 en una fila */
         gap: 20px; /* Espacio entre ad2 y ad3 */
+        flex-direction: row;
     }
-}
+
 
 .pub {
     font-weight: bold;
@@ -522,6 +529,8 @@ body {
 
 .post-footer {
     display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: space-between; /* Distribuir los botones con espacio entre ellos */
     margin-bottom: 20px; /* Añadir margen inferior para separar los botones del área de comentarios */
   }
@@ -557,4 +566,10 @@ body {
   .comment {
     padding: 5px;
     border-bottom: 1px solid #eee;
+  }
+
+  .pubNexus {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }

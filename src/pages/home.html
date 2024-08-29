@@ -153,64 +153,82 @@
 
         <!-- Sección de publicación -->
         <main>
-            <div class="content-container">
-                <div class="post-container">
-                    <div class="post-header">
-                        <div class="post-icon"><img src="../../public/assets/publicaciones/albañil.jpeg" alt="icon">
-                        </div>
-                        <div class="post-info">
-                            <h4>Servicio de albañilería</h4>
-                            <p>Benjamín Matías Romero 5.0 ★</p>
-                        </div>
-                    </div>
-                    <div class="post-body">
-                        <p>Buenas noches gente, paso a informarles que esta semana estaré realizando trabajos en el
-                            norte de la CDMX, áreas como Azcapotzalco, Buena Vista, La raza, etc. Cualquier cosa
-                            escríbanme en privado.</p>
-                        <img src="../../public/assets/publicaciones/albañileria.jpeg" alt="post-image">
+          <div class="content-container">
+              <div class="post-container">
+                  <div class="post-header">
+                      <div class="post-icon"><img src="../../public/assets/publicaciones/albañil.jpeg" alt="icon"></div>
+                      <div class="post-info">
+                          <h4>Servicio de albañilería</h4>
+                          <p>Benjamín Matías Romero 5.0 ★</p>
+                      </div>
+                  </div>
+                  <div class="post-body">
+                      <p>Buenas noches gente, paso a informarles que esta semana estaré realizando trabajos en el
+                          norte de la CDMX, áreas como Azcapotzalco, Buena Vista, La raza, etc. Cualquier cosa
+                          escríbanme en privado.</p>
+                      <img src="../../public/assets/publicaciones/albañileria.jpeg" alt="post-image">
+                  </div>
+      
+                  <div class="post-footer">
+                      <!-- Cambiando clases de los botones (reaccion--btn) -->
+                      <button class="reaccion--btn--ikonik" id="ikonik-button">iKonik <span id="ikonik-count" style="display: none;">0</span></button>
+                      <button class="reaccion--btn--comentar" id="comment-button">Comentar</button>
+                      <button class="reaccion--btn--compartir">Compartir</button>
+                  </div>
+      
+                  <!-- Sección para agregar comentarios, ahora dentro del contenedor de la publicación -->
+                  <div class="comment-section" style="display: none;">
+                      <textarea id="comment-input" placeholder="Escribe tu comentario aquí..." rows="3"></textarea>
+                      <div class="word-count">Palabras restantes: <span id="word-count">100</span></div>
+                      <button class="reaccion--btn--publicar" id="submit-comment">Publicar</button>
+                  </div>
+      
+                  <!-- Contenedor para mostrar los comentarios -->
+                  <div class="comments-container">
+                      <!-- Los comentarios se agregarán aquí dinámicamente -->
+                  </div>
+              </div>
+      
+              <!-- Sección de Publicidad -->
+              <div class="advertisements">
+                  <div class="ad ad1">
+                      <h3 class="pub">Publicidad</h3>
+                      <p>Todo lo que necesitas saber, está aquí</p>
+                  </div>
+      
+                  <!-- Contenedor para ad2 y ad3 -->
+                  <div class="ad-container">
+                      <div class="ad ad2">
+                          <h3 class="premium">¿Ya eres Premium? </h3>
+                          <p>Beneficios:<br>* Sin Ads<br>* Carrusel principal<br>* Más visibilidad</p>
+                          <a href="#">
+                              <!-- Cambiando clase btn2 a btn2Premium -->
+                              <button onclick="window.location.href= 'suscripciones.html'" class="btn2Premium">Premium</button>
+                          </a>
+                      </div>
+                      <div class="ad ad3">
+                          <p>¿Necesitas algún profesional de la salud?</p>
+                          <h3 class="premium">Nexus Services</h3>
+                          <img  src="../../public/assets/publicidad/nexus_logo.jpeg" class="pubNexus"/>
+                      </div>
+                      <div class="ad ad3">
+                        <p>¿Necesitas algún profesional de la salud?</p>
+                        <h3 class="premium">Nexus Services</h3>
+                        <img  src="../../public/assets/publicidad/NS.png" class="pubNexus"/>
                     </div>
 
-                    <div class="post-footer">
-                        <!-- Cambiando clases de los botones (reaccion--btn) -->
-                        <button class="reaccion--btn--ikonik" id="ikonik-button">iKonik <span id="ikonik-count"
-                                style="display: none;">0</span>
-                        </button>
-                        <button class="reaccion--btn--comentar" id="comment-button">Comentar</button>
-                        <button class="reaccion--btn--compartir">Compartir</button>
-                    </div>
-                </div>
 
-                
-
-                <!-- Sección de Publicidad -->
-                <div class="advertisements">
-                    <div class="ad ad1">
-                        <h3 class="pub">Publicidad</h3>
-                        <p>Todo lo que necesitas saber, está aquí</p>
-                    </div>
-
-                    <!-- Contenedor para ad2 y ad3 -->
-                    <div class="ad-container">
-                        <div class="ad ad2">
-                            <h3 class="premium">¿Ya eres Premium? </h3>
-                            <p>Beneficios:<br>* Sin Ads<br>* Carrusel principal<br>* Más visibilidad</p>
-                            <a href="#">
-                                <!-- Cambiando clase btn2 a btn2Premium -->
-                                <button onclick="window.location.href= 'suscripciones.html' "class="btn2Premium">Premium</button>
-                            </a>
-                        </div>
-                        <div class="ad ad3">
-                            <p>¿Necesitas algun profesional de la salud?
-                              
-                            <h3 class="premium">Nexus Services</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
+                  </div>
+              </div>
+          </div>
+      </main>
+      
 
     </div>
+
+
+
+
     <div id="footer--contenido"></div>
 
 

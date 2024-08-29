@@ -43,7 +43,7 @@ paymentForm.addEventListener('submit', function(event) {
 
     // Verificar si todos los campos están llenos
     if (email && cardNumber && expiryDate && cvv && fullName && country && billingAddress) {
-        alert('Gracias!! c: Tu donación se ha enviado correctamente!');
+        alert('Gracias!! Tu donación se ha enviado correctamente!');
         serviceForm.reset();
         paymentForm.reset();
         

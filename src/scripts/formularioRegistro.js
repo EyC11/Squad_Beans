@@ -53,6 +53,8 @@ function validateConfirmPassword() {
     
     if (password !== confirmPassword) {
         confirmPasswordValidation.textContent = 'Las contraseñas no coinciden.';
+         // Cambiar el color del texto a rojo
+         confirmPasswordValidation.style.color = '#EE3A3A';
     } else {
         confirmPasswordValidation.textContent = ' Las contraseñas coinciden';
         confirmPasswordValidation.style.color = '#62CF3D';
@@ -207,7 +209,7 @@ registroFormulario.addEventListener('submit', (event) => {
     localStorage.setItem("contrasena", nuevoPassword); */
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    usuarios.push({nombre:nombreUsuario,email:nombreEmail, contrasena:nuevoPassword, login:"out"});
+    usuarios.push({nombre:nombreUsuario,email:nombreEmail, contrasena:nuevoPassword, login:"out", status: "free"});
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
     
     alert('Registro exitoso!!!');

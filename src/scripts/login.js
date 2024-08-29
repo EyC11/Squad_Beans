@@ -54,19 +54,19 @@ inicioFormulario.addEventListener('submit', (event) => {
         
         
         
-        inicioFormulario.reset();
-
-       
         
+        
+        
+    window.location.href = 'home.html'
         
     } else {
         alert('Usuario o contraseña incorrecto');
     }
-
-
-
-window.location.href = 'home.html'
-
+    
+    
+    
+    
+    inicioFormulario.reset();
 
 
 
