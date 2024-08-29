@@ -1,1 +1,69 @@
-/* Comentario */
+/*Creacion de pagina styles Acerca de nosotros.*/
+/*Colores a usar 
+background: #EFF0F5
+azul fuerte: #2D4B73
+azul claro: #99B4BF
+oro: #D9B70D
+blanco: #FFFFFF
+Documentacion: https://www.w3schools.com
+
+Breakpoint debajo de los 500px
+Usar porcentajes 
+*//* Comentario */
+
+body {
+    background-color: #EFF0F5;
+}
+
+h1{
+    color: #2D4B73 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2{
+    color: #2D4B73 !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+p{
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+    color:  #ffffff;
+}
+
+.my-2{
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+    color:  #2D4B73
+}
+
+.accordion-body{
+    background-color: #99B4BF;
+    border-radius: 20px;
+}
+
+.accordion-button{
+    background-color:#D9B70D !important;
+    color: #2D4B73 !important;
+    border-radius: 20px !important; 
+}
+button:visited{
+    background-color:#2D4B73 !important;
+    color: #D9B70D !important;
+}
+
+.accordion-button:hover{
+    background-color:#2D4B73 !important;
+    color: #D9B70D !important;
+}
+
