@@ -29,12 +29,13 @@ body{
 
 .tarjetas--planes section{
     
-    width:45vh;
+    width:25%;
     margin: 1rem;
     border-radius: 20px;
     background-color: #2D4B73;
     text-align: center;
-    height: 70vh;
+    padding-right: 10px;
+    min-height: 600px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -70,7 +71,7 @@ main button{
     border-radius: 20px;
     border:none;
     font-weight: 500;
-    width: 20vh;
+    width: 60%;
     border: solid 2px #2D4B73;
  }
  main button:hover{

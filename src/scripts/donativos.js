@@ -47,6 +47,8 @@ paymentForm.addEventListener('submit', function(event) {
         serviceForm.reset();
         paymentForm.reset();
         
+        window.location.href = 'home.html'
+
     } else {
         alert('Por favor, complete todos los campos del formulario.');
     }

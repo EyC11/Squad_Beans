@@ -124,7 +124,7 @@ label{
 .donar--botones button:hover{
     background-color: #2D4B73;
     color: #FFFFFF;
-    border: solid 2px #2D4B73;
+    border: solid 2px #D9B70D;
     transition-duration: 0.5s; 
 }
 .pago--btn{
@@ -147,7 +147,7 @@ label{
 #pago--btnCancelar:hover{
     background-color: #2D4B73;
     color: #FFFFFF;
-    border: solid 2px #2D4B73;
+    border: solid 2px #D9B70D;
     transition-duration: 0.5s;   
 }
 

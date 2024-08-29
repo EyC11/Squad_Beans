@@ -11,6 +11,11 @@ button.addEventListener('click', () => {
 
 });
 
+const buttonCerrar = document.getElementById('button--cerrar');
+buttonCerrar.addEventListener('click', () => {
+    container.style.visibility = (container.style.visibility === 'visible') ? 'hidden' : 'visible'; 
+
+});
 
 document.addEventListener('DOMContentLoaded', function () {
   // Referencias a elementos del DOM
