@@ -102,15 +102,15 @@ input, select, label {
     transition: 0.5s;
 }
 
-.redes {
+.form-redes { 
     font-size: x-large;
-    /* width: 250px; */
     text-align: center;
     font-family: "Poppins", sans-serif;
     color: #FFFFFF;
     font-weight: bold;
     margin:auto;
-
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -123,12 +123,9 @@ input, select, label {
 
 
 .icon-container {
-   
     gap: 10px; /* Espacio entre los íconos */
     justify-content: center; /* Centra los íconos horizontalmente */
     padding: 10px; /* Espacio interior */
-   
-   
 }
 
 .icon-container i {
@@ -156,30 +153,31 @@ input, select, label {
     
 }
 
-
-@media (max-width: 500px){
-    .redes{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .columna1-fila {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-.i-img {
+ .i-img {
     margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
     text-align: center;
     justify-content: center;
-    display: flex;
+    font-size: 70px; 
 }
+
 
 .i-icon {
     font-size: 50px;
-}
+} 
+
+
+    @media (max-width: 500px){
+        .columna1-fila {
+            display: flex;
+            flex-direction: column;
+        }
+        .i-img {
+            display: flex;
+            font-size: 50px;
+            padding: 10px;
+        }   
+    }

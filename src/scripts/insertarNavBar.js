@@ -25,7 +25,7 @@ function actualizarElementosSegunSesion() {
 
 
       botonRegistro.onclick = function() {
-          window.location.href = 'mensajes.html';
+          window.location.href = 'mensajes2.html';
       };
       botonLogin.onclick = function() {
           window.location.href = 'landing.html';

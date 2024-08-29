@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 #button--card {
     background-color: #D9B70D;
@@ -17,6 +18,8 @@
     cursor: pointer;
     margin: 20px 0px 10px 0px;
     font-family: 'Poppins', sans-serif;
+    z-index:1;
+    
 }
 
 #button--card:hover {
@@ -45,12 +48,11 @@
     background-color: #2D4B73;
     border-radius: 20px;
     border: solid 2px #D9B70D;
-    /*     display: flex;    
-        align-items: center;
-        text-align: center; */
     padding: 15px 0px 0px 0px;
     width: 500px;
-    margin: 20px 0px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
 }
 
 .post h2 {
@@ -273,7 +275,7 @@ body {
     padding: 20px;
     max-width: 100%;
     box-sizing: border-box;
-      
+    
 }
 
 .post-container {

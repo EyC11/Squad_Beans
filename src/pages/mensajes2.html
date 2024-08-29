@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="../styles/mensajes2.css"> 
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <div id="navbar--contenido"></div>
+
+    <div class="contenedor">
+        <!-- Barra lateral izquierda -->
+        <aside class="barra-lateral">
+            <!-- Cuadro de búsqueda de chats -->
+            <!-- <input type="text" id="buscarChats" placeholder="Buscar chats..."> -->
+            <ul id="listaChats">
+                <li>Maria</li>
+                <li>Roberto</li>
+                <li>Adrian</li>
+                <!-- Se pueden agregar más chats aquí -->
+            </ul>
+        </aside>
+
+        <!-- Sección principal de mensajes -->
+        <section class="seccion-mensajes">
+            <div id="mensajeContainer" class="mensaje-container">
+                <!-- Aquí se mostrarán los mensajes -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
+                <button id="enviarMensaje">Enviar</button>
+            </div>
+        </section>
+      
+    </div>
+
+    <div id="footer--contenido"></div>
+
+    <script src="../scripts/mensajes2.js"></script>
+    <script src="../scripts/insertarNavBar.js"></script>
+    <script src="../scripts/footer.js"></script>
+</body>
+</html>
