@@ -1,33 +1,37 @@
+
 function actualizarElementosSegunSesion() {
     // Obtén el array de usuarios desde el localStorage
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
-    
+
     // Verifica si algún usuario tiene 'login' igual a 'in'
     const usuarioAutenticado = usuarios.find(usuario => usuario.login === 'in');
+    const usuarioBienvenida = usuarios.find(usuario);
     const botonLogin = document.getElementById('loginBtn');
     const botonRegistro = document.getElementById('regisBtn');
     const enlace = document.getElementById('cambio1');
-    console.log(botonLogin);
-    
-    
-    
-    
+    const usuarioNombre = document.getElementById('nombreUsuario').value;
+    const usuarioImagen = document.getElementById('')
 
+    console.log(botonLogin);
     console.log(usuarioAutenticado);
-    
+
     if (usuarioAutenticado) {
-        
+
         console.log("logIN");
-        //console.log(botonLogin);
+
         
+        usuarioNombre.textContent = `Hola, ${usuarioBienvenida.nombre}`;
+
+        
+       
         botonLogin.textContent = "Cerrar Sesión";
         botonRegistro.textContent = "Mensajes";
 
 
-        botonRegistro.onclick = function() {
+        botonRegistro.onclick = function () {
             window.location.href = 'mensajes.html';
         };
-        botonLogin.onclick = function() {
+        botonLogin.onclick = function () {
             window.location.href = 'landing.html';
         };
         enlace.href = "../pages/home.html";
@@ -35,31 +39,31 @@ function actualizarElementosSegunSesion() {
 
 
         // Asigna la función al hacer clic en "Cerrar Sesión"
-        botonLogin.onclick = function() {
+        botonLogin.onclick = function () {
             // Cambia el valor de 'login' a 'out'
             usuarioAutenticado.login = 'out';
 
             // Guarda de nuevo el array de usuarios en el localStorage
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
-             //agregar una redirección 
-             window.location.href = 'login.html';
-             
-        
+            //agregar una redirección 
+            window.location.href = 'login.html';
+
+
         };
 
-    }else{
+    } else {
         console.log("LogaOut");
         botonLogin.textContent = "Iniciar Sesión";
         botonRegistro.textContent = "Registrate";
 
-        botonRegistro.onclick = function() {
+        botonRegistro.onclick = function () {
             window.location.href = 'formularioRegistro.html';
         };
-        botonLogin.onclick = function() {
+        botonLogin.onclick = function () {
             window.location.href = 'login.html';
         };
         enlace.href = "../pages/landing.html";
-        
+
     }
 }
 

@@ -76,7 +76,7 @@
 }
 
 /* Especificaciones para los textos anchor del footer */
-a, .anchor--footer{
+ .anchor--footer{
     color:#FFFFFF !important;
     list-style:none;
     cursor: pointer ;
@@ -87,14 +87,13 @@ a, .anchor--footer{
     text-align:left;
     margin-left: -20px ;
 }
-
-a{
+.enlaces--footer{
     color:#FFFFFF !important;
     text-decoration: none !important;
 
 }
 
-a:hover, .anchor--footer:hover{
+.enlaces--footer:hover, .anchor--footer:hover{
     color: #D9B70D !important;
     
 }

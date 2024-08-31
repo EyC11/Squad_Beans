@@ -119,6 +119,19 @@ body {
    
 }
 
+#imagenUsuario{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+.usuarioNav{
+    color: #253C59;
+    text-decoration: none;
+    
+}
+#holaUsuario{
+    width: 100px;
+}
 /* Contenedor de los botones "donativos y "ayuda" acomodados en columna */
 .navbar--buttons--type12{
     display: flex;
@@ -133,12 +146,12 @@ body {
     border: 3px solid #D9B70D !important;
     border-radius: 20px;
     margin: 2px;
-    color: #FFFFFF ;
+    color: #2D4B73 bold;
     background-color: #D9B70D;
     padding: 4px 10px;
     cursor: pointer;
     font-family: "Poppins", sans-serif !important;
-    font-style: normal;
+    font-style: bold !important ;
     width: 100%;
 }
 
@@ -244,11 +257,15 @@ main {
     text-align: center;
 }
 
+/*estilo lista botones*/
+.dropdown-item:hover{
+background-color: #253C59;
+border: 2px solid #D9B70D;
+/* border-radius: 20px; */
+color: #FFFFFF;
+}
 
 
-
-
-@media (max-width: 900px) {
 @media (max-width: 900px) {
 
     .navbar{

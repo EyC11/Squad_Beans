@@ -1,0 +1,568 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EFF0F5;
+}
+
+/* *************** Estilos de la card del perfil ***************************** */
+.profile-card {
+    width: 100%; /* Ancho de la card*/
+    border-radius: 20px;
+    background-color: #2D4B73;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    margin: auto;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    border: 5px solid #D9B70D;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    margin: 15px 0 5px;
+    font-weight: bold;
+    font-size: 25px;
+    color: #D9B70D;
+}
+
+.profile-service {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.rating-section {
+    text-align: center;
+    margin: 22px 0;
+}
+
+.rating-section p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: #D9B70D;
+}
+
+.stars span {
+    font-size: 25px;
+    color: #D9B70D;
+}
+
+.review-section {
+    width: 100%;
+    text-align: center;
+}
+
+.review-section p {
+    margin: 15px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+#review {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    resize: none;
+}
+/*Boton de enviar reseña*/
+#submit-review {
+    padding: 7px;
+    background-color: #D9B70D;
+    color: #2D4B73;
+    border: solid 2px #253C59;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    width: 65%;
+}
+#submit-review:hover {
+    padding: 7px;
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border:  solid 2px #D9B70D;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+#reviews-container {
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+.review {
+    background-color: #1A324B;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/*Nuevos estilos*/
+
+#principal--perfiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div--card--general {
+    margin: auto;
+}
+
+.publicacion {
+    background-color: #2D4B73;
+    border-radius: 20px;
+}
+
+.container {
+    gap: 20px;
+    justify-content: space-between;
+}
+/* *************** Estilos Hacer una publicacion ******************** */
+#button--card {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    color: #253C59;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    width: 45%
+}
+
+#button--card:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+/* INICIAN ESTILOS DEL POST BOX */
+
+
+#formulario--post--perfiles{
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.formulario--publicacion {
+    margin-top: 350px;
+    background-color: #2D4B73;
+    border-radius: 20px;
+    border: solid 2px #D9B70D;
+    padding: 15px 0px 0px 0px;
+    width: 500px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    
+}
+.cont--button--close{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:10px;
+    padding: 10px;
+}
+.close {
+    border-radius: 50px;
+    background-color: #D9B70D;
+    border: none;
+    padding: 4px 4px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+.post h2 {
+    font-size: 25px;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    padding: 17px 0;
+    border-bottom: 2px solid #D9B70D;
+    color: #EFF0F5;
+
+}
+.post #imagen{
+    border-radius: 50%;
+}
+
+.post form {
+    margin: 20px 25px;
+}
+
+.post form .content {
+    display: flex;
+    align-items: center;
+}
+
+.post form .content img {
+    max-width: 110px;
+}
+
+.post form .content .details {
+    margin: -3px 0 0 12px;
+}
+
+form .content .details span {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: #EFF0F5;
+}
+
+form .content .details .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+    font-size: 12px;
+    color: #EFF0F5;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 8px;
+}
+
+
+.details .options select {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+    background-color: #2D4B73;
+    color: #EFF0F5;
+    font-size: 12px;
+    font-family: "DM Sans", sans-serif;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+
+/* ESTILOS textarea */
+.texto {
+    display: flex;
+    flex-direction: column;
+    background-color: #99B4BF;
+
+}
+
+.texto  {
+    background-color: #99B4BF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 15px;
+    line-height: 16px;
+    resize: none;
+     /* Para que el textarea no pueda ser redimensionado por el usuario */
+    border: none;
+    outline: none;
+    /* Elimina contorno del textarea */
+    margin-top: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 140px;
+    /* height: 100px; */
+    overflow: scroll;
+    /* Modificar la barrascroll */
+    scrollbar-width: 0;
+}
+
+.form-control:-webkit-scrollbar {
+   /*  Ocultar barra de scroll  */
+   overflow: hidden !important;
+   resize: none;
+}
+
+/*Seleccionar otro servicio*/
+#inputOtro{
+    background-color: #e9ecef; /* Color de fondo para indicar que está deshabilitado */
+    cursor: not-allowed;
+}
+
+
+/* Estilos sección de Selecciona tus imagenes */
+
+
+.seleccionarImagenes h2 {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins';
+    text-align: center;
+}
+.vistaPrevia {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.vistaPrevia img {
+    max-width: 100px important;
+    max-height: 100px;
+    display: none;
+}
+.botonDeCarga {
+    padding: 10px 20px;
+    background-color:#253C59;
+    color: #D9B70D !important;
+    border: solid 2px #D9B70D;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+.botonDeCarga:hover {
+    background-color: #D9B70D;
+    color: #253C59!important;
+    border:solid 2px #253C59;
+    transition: 0.5s;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.seleccionarImagenes img {
+    width: auto;
+    float: inline-start;
+}
+
+
+
+/* ESTILOS DEL BOTÓN PUBLICAR */
+.btn--publicar{
+    background-color: #D9B70D !important;
+    border: solid 2px #253C59;
+    color: #253C59;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px !important;
+    width: 100%;
+    font-weight: bold;
+}
+
+.btn--publicar:hover{
+    background-color: #253C59 !important;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+/* *************** Estilos de las publicaciones ***************************** */
+.container--publicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -275px;
+    gap: 12px;
+    border: solid 2px #D9B70D;
+    border-radius: 20px;
+    padding: 20px;
+    
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.post-icon img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.post-info h4 {
+    margin: 0;
+    color: #D9B70D;
+    font-weight: bold;
+}
+
+.post-info p {
+    color: #2D4B73;
+    margin: 0;
+    
+}
+
+.post-body {
+    color: #2D4B73;
+    margin-top: 20px;
+    
+}
+
+.post-body img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.post-footer {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/**************************** Botones de la publicacion *************************/
+/* Boton ikonik*/
+.reaccion--btn--ikonik {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.reaccion--btn--ikonik:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Boton comentar*/
+.reaccion--btn--comentar {
+    background-color: #D9B70D ;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.reaccion--btn--comentar:hover{
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Boton compartir*/
+.reaccion--btn--compartir{
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.reaccion--btn--compartir:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+    }
+
+    /*Seccion para comentar*/
+    .comment-section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px; /* Añadir margen superior para separar el área de comentarios de los botones */
+      }
+      
+      #comment-input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+        resize: none; /* Evitar que el textarea sea redimensionable */
+      }
+      
+      .word-count {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+      
+      .comments-container {
+        max-height: 200px; /* Limita la altura para habilitar la barra de desplazamiento */
+        overflow-y: auto; /* Agrega la barra de desplazamiento */
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        margin-top: 10px;
+      }
+      
+      .comment {
+        padding: 5px;
+        border-bottom: 1px solid #eee;
+      }
+
+      /*Reaccion Publicar comentacio*/
+      .reaccion--btn--publicar:hover {
+        background-color: #253C59;
+        color: #D9B70D;
+        transition: 0.5s;
+        border: solid 2px #D9B70D;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    .reaccion--btn--publicar {
+        background-color: #D9B70D;
+        border: solid 2px #253C59;
+        padding: 8px 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        color: #2D4B73;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        
+    }

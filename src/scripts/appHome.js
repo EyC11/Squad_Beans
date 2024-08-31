@@ -147,6 +147,7 @@ console.log(typeof jsonData);
     (publicaciones) => publicaciones.calificacion > 4.5 && publicaciones.calificacion <= 5
 );
 console.log (publicacionesCalif); */
+
 //JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
 const mostrarFecha = document.getElementById('fecha');
 const hoy = new Date();
