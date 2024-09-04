@@ -10,53 +10,20 @@ body, html {
 .contenedor {
     display: flex;
     height: 100vh;
+    margin-bottom: 20px;
 }
-.content-messages{
-    overflow-y: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+
 /* Barra lateral de chats */
-.barra-lateral {
-    width: 30%;
-    background-color: #FFFFFF;
-    color: #2D4B73;
-    padding: 20px;
-    height: 400px;
-}
 
-.barra-lateral ul {
-    list-style-type: none;
-    padding: 2px;
-    border:solid 2px #2D4B73;
-}
 
-.barra-lateral ul li {
-    padding: 10px;
-    border-bottom: 2px solid #2D4B73;
-    cursor: pointer;
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    justify-content: center;
-}
 
-.barra-lateral ul li:hover {
-    background-color: #2D4B73;
-    color: #FFFFFF;
-    font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    justify-content: center;
-
-}
 /* *******Publicidad******* */
 .ad {
     border-radius: 20px;
     padding: 20px;
-    margin-top: -210px;
-    
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 
 .ad2{
@@ -65,14 +32,15 @@ body, html {
     background-color: #aac8f0;
     color: #2D4B73;
     font-weight: bold;
-    width: 100%; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
-    height: min-content; /* Igualar la altura con ad1 */
+    width: 90%; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
+    height: 200px; /* Igualar la altura con ad1 */
     font-family: 'Poppins',sans-serif;
-    font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
     justify-content: center;
     align-items: center;
-    
+    padding: 10px;
+    line-height: 1;
+    padding-bottom: 10px;
 }
 
 /*Boton premium*/
@@ -131,37 +99,6 @@ body, html {
     color: #D9B70D;
 }
 
-.cont--button--close{
-    display: flex;
-    flex-direction: row-reverse;
-    gap:10px;
-    padding: 100px;
-    justify-content: space-around;
-}
-.close {
-    border-radius: 50px;
-    background-color: #D9B70D;
-    border: none;
-    padding: 4px 4px;
-    cursor: pointer;
-    color: #2D4B73;
-    font-weight: bold;
-    font-family: 'Poppins', sans-serif;
-  }
-
-  .material-symbols-outlined {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 10
-    
-}
-
 .mensaje-container {
     flex-grow: 1;
     border: 1px solid #D9B70D;
@@ -171,6 +108,22 @@ body, html {
     align-content: end;
     border-radius: 5px;
 }
+.chats-container {
+
+   width: 285px;
+   height: 450px;
+    border: 1px solid #D9B70D;
+    overflow-y: auto;
+    background-color: #EFF0F5;
+    text-align: right;
+    align-content:start;
+   
+}
+.chats-container :hover {
+     background-color: #cfcfd0;
+  
+    
+ }
 
 .input-container {
     display: flex;
@@ -221,155 +174,57 @@ body, html {
 }
 
 /*Estilo de las listas */
-.barra-lateral {
-background-color: #FFFFFF;
-color: #2D4B73;
 
-}
 
-/****************** Estilos miguel ****************************/
-.chat-container{
+
+
+
+/* estilos momentaneos de pchats */
+.chat {
     display: flex;
-    width: 100%;
-    height: 100%;
-}
- 
-.chat-content{
-    padding-left: 20px;
-    padding: 20px;
-    width: 420px;
-    height: 100%;
-    flex: 0 0 420px;
-}
-
-.chat-sidebar-search-block {
-    background-color: #EFF0F5;
-    border-radius: 20px;
-    padding: 8px 10px;
     align-items: center;
-    justify-items: center;
-
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    
 }
 
-.content-sidebar-form {
-    position: flex;
+.perfil-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+    margin-right: 15px;
 }
 
-.content-sidebar-submit {
-    position: absolute;
-    outline: transparent;
-    border: transparent;
-    left: 23px;
-    width: 100%;
-    background-color: transparent;
-    transform: translate(-50%);
-    cursor: pointer;
-    color: #2D4B73;
-    font-size: 1.2rem;
-}
-
-.content-sidebar-input {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    width: 100%;
-    margin-left: 30px;
-}
-.content-sidebar-input::placeholder {
-    padding-left: 7px;
-}
-
-
-
-.chat-sidebar-container {
-    position: sticky;
-    height: 100%;
-    color: yellow;
-}
-/* Start: Content */
-.content-messages{
-    overflow-y: auto;
-    height: 100%;
+.chat-info {
     display: flex;
     flex-direction: column;
 }
 
-.content-messages-list{
-    list-style-type: none;
-    height: 100%;
-    padding: 10px;
-}
-
-
-.content-messages-list > * > a {
+.chat-row {
     display: flex;
-    align-items: center;
-    text-decoration: none;
-    height: 100%;
-    color: #253C59;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    margin: 0;
+    font-size: large;
+}
+
+.trabajo-usuario {
+    font-weight: bold;
+    font-size: small;
+    text-align: left;
+}
+
+.ultimo-mensaje {
+    color: #555;
+    margin: 0;
     width: 100%;
-    padding-left: 20px;
-    padding: 10px;
-}
-.content-messages-list > * > a:hover {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    border-style: solid;
-    border-color: #D9B70D;
-    color: white;
-    width: 100%;
-}
-
-.content-message-image {
-    width: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    flex-shrink: 0;
-    margin-right: 12px;
-}
-
-.content-message-info {
-    display: grid;
-    margin-right: 12px;
-}
-
-.content-message-unread {
-    font-size: 10px;
-    font-weight: 200;
-    color: #EFF0F5;
-    background-color: #2D4B73 ;
-    padding: 2px 4px;
-    border-radius: 20px;
-    position: absolute;
-    align-items: center;
-    left: 27px
-}
-.content-message-name{
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.content-message-text {
-    font-size: 15px;
-    font-weight: 300;
-    text-overflow: ellipsis; /**/
-    overflow: hidden;
+    text-align: left;
     white-space: nowrap;
 }
-/* .content-message-service {
-    display: flex;
-    position: absolute;
-    top: 79px;
-    transform: translate(-50%);
-}
- */
-
-.content-message-time {
-    font-size: 12px;
-    font-weight: 300;
-    position: relative;
-    top: 15px;
-}
-/* End: Content */

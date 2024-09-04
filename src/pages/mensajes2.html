@@ -18,101 +18,97 @@
         <aside class="barra-lateral">
             <!-- Cuadro de búsqueda de chats -->
             <!-- <input type="text" id="buscarChats" placeholder="Buscar chats..."> -->
-            <div class="chats">
-<!--                 <ul id="listaChats">
-                    <li>Maria</li>
-                    <li><img src="../../public/assets/jardineroGabriel.jpg" alt=""
-                            style="height: 50px;width: 50px; border-radius: 50%;object-fit: cover;"> Gabriel</li>
-                    <li>
-                        
-                    </li>
-                    Se pueden agregar más chats aquí 
-                </ul> -->
-                <ul class="content-messages-list">
-                    <li>
-                      <a href="" class="chat-link">
-                        <img
-                          class="content-message-image"
-                          src="../../public/assets/portrait.jpg"
-                          alt=""
-                        />
-                        <span class="content-message-info">
-                          <span class="content-message-unread">23</span>
-                          <span class="content-message-name">Miguel</span>
-                          <span class="content-message-text"
-                            >Quien sabe que quien sabe que quien sabe que</span
-                          >
-                        </span>
-                        <span>
-                          <span class="content-message-service">Servicio</span>
-                          <span class="content-message-time">12:32</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" class="chat-link">
-                        <img
-                          class="content-message-image"
-                          src="../../public/assets/portrait.jpg"
-                          alt=""
-                        />
-                        <span class="content-message-info">
-                          <span class="content-message-name">Miguel</span>
-                          <span class="content-message-text"
-                            >Quien sabe que quien sabe que quien sabe que</span
-                          >
-                        </span>
-                        <span>
-                          <span class="content-message-unread">23</span>
-                          <span class="content-message-service">Servicio</span>
-                          <span class="content-message-time">12:32</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" class="chat-link">
-                        <img
-                          class="content-message-image"
-                          src="../../public/assets/portrait.jpg"
-                          alt=""
-                        />
-                        <span class="content-message-info">
-                          <span class="content-message-name">Miguel</span>
-                          <span class="content-message-text"
-                            >Quien sabe que quien sabe que quien sabe que</span
-                          >
-                        </span>
-                        <span>
-                          <span class="content-message-unread">23</span>
-                          <span class="content-message-service">Servicio</span>
-                          <span class="content-message-time">12:32</span>
-                        </span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="" class="chat-link">
-                        <img
-                          class="content-message-image"
-                          src="../../public/assets/portrait.jpg"
-                          alt=""
-                        />
-                        <span class="content-message-info">
-                          <span class="content-message-name">Miguel</span>
-                          <span class="content-message-text"
-                            >Quien sabe que quien sabe que quien sabe que</span
-                          >
-                        </span>
-                        <span>
-                          <span class="content-message-unread">23</span>
-                          <span class="content-message-service">Servicio</span>
-                          <span class="content-message-time">12:32</span>
-                        </span>
-                      </a>
-                    </li>
+            
+          <div id="chatsContainer" class="chats-container">
+            <!-- Aquí se mostrarán los chats -->
 
-                  </ul>
+            <!-- Chat 1 -->
+            <div class="chat" data-chat="gabriel">
+              <img src="../../public/assets/jardineroGabriel.jpg" alt="Perfil 1" class="perfil-img">
+              <div class="chat-info">
+                  <div class="chat-row">
+                      <p class="nombre-usuario">Gabriel</p>
+                      <p class="trabajo-usuario">Jardinería</p>
+                  </div>
+                  <p class="ultimo-mensaje">Último mensaje de Gabriel</p>
+              </div>
             </div>
-            <br><br><br><br><br><br><br><br>
+
+            <!-- Chat 2 -->
+            <div class="chat" data-chat="carpintero">
+              <img src="../../public/assets/carpintero.jfif" alt="Perfil 2" class="perfil-img">
+              <div class="chat-info">
+                <div class="chat-row">
+                  <p class="nombre-usuario">María</p>
+                  <p class="trabajo-usuario">Pastelera</p>
+                </div>
+                  <p class="ultimo-mensaje">Último mensaje de María</p>
+              </div>
+            </div>
+
+            <!-- Chat 3 -->
+            <div class="chat" data-chat="limpieza">
+              <img src="../../public/assets/Limpieza.jfif" alt="Perfil 3" class="perfil-img">
+              <div class="chat-info">
+                <div class="chat-row">
+                  <p class="nombre-usuario">Juan</p>
+                  <p class="trabajo-usuario">Albañil</p>
+                </div>
+                  <p class="ultimo-mensaje">Último mensaje de Juan</p>
+              </div>
+            </div>
+
+            <!-- Chat 4 -->
+            <div class="chat" data-chat="jardinero2">
+              <img src="../../public/assets/publicaciones/albañill.jpeg" alt="Perfil 1" class="perfil-img">
+              <div class="chat-info">
+                <div class="chat-row">
+                  <p class="nombre-usuario">josé</p>
+                  <p class="trabajo-usuario">Carpintero</p>
+                </div>
+                  <p class="ultimo-mensaje">Último mensaje de Ana</p>
+              </div>
+            </div>
+
+            <!-- Chat 5 -->
+            <div class="chat" data-chat="carpintero2">
+              <img src="../../public/assets/carpintero.jfif" alt="Perfil 2" class="perfil-img">
+              <div class="chat-info">
+                <div class="chat-row">
+                  <p class="nombre-usuario">Luis</p>
+                  <p class="trabajo-usuario">Fontanero</p>
+                </div>
+                  <p class="ultimo-mensaje">Último mensaje de Luis</p>
+              </div>
+            </div>
+
+            <!-- Chat 6 -->
+            <div class="chat" data-chat="limpieza2">
+              <img src="../../public/assets/cocinera.jpg" alt="Perfil 3" class="perfil-img">
+              <div class="chat-info">
+                <div class="chat-row">
+                  <p class="nombre-usuario">Laura</p>
+                  <p class="trabajo-usuario">Cocinera</p>
+                </div>
+                  <p class="ultimo-mensaje">Último mensaje de Laura</p>
+              </div>
+            </div>
+
+
+            
+            
+
+            
+
+
+          </div>
+
+          
+              
+
+
+           
+            <br>
             <div class="ad ad2">
                 <h3 class="premium">¿Ya eres Premium? </h3>
                 <p>Beneficios:<br>* Sin Ads<br>* Carrusel principal<br>* Más visibilidad</p>
@@ -126,12 +122,12 @@
 
         <!-- Sección principal de mensajes -->
         <section class="seccion-mensajes">
-            <div class="perfil--barra" style="display: flex;">
-                <div class="foto--perfil"><img src="../../public/assets/jardineroGabriel.jpg" alt=""
-                        style="height: 80px;width: 80px; border-radius: 50%;object-fit: cover;"> </div>
+            <div  id="chatHeader" class="perfil--barra" style="display: flex; align-items: center;">
+                <div class="foto--perfil"><img id="perfilImg" src="" alt="Perfil" class="perfil-img">
+                   </div>
                 <div class="texto--perfil">
-                    <p>Gabriel Gómez</p>
-                    <p>Jardinería</p>
+                  <p id="nombre-Usuario" class="nombre-usuario"></p>
+                    
                     
                 </div>
                 <div class="stars">
