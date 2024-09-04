@@ -5,15 +5,17 @@ function actualizarElementosSegunSesion() {
 
     // Verifica si algún usuario tiene 'login' igual a 'in'
     const usuarioAutenticado = usuarios.find(usuario => usuario.login === 'in');
-    const usuarioBienvenida = usuarios.find(usuario);
+   // const usuarioBienvenida = usuarios.find(usuario);
     const botonLogin = document.getElementById('loginBtn');
     const botonRegistro = document.getElementById('regisBtn');
     const enlace = document.getElementById('cambio1');
-    const usuarioNombre = document.getElementById('nombreUsuario').value;
-    const usuarioImagen = document.getElementById('')
+    const btnUsuario = document.getElementById('loginBtn');
+
 
     console.log(botonLogin);
     console.log(usuarioAutenticado);
+    console.log(btnUsuario, "dooooos");
+    
 
     if (usuarioAutenticado) {
 
