@@ -52,23 +52,13 @@ inicioFormulario.addEventListener('submit', (event) => {
         alert(`Bienvenide ${usuarioValido.nombre}, inicio de sesión exitoso`);
 
         
-        
-        
-        
-        
-        
     window.location.href = 'home.html'
         
     } else {
         alert('Usuario o contraseña incorrecto');
     }
     
-    
-    
-    
     inicioFormulario.reset();
-
-
 
 });
 

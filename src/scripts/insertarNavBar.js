@@ -7,10 +7,11 @@ function actualizarElementosSegunSesion() {
   const botonLogin = document.getElementById('loginBtn');
   const botonRegistro = document.getElementById('regisBtn');
   const enlace = document.getElementById('cambio1');
+  const nombreUsuarioBarra = document.getElementById('nombreUsuarioNav');
   console.log(botonLogin);
   
   
-  
+  console.log(nombreUsuarioBarra);
   
 
   console.log(usuarioAutenticado);
@@ -19,7 +20,7 @@ function actualizarElementosSegunSesion() {
       
       console.log("logIN");
       //console.log(botonLogin);
-      
+      nombreUsuarioBarra.textContent = `Hola, ${usuarioAutenticado.nombre}`;
       botonLogin.textContent = "Cerrar Sesión";
       botonRegistro.textContent = "Mensajes";
 
@@ -59,7 +60,7 @@ function actualizarElementosSegunSesion() {
           window.location.href = 'login.html';
       };
       enlace.href = "../pages/landing.html";
-      
+      nombreUsuarioBarra.style.visibility = 'hidden';
   }
 }
 

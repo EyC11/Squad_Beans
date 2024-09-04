@@ -1,33 +1,31 @@
+function actualizarNombre(){
+   
+    
 
+    console.log(nombreUsuarioBarra);
+}
 function actualizarElementosSegunSesion() {
     // Obtén el array de usuarios desde el localStorage
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
     // Verifica si algún usuario tiene 'login' igual a 'in'
     const usuarioAutenticado = usuarios.find(usuario => usuario.login === 'in');
-    const usuarioBienvenida = usuarios.find(usuario);
     const botonLogin = document.getElementById('loginBtn');
     const botonRegistro = document.getElementById('regisBtn');
     const enlace = document.getElementById('cambio1');
-    const usuarioNombre = document.getElementById('nombreUsuario').value;
-    const usuarioImagen = document.getElementById('')
+    
+    
 
     console.log(botonLogin);
     console.log(usuarioAutenticado);
-
+    
     if (usuarioAutenticado) {
 
         console.log("logIN");
 
-        
-        usuarioNombre.textContent = `Hola, ${usuarioBienvenida.nombre}`;
-
-        
-       
+        nombreUsuarioBarra.textContent = "hola";
         botonLogin.textContent = "Cerrar Sesión";
         botonRegistro.textContent = "Mensajes";
-
-
         botonRegistro.onclick = function () {
             window.location.href = 'mensajes.html';
         };
@@ -47,7 +45,7 @@ function actualizarElementosSegunSesion() {
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
             //agregar una redirección 
             window.location.href = 'login.html';
-
+            nombreUsuarioBarra
 
         };
 
@@ -64,12 +62,13 @@ function actualizarElementosSegunSesion() {
         };
         enlace.href = "../pages/landing.html";
 
+
     }
 }
 
 // Llama a la función al cargar la página
 document.addEventListener('DOMContentLoaded', actualizarElementosSegunSesion);
-
+document.addEventListener('DOMContentLoaded', actualizarNombre);
 
 
 

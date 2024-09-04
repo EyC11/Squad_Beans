@@ -25,6 +25,7 @@ body {
 }
 
 .profile-image img {
+    position: block;
     border-radius: 50%;
     border: 5px solid #D9B70D;
     width: 250px;
@@ -32,7 +33,34 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
 }
+.cargarImagen {
 
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.cargarImagen:hover {
+    opacity: .75;
+    border-radius: 50%;
+    transition: 0.5s;
+
+
+}
+#edit--icon{
+    position: absolute;
+    display: flex;
+    margin-left: 115px;
+    margin-top: 115px;
+    width: 150px; /* Ajusta el tamaño del ícono */
+    height: 150px; /* Ajusta el tamaño del ícono */
+    opacity: .1; /* Oculto por defecto */
+    transition: 0.5s;
+}
+#edit--icon:hover{
+    opacity: 1 !important; /* Muestra el ícono en hover */ 
+    transition: 0.5s;
+}
 .profile-name {
     margin: 15px 0 5px;
     font-weight: bold;

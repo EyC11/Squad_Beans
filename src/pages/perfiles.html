@@ -30,20 +30,21 @@
 
 </head>
 
-
 <body>
     <!-- Barra de navegación -->
     <div id="navbar--contenido"></div>
     <div class="container text-center">
-        <div class="row align-items-start " id="principal--perfiles">
-            <!-- Div principal en row de bootstrap  class  class="row"-->
+        <div class="row align-items-start" id="principal--perfiles">
+            <!-- Div principal en row de bootstrap -->
             <div class="col-md-4"> <!-- Div columna 1 en row de bootstrap-->
-
                 <div class="div--card--general">
                     <div class="profile-card">
-
                         <div class="profile-image">
-                            <img src="../../public/assets/images (1).jpeg" alt="Foto de Perfil">
+                            <input type="file" id="foto-input" accept="image/*" multiple style="display:none;">
+                            <label for="foto-input" class="cargarImagen">
+                                <span class="material-symbols-outlined" id="edit--icon">edit</span>
+                                <img src="../../public/assets/images (1).jpeg" alt="Foto de Perfil">
+                            </label>
                         </div>
                         <h2 class="profile-name">Benjamín Matías Romero</h2>
                         <p class="profile-service">Servicio de albañilería</p>
@@ -60,67 +61,53 @@
                         <div class="review-section">
                             <p>Deja una reseña:</p>
                             <textarea id="review" placeholder="Escribe tu reseña aquí..."></textarea>
-                            <br>
-                            <br>
+                            <br><br>
                             <button id="submit-review">Enviar Reseña</button>
                             <div id="reviews-container"></div>
                         </div>
                     </div>
-                    <br>
-                    <br>
+                    <br><br>
                 </div>
             </div> <!-- fin columna 1 -->
-            <div class="col "><!-- Div columna 2 en row de bootstrap-->
-
-                <!-- Bóton de publicaciones -->
-                <!-- POST BOX :P El bueno y elegido -->
+            <div class="col"> <!-- Div columna 2 en row de bootstrap-->
+                <!-- Botón de publicaciones -->
                 <button id="button--card">Hacer una publicación</button>
-
-
                 <div id="formulario--post--perfiles">
                     <div class="formulario--publicacion" id="formulario--publicacion">
                         <div class="wrapper">
                             <section class="post">
                                 <div class="cont--button--close">
-                                    <button class="close" id="button--cerrar"><span class="material-symbols-outlined">
-                                            close
-                                        </span></button>
+                                    <button class="close" id="button--cerrar">
+                                        <span class="material-symbols-outlined">close</span>
+                                    </button>
                                 </div>
                                 <h2>Crear Publicación</h2>
-
                                 <div class="content--container">
-                                    <form action="#">
+                                    <form id="post-form">
                                         <div class="content">
                                             <img id="imagen" src="../../public/assets/user.png" alt="Perfil">
-
                                             <div class="details">
                                                 <span>Emilio Córdova</span>
-
                                                 <div class="options">
-                                                    <!-- SELECT AGREGADO DE BOOTSTRAP  -->
+                                                    <!-- SELECT AGREGADO DE BOOTSTRAP -->
                                                     <div class="opcion">
-                                                        <select class="form-select form-select-sm"
-                                                            aria-label="Small select example" id="select--usuario">
+                                                        <select class="form-select form-select-sm" aria-label="Small select example" id="select--usuario">
                                                             <option selected value="0">Selección</option>
                                                             <option value="1">Cliente</option>
                                                             <option value="2">Proveedor</option>
                                                         </select>
-                                                        <!--UBICACION-->
+                                                        <!-- UBICACION -->
                                                         <label for="ubicacion">CDMX</label>
-                                                        <!-- FECHA  -->
+                                                        <!-- FECHA -->
                                                         <label id="fecha"></label>
                                                     </div>
-
-
                                                 </div>
                                             </div>
                                         </div>
                                         <br>
-                                        <!--Seleccionar categoría para la publicación-->
+                                        <!-- Seleccionar categoría para la publicación -->
                                         <div class="Categoría">
-                                            <select class="form-select form-select-sm" id="select--usuario"
-                                                aria-label="Small select example" id="select--usuario"
-                                                style="width: fit-content;">
+                                            <select class="form-select form-select-sm" id="select--categoria" aria-label="Small select example">
                                                 <option selected value="0">Albañilería</option>
                                                 <option value="1">Carpintería</option>
                                                 <option value="2">Cerrajería</option>
@@ -133,107 +120,63 @@
                                                 <option value="9">Pintura</option>
                                                 <option value="10">Plomería</option>
                                                 <option value="11">Tecnología y Electrónica</option>
-                                                <option value="11">Transporte</option>
+                                                <option value="12">Transporte</option>
                                             </select>
                                         </div>
                                         <br>
-                                        <!-- TEXTAREA AGREGADA DE BOOTSTRAP  -->
-                                        <textarea class="form-control"
-                                            placeholder="Escribe lo que quieres compartir aquí" id="floatingTextarea2"
-                                            style="height: 100px; resize: none; "></textarea>
+                                        <!-- TEXTAREA AGREGADA DE BOOTSTRAP -->
+                                        <textarea class="form-control" placeholder="Escribe lo que quieres compartir aquí" id="floatingTextarea2" style="height: 100px; resize: none;"></textarea>
                                         <br>
                                         <div class="seleccionarImagenes">
-
-                                            <input type="file" id="archivo-input" accept="image/*" multiple
-                                                style="display:none;">
+                                            <input type="file" id="archivo-input" accept="image/*" multiple style="display:none;">
                                             <label for="archivo-input" class="botonDeCarga">Cargar Documentos</label>
-                                            <div class="vistaPrevia" id="vistaPrevia-container">
-                                                <img src="" alt="Vista previa 1">
-                                                <img src="" alt="Vista previa 2">
-                                                <img src="" alt="Vista previa 3">
-                                                <img src="" alt="Vista previa 4">
-                                            </div>
+                                            <div class="vistaPrevia" id="vistaPrevia-container"></div>
+                                            <button class="btn--publicar" id="buttton--publicar">Publicar</button>
                                         </div>
-                                        <button class="btn--publicar" id="buttton--publicar">Publicar</button>
                                     </form>
+                                </div>
                             </section>
                         </div>
                     </div>
-
                 </div>
                 <section class="container--publicacion">
                     <div class="content--container row">
                         <div class="post-container col">
                             <div class="post-header">
                                 <div class="post-icon">
-                                    <img src="../../public/assets/publicaciones/albañil.jpeg" alt="icon">
+                                    <img src="../../public/assets/user.png" alt="Perfil">
+                                    <span class="post-name">Nombre Usuario</span>
                                 </div>
-                                <div class="post-info">
-                                    <h4>Servicio de albañilería</h4>
-                                    <p>Benjamín Matías Romero 5.0 ★</p>
+                                <div class="post-options">
+                                    <button class="ikonik" data-id="1">Ikonik</button>
+                                    <button class="comentar" data-id="1">Comentar</button>
                                 </div>
                             </div>
-                            <div class="post-body">
-                                <p>Buenas noches, paso a informarles que esta semana estaré realizando trabajos en la
-                                    zona norte/centro de la CDMX, áreas como Azcapotzalco, Buenavista, Gustavo A.
-                                    Madero, La
-                                    Raza, etc.
-                                </p>
-                                <img src="../../public/assets/publicaciones/albañileria.jpeg" alt="post-image">
+                            <div class="post-content">
+                                <p>Este es el contenido de la publicación</p>
+                                <img src="../../public/assets/user.png" alt="Imagen publicación">
                             </div>
-
-                            <div class="post-footer">
-                                <!-- Cambiando clases de los botones (reaccion--btn) -->
-                                <button class="reaccion--btn--ikonik" id="ikonik-button">iKonik <span id="ikonik-count"
-                                        style="display: none;">0</span></button>
-                                <button class="reaccion--btn--comentar" id="comment-button">Comentar</button>
-                                <button class="reaccion--btn--compartir">Compartir</button>
-                            </div>
-
-                            <!-- Sección para agregar comentarios, ahora dentro del contenedor de la publicación -->
-                            <div class="comment-section" style="display: none;">
-                                <textarea id="comment-input" placeholder="Escribe tu comentario aquí..."
-                                    rows="3"></textarea>
-                                <div class="word-count">Palabras restantes: <span id="word-count">100</span></div>
-                                <button class="reaccion--btn--publicar" id="submit-comment">Publicar</button>
-                            </div>
-
-                            <!-- Contenedor para mostrar los comentarios -->
-                            <div class="comments-container">
-                                <!-- Los comentarios se agregarán aquí dinámicamente -->
+                            <div class="post-comments" id="comments-container-1">
+                                <!-- Comentarios se cargarán aquí -->
                             </div>
                         </div>
-
+                        <!-- Más publicaciones pueden añadirse aquí -->
+                    </div>
                 </section>
-                <br>
-                <br>
-
-
-
-            </div><!-- fin columna 2 -->
-
-
-        </div><!-- row general-->
-
-    </div> <!-- general-->
-
+            </div> <!-- fin columna 2 -->
+        </div>
+        
     </div>
-
-
-
-    <!--scripts-->
-
-
-
     <div id="footer--contenido"></div>
-
-    <script src="../scripts/perfiles.js"></script>
-    <script src="../scripts/appPerfilesbutton"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
     <script src="../scripts/insertarNavBar.js"></script>
-    <script src="../scripts/footer.js"></script>
+    <script src="../scripts/footer.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+        integrity="sha512-3r7E6lH2S1X9pQzI4QzB2c3omDkhPi6GxWxS3A3aZ0d9wA3V8xEwrJUGzQ3EbKLBefYl8JBL5f8zQUnm4ywFqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-9k9xKjLhGp7IAtSbiPSd8rj5V5a6M5K8u9l0dW3Xy5mj1K3lAmwUO6fypGM1R4EJ" crossorigin="anonymous"></script>
+    <script src="../scripts/perfiles.js"></script>
 </body>
 
 </html>
