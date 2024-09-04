@@ -183,7 +183,9 @@ buttonPublicar.addEventListener('click', () => {
 }
 console.log (publicacionesObject);
 });
-console.log(publicacionesObject.json());
+
+
+
 //fetch("./nuevasPublicaciones.json").then
 
 /*
@@ -195,5 +197,4 @@ fs.writeFile('nuevasPublicaciones.json',nuevaPublicacion, (error)=>{
 
 })  */
     
-
-
+   

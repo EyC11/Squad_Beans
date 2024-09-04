@@ -168,6 +168,33 @@ input, select, label {
 .i-icon {
     font-size: 50px;
 } 
+/*Estilos del checkbox "No soy un robot"*/
+.remember-me--position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.remember-me {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+    background-color: #99B4BF;
+    color: #2D4B73;
+    width:230px;
+
+}
+
+#robot-check{
+    margin-left: 10px;
+}
 
 
     @media (max-width: 500px){

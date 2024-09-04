@@ -194,6 +194,10 @@ justify-content: center;
     justify-content: center;
     
 }
+
+
+
+/*Estilos del checkbox "No soy un robot"*/
 .remember-me--position {
     display: flex;
     flex-direction: column;
@@ -202,9 +206,6 @@ justify-content: center;
     
 
 }
-
-
-/*Estilos del checkbox "No soy un robot"*/
 .remember-me {
     font-family: 'Poppins',sans-serif;
     font-weight: 600;

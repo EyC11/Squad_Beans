@@ -199,6 +199,7 @@ registroFormulario.addEventListener('submit', (event) => {
     event.preventDefault();
     // Guardar los inputs en constantes
     const nombreUsuario = document.getElementById("nombreInput").value;
+    const apellidoUsuario = document.getElementById("apellidoInput").value;
     const nombreEmail = document.getElementById("email").value;
     const nuevoPassword = document.getElementById('password').value;
 
@@ -209,7 +210,7 @@ registroFormulario.addEventListener('submit', (event) => {
     localStorage.setItem("contrasena", nuevoPassword); */
     let usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
-    usuarios.push({nombre:nombreUsuario,email:nombreEmail, contrasena:nuevoPassword, login:"out", status: "free"});
+    usuarios.push({nombre:nombreUsuario,apellido:apellidoUsuario,email:nombreEmail, contrasena:nuevoPassword, login:"out", status: "free"});
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
     
     alert('Registro exitoso!!!');

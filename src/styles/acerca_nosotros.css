@@ -205,7 +205,14 @@ body {
     text-align: center;
     font-size: 14px;
 }
+.contenedor-boton{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+    /*margin:20px; */ 
+    /* mejor asi ya que esta responsivo ): con nosotros en un div dentro de otro div con colum y luego afectar  */
 
+} /* vayanse a comer xd*/
 .button {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -224,13 +231,18 @@ body {
 .button:hover {
     border: #D9B70D solid 2px;
     background-color: #2D4B73;
-    color: #D9B70D;
+    color: #D9B70D !important;
     padding: 7px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
-
+@media screen and (max-width: 955px){
+    .contenedor-boton{
+        display: flex;
+        flex-direction: column;
+    }
+}
 /*Media para contenedor Seccion 1*/
 @media screen and (max-width: 600px) {
     .contenedor {

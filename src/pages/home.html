@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,10 +26,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../styles/home.css">
-
-
-
 </head>
+
 
 <body>
     <!-- Barra de navegación -->
@@ -191,65 +187,9 @@
                         <span>&#9733;</span>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
-
-
-        <!-- Encabezado con carrusel de usuarios 
-        <header>
-            <div class="header-container">
-                <div class="user-carousel">
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/carpintero.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/constructor.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/costurera.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/estilista.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/jardinero.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/albañill.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/mecanico.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/pintor.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/plomero.jpeg" alt="user">
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/chef.jpeg" alt="user"></div>
-                    </a>
-                    <a href="#">
-                        <div class="user-icon"><img src="../../public/assets/publicaciones/soldador.jpeg" alt="user">
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </header>-->
-
+        
         <!-- Bóton de publicaciones -->
         <!-- POST BOX :P El bueno y elegido -->
         <button id="button--card">Hacer una publicación</button>
@@ -270,7 +210,7 @@
                                 <img id="imagen" src="../../public/assets/user.png" alt="Perfil">
 
                                 <div class="details">
-                                    <span>Emilio Córdova</span>
+                                    <span id="nombreUsuarioPublicar"></span>
 
                                     <div class="options">
                                         <!-- SELECT AGREGADO DE BOOTSTRAP  -->
@@ -299,15 +239,15 @@
                                     <option selected value="0">Albañilería</option>
                                     <option value="1">Carpintería</option>
                                     <option value="2">Cerrajería</option>
-                                    <option value="3">Diseño y Decoración</option>
+                                    <option value="3">Diseño</option>
                                     <option value="4">Electricidad</option>
-                                    <option value="5">Jardinería y Paisajismo</option>
+                                    <option value="5">Jardinería</option>
                                     <option value="6">Limpieza</option>
-                                    <option value="7">Mantenimiento y Reparación</option>
+                                    <option value="7">Mantenimiento</option>
                                     <option value="8">Otro</option>
                                     <option value="9">Pintura</option>
                                     <option value="10">Plomería</option>
-                                    <option value="11">Tecnología y Electrónica</option>
+                                    <option value="11">Tecnología</option>
                                     <option value="11">Transporte</option>
                                 </select>
                             </div>
@@ -417,43 +357,25 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
-
         </main>
-
-
-
-
-
     </div>
 
-
-
+    
 
     <div id="footer--contenido"></div>
 
 
-
-
-
-
-
     <script src="../scripts/footer.js"></script>
     <script src="../scripts/insertarNavBar.js"></script>
-
     <script src="../scripts/appHome.js"></script>
     <script src="../scripts/appHomebutton.js"></script>
     <script src="../scripts/cargarImagen.js"></script>
+    <script src="../scripts/nombresLocalStorage.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
 </body>
-
-
 </html>

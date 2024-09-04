@@ -258,11 +258,24 @@ main {
 }
 
 /*estilo lista botones*/
+.dropdown-item {
+    font-family: 'Poppins',sans-serif;
+    color: #2D4B73;
+}
+
 .dropdown-item:hover{
 background-color: #253C59;
 border: 2px solid #D9B70D;
-/* border-radius: 20px; */
+border-radius: 5px;
 color: #FFFFFF;
+text-decoration-line: none;
+text-decoration: none;
+font-family: 'Poppins',sans-serif;
+
+}
+/* Afectando a todos los a para que no se muestre subrayado*/
+a{
+    text-decoration: none;  
 }
 
 
