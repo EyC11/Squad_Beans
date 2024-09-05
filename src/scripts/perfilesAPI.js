@@ -4,7 +4,7 @@ loginRevisar.addEventListener('click', () => {
     const userInfo = document.getElementById('userCard');
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
     const usuarioLogin = usuarios.find(usuario => usuario.login === 'in');
-    const url = `http://localhost:8080/api/kapp/konikappers/email?konikmail=${usuarioLogin.email}`;
+    const url = `http://54.163.153.109/api/kapp/konikappers/email?konikmail=${usuarioLogin.email}`;
 
     // fetch para método get
     fetch(url)

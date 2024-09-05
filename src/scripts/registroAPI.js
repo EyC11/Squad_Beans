@@ -35,7 +35,7 @@ registrar.addEventListener('click', () => {
 }
 
 // Comenzar con la llamada de la API (fetch, asynch-await, axios)
-const url = `http://localhost:8080/api/kapp`;
+const url = `http://54.163.153.109/api/kapp`;
 
 fetch(url, {
 method: 'POST',

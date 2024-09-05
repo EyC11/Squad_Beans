@@ -26,12 +26,12 @@ function actualizarElementosSegunSesion() {
   
   
         botonRegistro.onclick = function() {
-            window.location.href = 'mensajes2.html';
+            window.location.href = './src/pages/mensajes2.html';
         };
         botonLogin.onclick = function() {
-            window.location.href = 'landing.html';
+            window.location.href = './src/pages/landing.html';
         };
-        enlace.href = "../pages/home.html";
+        enlace.href = "./src/pages/home.html";
   
   
   
@@ -43,7 +43,7 @@ function actualizarElementosSegunSesion() {
             // Guarda de nuevo el array de usuarios en el localStorage
             localStorage.setItem('usuarios', JSON.stringify(usuarios));
              //agregar una redirección 
-             window.location.href = 'login.html';
+             window.location.href = './src/pages/login.html';
              
         
         };
@@ -54,12 +54,12 @@ function actualizarElementosSegunSesion() {
         botonRegistro.textContent = "Registrate";
   
         botonRegistro.onclick = function() {
-            window.location.href = 'formularioRegistro.html';
+            window.location.href = './src/pages/formularioRegistro.html';
         };
         botonLogin.onclick = function() {
-            window.location.href = 'login.html';
+            window.location.href = './src/pages/login.html';
         };
-        enlace.href = "../pages/landing.html";
+        enlace.href = "./src/pages/landing.html";
         nombreUsuarioBarra.style.visibility = 'hidden';
     }
   }
