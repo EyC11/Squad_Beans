@@ -1,35 +1,60 @@
-
-/**********************Estilos Cintia *****************************/
-
-body {
-    background-color: #EFF0F5;  
-    /*Centrar los elementos de la página*/
+.contenido--general{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
 }
-
 #button--card {
     background-color: #D9B70D;
-    border: none;
+    border: solid 2px #253C59;
     color: #253C59;
-    border-color: #2D4B73;
-    border-width: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 20px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     margin: 20px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    width: 35%
 }
 
 #button--card:hover {
     background-color: #253C59;
     color: #D9B70D;
     transition: 0.5s;
-    border: solid 1px #D9B70D;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
 }
+.cont--button--close{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:10px;
+    padding: 10px;
+}
+.close {
+    border-radius: 50px;
+    background-color: #D9B70D;
+    border: none;
+    padding: 4px 4px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+  }
+.material-symbols-outlined {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 10
+    
+}
+
 
 .container {
     display: flex;
@@ -49,12 +74,11 @@ body {
     background-color: #2D4B73;
     border-radius: 20px;
     border: solid 2px #D9B70D;
-    /*     display: flex;    
-        align-items: center;
-        text-align: center; */
     padding: 15px 0px 0px 0px;
     width: 500px;
-    margin: 20px 0px;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
 }
 
 .post h2 {
@@ -135,7 +159,7 @@ form .content .details .options {
     font-size: 15px;
     line-height: 16px;
     resize: none;
-    /* Para que el textarea no pueda ser redimensionado por el usuario */
+     /* Para que el textarea no pueda ser redimensionado por el usuario */
     border: none;
     outline: none;
     /* Elimina contorno del textarea */
@@ -154,6 +178,13 @@ form .content .details .options {
 .form-control:-webkit-scrollbar {
    /*  Ocultar barra de scroll  */
    overflow: hidden !important;
+   resize: none;
+}
+
+/*Seleccionar otro servicio*/
+#inputOtro{
+    background-color: #e9ecef; /* Color de fondo para indicar que está deshabilitado */
+    cursor: not-allowed;
 }
 
 
@@ -180,13 +211,22 @@ form .content .details .options {
 .botonDeCarga {
     padding: 10px 20px;
     background-color:#253C59;
-    color: #EFF0F5;
-    border: none;
-    border-radius: 5px;
+    color: #D9B70D !important;
+    border: solid 2px #D9B70D;
+    border-radius: 20px;
     cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 .botonDeCarga:hover {
     background-color: #D9B70D;
+    color: #253C59!important;
+    border:solid 2px #253C59;
+    transition: 0.5s;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .seleccionarImagenes img {
@@ -194,35 +234,18 @@ form .content .details .options {
     float: inline-start;
 }
 
-/* .optiones {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 12px;
-    font-family: "DM Sans", sans-serif !important;;
-    color: #D9B70D;
-    margin: 15px 0;
 
-}
-
-.optiones input {
-    background-color: #2D4B73 !important;;
-    color: #EFF0F5;
-    font-size: 12px;
-    font-family: "DM Sans", sans-serif;
-    border-radius: 20px;
-    cursor: pointer;
-} */
 
 /* ESTILOS DEL BOTÓN PUBLICAR */
-.btn {
+.btn--publicar{
     background-color: #D9B70D !important;
     border: none;
-    color: #3d4146;
+    color: #253C59;
     padding: 10px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-family: 'Poppins',sans-serif;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
@@ -230,11 +253,530 @@ form .content .details .options {
     width: 100%;
     font-weight: bold;
 }
-.btn :hover{
-    background-color: #3d4146 !important;
+
+.btn--publicar:hover{
+    background-color: #253C59 !important;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+/* inician nuevos estilos de carrusel */
+.contenido-carrusel{
+    border-radius: 20px;
+    text-align: center;
+    width: 90%;
+    background-color: #2D4B73;
+    box-shadow: 0 3px 24px -8px #253C59;
+    padding: 20px 32px;
+    border-radius: 8px;
+    gap: 48px;
+    overflow-x:scroll;
+    
+}
+.contenido-carrusel::-webkit-scrollbar {
+    width: 8px; 
+    height: 12px; 
+  }
+  
+  .contenido-carrusel::-webkit-scrollbar-thumb {
+    background-color: #FFD700;
+    border-radius: 10px;   
+  }
+  
+  .contenido-carrusel::-webkit-scrollbar-track {
+    background-color: #f1f1f1; 
+    border-radius: 10px;   
+  }
+
+.perfiles-carrusel {
+    display:flex;   
+    /*justify-content: space-between;  */
+    
+    width: 100%;
+
+}
+.perfiles-contenido img{
+    border: 5px solid #D9B70D;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    margin: 0 40px;
+    object-fit: cover;
+    position: relative;
+    
+}
+
+.contenido-titulo {
+
+font-size: 25px;
+font-weight: bold;
+color: #D9B70D;
+font-family: 'Poppins';
+}
+.perfiles-titulo span{
+    font-size: 20px;
     color: #D9B70D;
 }
 
+.perfiles-titulo p{
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: #EFF0D5;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    background-color: #2D4B73;
+    border-radius: 30px;
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: auto;
+    margin: auto;
+}
+
+.user-carousel {
+    display: flex;
+    gap: 40px !important; 
+    padding: 20px 20px 20px 20px;
+}
+
+.user-icon img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    
+}
+
+.service-title h2 {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.post-container {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+    max-width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+    box-sizing: border-box;
+   
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.post-info h4 {
+    margin: 0;
+    color: #D9B70D;
+    font-weight: bold;
+}
+
+.post-info p {
+    color: #2D4B73;
+    margin: 0;
+    
+}
+
+.post-icon img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.post-body {
+    color: #2D4B73;
+    margin-top: 20px;
+    
+}
+
+.post-body img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D9B70D;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.post-footer {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.reaccion--btn {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    text-align: center;
+    flex: 1; /* Los botones ocupan el mismo espacio */
+    max-width: 100px; /* Ancho máximo de cada botón */
+    /*
+     background-color: #D9B70D;
+    border: none;
+    color: #253C59;
+    border-color: #2D4B73;
+    border-width: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0px 10px 0px;
+    */
+
+}
+.reaccion--btn :hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+}
+/** Botones de la publicacion ****/
+/* Boton ikonik*/
+.reaccion--btn--ikonik {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.reaccion--btn--ikonik:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Boton comentar*/
+.reaccion--btn--comentar {
+    background-color: #D9B70D ;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.reaccion--btn--comentar:hover{
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Boton compartir*/
+.reaccion--btn--compartir{
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.reaccion--btn--compartir:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Boton Premium*/
+.btn2Premium {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn2Premium:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reaccion--btn--publicar:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reaccion--btn--publicar {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    
+}
 
 
-/*  !important; */
+.advertisements {
+    display: flex;
+    flex-direction: column; /* Mantener columna para pantallas pequeñas */
+    gap: 20px;
+    margin-left: 20px; /* Agregar margen izquierdo para separación del contenido principal */
+}
+
+
+/* Ajuste para pantallas más grandes */
+@media (min-width: 800px) {
+    .advertisements {
+        gap: 20px; /* Espacio entre los elementos */
+        margin-left: 40px; /* Aumenta el margen izquierdo para mayor separación en pantallas grandes */
+    }
+    
+}
+
+
+.ad-container {
+    display: flex; /* Utilizar flex para organizar ad2 y ad3 en una fila */
+    gap: 20px; /* Espacio entre ad2 y ad3 */
+    flex-direction: row;
+}
+
+
+.pub {
+    font-weight: bold;
+}
+
+.ad {
+    background-color: #D9B70D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ad1 {
+    width: 480px;
+    height: 200px;
+}
+
+.ad2{
+    background-color: #aac8f0;
+    color: #2D4B73;
+    font-weight: bold;
+    width: 100%; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
+    height: min-content; /* Igualar la altura con ad1 */
+}
+.ad3{
+    background-color: #EFF0D5;
+    color: #2D4B73;
+    border: 2px solid #2768B3;
+    font-weight: bold;
+    width: 230px; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
+    height: min-content; /* Igualar la altura con ad1 */
+}
+
+.ad4{
+    background-color: #aac8f0;
+    color: #2D4B73;
+    font-weight: bold;
+    width: 230px; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
+    height: min-content; /* Igualar la altura con ad1 */
+
+}
+.premium {
+    font-weight: bold;
+}
+
+.post-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between; /* Distribuir los botones con espacio entre ellos */
+    margin-bottom: 20px; /* Añadir margen inferior para separar los botones del área de comentarios */
+  }
+  
+  .comment-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; /* Añadir margen superior para separar el área de comentarios de los botones */
+  }
+  
+  #comment-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    resize: none; /* Evitar que el textarea sea redimensionable */
+  }
+  
+  .word-count {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  
+  .comments-container {
+    max-height: 200px; /* Limita la altura para habilitar la barra de desplazamiento */
+    overflow-y: auto; /* Agrega la barra de desplazamiento */
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+  
+  .comment {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .pubNexus {
+    object-fit: cover;
+    width: 80%;
+    height: 80%;
+  }
+/*
+  .pubDog{
+    object-fit: cover;
+    width: 100%;
+    height: 80%;
+  }
+  
+  */
+  
+  
+
+  .options{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.culumna-anuncios {
+    display: flex;
+    flex-direction: column;
+}
+
+.culumna-anuncios-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+  @media (max-width:1400px) {
+    
+    .contenedor--general{
+        margin-bottom: 350px;
+    }
+    
+    .ad .ad3 .ad4{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:500px){
+    .formulario--publicacion{
+        width: 350px;
+    }
+    .opciones{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+    }
+    .post-container{
+        width: 350px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .content--container {
+        width: 100%;
+    }
+
+    .culumna-anuncios {
+        width: 100%;
+    }
+
+    .culumna-anuncios-row {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ad4 {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 40%;
+      }
+
+    #pubing {
+        object-fit: scale-down;
+    }
+    
+}
+
+@media (max-width:800px){
+    .ad-container {
+        display: flex; /* Utilizar flex para organizar ad2 y ad3 en una fila */
+        gap: 20px; /* Espacio entre ad2 y ad3 */
+        flex-wrap: wrap;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}

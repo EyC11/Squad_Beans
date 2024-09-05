@@ -1,15 +1,3 @@
-/*Creacion de pagina styles Acerca de nosotros.*/
-/*Colores a usar 
-background: #EFF0F5
-azul fuerte: #2D4B73
-azul claro: #99B4BF
-oro: #D9B70D
-blanco: #FFFFFF
-Documentacion: https://www.w3schools.com
-
-Breakpoint debajo de los 500px
-Usar porcentajes 
-*/
 
 body {
     background-color: #EFF0F5;
@@ -19,7 +7,7 @@ body {
 .contenedor {
     background-color: #2D4B73;
     border-radius: 20px;
-    max-width: 1140px;
+    margin: 40px;
     height: 260px;
     display: flex;
     flex-direction: column;
@@ -28,18 +16,19 @@ body {
     padding: 20px;
     justify-items: auto;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     flex-wrap: wrap;  /*Cambio permitir el ajuste de línea */   
 }
 
+/*Estilos para el h1 */
 .contenedor--h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
+    width: 95%;
 }
 
+/*Estilos para el parrafo */
 .contenedor--p {
     display: flex;
     flex-direction: column;
@@ -47,8 +36,10 @@ body {
     font-family: 'DM-Sans', sans-serif;
     font-weight: 300;
     margin-top: 15px;
+    width: 95%;
 }
 
+/*Estilos para el botón*/
 .contenedor--boton--empezar {
     background-color: #D9B70D;
     color: #2D4B73;
@@ -71,6 +62,7 @@ body {
     border: solid 2px #D9B70D;
 }
 
+/*Estilos para la imagen de LIKE*/
 .img--like {
     width: 100%;
     height: auto;
@@ -87,22 +79,21 @@ body {
 }
 
 
-
 /*SECCION 2: Por que usas Konikapp*/
+
+/*Estilos para el contenedor 2*/
 .contenedor2 {
     background-color: #99B4BF;
     padding: 20px;
-    margin: 20px;
     border-radius: 20px;
-    max-width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px;
     display: flex;
-    flex-wrap: wrap; /* Cambio: permitir el ajuste de línea */
+    flex-direction: column;
     justify-content: space-between; /* Cambio: distribuir espacio entre elementos */
     height: 350px;
 }
 
+/*Estilos para el h1 del contenedor 2*/
 .contenedor2--h1 {
     font-family: "Poppins", sans-serif;
     font-size: 40px;
@@ -116,15 +107,16 @@ body {
     width: fit-content;
 }
 
+/*Estilos para el párrafo del contenedor 2*/
 .contenedor2--contenido {
     display: flex;
-    align-items: center;
-    
+    flex-direction: row;
+    align-items:center;
+    justify-items:center;
 }
-
 .contenedor2--contenido p {
     font-family: 'DM-Sans', sans-serif;
-    font-size: 18p;
+    font-size: 18px;
     text-align: center;
     color: #2D4B73;
     margin-right: 20px;
@@ -132,20 +124,23 @@ body {
     font-weight: 300;
 }
 
+/*Estilos para la imagen de la computadora*/
  .contenedor2--imagen{
      flex-wrap: wrap;
      position: absolute;
-     margin-left: 700px;
-     margin-top: -150px;
+     margin-left: 1000px;
+     margin-top: -230px;
 }
 
-/*Sección 3: Mision, Vision y Valores */
+/*SECCION 3: Mision, Vision y Valores */
+/*Estilos del contenedor 3*/
 .contenedor3 {
     display: flex;
     justify-content: space-around;
     margin:20px; 
 }
 
+/*Estilos para las cards del contenedor 3 (parrafos y lista)*/
 .contenedor3--card-k {
     background-color: #99B4BF;
     color: #2D4B73;
@@ -158,18 +153,26 @@ body {
     flex-wrap: wrap;
     width: 90%;
 }
-
+.contenedor3--card-k p{
+    font-size: 18px;
+    font-family: 'DM-Sans', sans-serif;
+}
 .contenedor3--card-k ul{
     list-style-type: none;
     padding-left: 0;
+    font-size: 18px;
+    font-family: 'DM-Sans', sans-serif;
 }
 
 
 /* SECCION 4: CARRUSEL ESTILOS */
+.card-fondo{
+    margin-left: 40px;
+    margin-right: 40px;
+}
 .card-body {
     display: flex;
     flex-direction: column;
-    /* Botones */
     background-color: #99B4BF;
 }
 
@@ -177,7 +180,7 @@ body {
     color: #2D4B73;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .imagen-carrusel img {
@@ -188,13 +191,27 @@ body {
 .card-title {
     font-family: sans-serif;
     text-align: center;
+
+}
+.card-titulo{
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .card-text {
     color: #2D4B73;
     font-family: "DM Sans", sans-serif;
     text-align: center;
+    font-size: 14px;
 }
+
+.contenedor-boton{
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px;
+    /*margin:20px; */ 
+} 
 
 .button {
     font-family: "Poppins", sans-serif;
@@ -203,55 +220,87 @@ body {
     text-align: center;
     background-color: #D9B70D;
     border: #2D4B73 solid 2px;
-    color: #2D4B73;
-    padding: 8px;
+    color: #2D4B73 !important;
+    padding: 6px;
     border-radius: 20px;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     margin-left: 1px;
 }
 
 .button:hover {
     border: #D9B70D solid 2px;
     background-color: #2D4B73;
-    color: #D9B70D;
-    padding: 7px;
+    color: #D9B70D !important;
+    padding: 6px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
 
-.imagen-fondo {
-    background-color: #2D4B73;
+.button i{
+    font-size: 25px;
+    /*Tamaño de iconos LK y Git de botones */
 }
 
-/*Media para contenedor Seccion 1*/
-@media screen and (max-width: 500px) {
-    .contenedor {
-        min-height: 400px;
-    }
-}
 
-/*Media para la imagen like Seccion 1*/
-@media screen and (max-width: 1350px) {
-    .contenedor--img {
-        visibility: hidden;
-    }
-}
 
-/*Media por que konikapp Seccion 2*/
-@media screen and (max-width:800px) {
-    .contenerdor2--contenido{
+    
+
+
+@media screen and (max-width: 955px){
+    .contenedor-boton{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
     }
 }
- 
-/*Media para la imagen search Seccion 2*/
-@media screen and (max-width: 800px) {
+/*Media para contenedor Seccion 1*/
+@media screen and (max-width: 600px) {
+    .contenedor {
+        min-height: 400px;
+    }
+   
+    .contenedor2--h1{
+        margin: 0;
+        margin-top: 25px;
+    }
+    .contenedor--boton--empezar{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .contenedor{
+        height: max-content;
+        width: min-content;
+    }
+
+    .contenedor2{
+        width: 290px;
+    }
+}
+
+/*Media para las imágenes*/
+@media screen and (max-width: 1400px) {
+    .contenedor--img {
+        visibility: hidden;
+    }
     .contenedor2--imagen {
         visibility: hidden;
+    }
+}
+
+/*Media para la imagen search Seccion 2*/
+@media screen and (max-width:585px) {
+.contenedor2{
+    height: max-content;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .contenerdor2--contenido{
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -265,27 +314,27 @@ body {
   }
 
 /*Media para el carrusel Seccion 4*/
-@media screen and (min-width:700px) {
-    .card-fondo {
+@media screen and (min-width:660px) {
+  .card-fondo {
         display: flex;
         background-color: #2D4B73;
-        margin-left: 40px;
-        margin-right: 40px;
+        
         padding: 15px;
         justify-content: space-around;
         border-radius: 20px;
     }
-
-    .cards {
-        display: flex;
-        margin-left: 5px;
-        width: 260px;
+    .card {
+        margin:5px;
+        width: 300px;
         height: 345px;
     }
-
     .imagen-carrusel {
-        height: 200px;
-        margin: 0 auto;
+        margin: auto;
         background-color: #99B4BF;
     }
+    .imagen-carrusel-img {
+        max-width: 100%;
+        height: 200px;  
+    }     
 }
+

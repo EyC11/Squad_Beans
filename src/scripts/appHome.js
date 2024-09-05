@@ -1,3 +1,5 @@
+
+
 //Objetos en formato JSON agregados en javascript
 const publicaciones = ` [
     {  "proveedor":true,
@@ -146,6 +148,17 @@ console.log(typeof jsonData);
 );
 console.log (publicacionesCalif); */
 
+//JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
+const mostrarFecha = document.getElementById('fecha');
+const hoy = new Date();
+
+const dia = hoy.getDate();
+const mes = hoy.getMonth()+1;
+const agnio = hoy.getFullYear();
+mostrarFecha.innerHTML = `${dia}/${mes}/${agnio}`;
+
+
+
 //Alertas en el llenado de campos necesarios
 //No aplica aun para el: select class="form-select form-select-sm" aria-label="Small select example"  id="select--usuario"!!
 const buttonPublicar = document.getElementById('buttton--publicar');
@@ -173,19 +186,15 @@ console.log (publicacionesObject);
 
 
 
+//fetch("./nuevasPublicaciones.json").then
+
+/*
 const fs = require('fs');
 const nuevaPublicacion = JSON.stringify(publicacionesObject);
 fs.writeFile('nuevasPublicaciones.json',nuevaPublicacion, (error)=>{
     if (error) throw error;
     console.log('Informacion recibida'); 
 
-})
+})  */
     
-/* //JS para: obtener la fecha de manera automatica, de acuerdo al sistema del usuario.
-    let mostrarFecha = document.getElementById('fecha');
-    let hoy = new Date();
-
-    let dia = hoy.getDate();
-    let mes = hoy.getMonth()+1;
-    let agnio = hoy.getFullYear();
-    mostrarFecha.innerHTML = `${dia}/${mes}/${agnio}`; */ 
+   

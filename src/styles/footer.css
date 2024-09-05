@@ -1,4 +1,3 @@
-
 /* Footer contenido general */
 #footer {
     border-width: 5px;
@@ -6,30 +5,44 @@
     border-color: #D9B70D;
     background-color: #2D4B73;
     text-align: center;
+    justify-content: space-around;
     padding: 10px 20px;
     width: 100%;
     min-height: 200px;  
 }
 
-footer {
-    position: fixed;
-    bottom: -800px; /* Oculto inicialmente */
-    width: 100%;
-    transition: bottom 0.8s ease; /* Transición suave */
-}
-
-footer.visible {
-    bottom: 0; /* Muestra el footer */
-}
-
-
-
 
 .footer--container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around ;
+    justify-content: space-evenly ;
+    
 }
+
+.footer--container p{
+    display: flex;
+    text-wrap:wrap;
+   
+}
+
+
+.mitad1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+
+}
+.mitad2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+
+    
+}
+
+
 
 .footer--container--2{
     display: flex;
@@ -44,6 +57,12 @@ footer.visible {
         gap: 20px;
         font-size: 20px;
 }
+.borde{
+
+
+    text-align: justify;
+    padding: 8px;
+}
 
 
 /* Especificaciones para los subtitulos del footer */
@@ -57,7 +76,7 @@ footer.visible {
 }
 
 /* Especificaciones para los textos anchor del footer */
-a, .anchor--footer{
+ .anchor--footer{
     color:#FFFFFF !important;
     list-style:none;
     cursor: pointer ;
@@ -68,32 +87,48 @@ a, .anchor--footer{
     text-align:left;
     margin-left: -20px ;
 }
-
-a{
+.enlaces--footer{
     color:#FFFFFF !important;
     text-decoration: none !important;
 
 }
 
-a:hover, .anchor--footer:hover{
+.enlaces--footer:hover, .anchor--footer:hover{
     color: #D9B70D !important;
     
 }
-@media (max-width: 500px) {
 
+@media (max-width: 1020px) {
     .footer--container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-direction: column;
+    }
+    .mitad1{
+        width: 100%;
+
+    }
+    .mitad2{
+        width: 100%;
+
     }
 
-    .footer--container--2{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-       
+}
+@media (max-width: 650px) {
+    .footer--container{
+        flex-direction: column;
+        align-items: center;
     }
+
+    .mitad1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mitad2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 
 }

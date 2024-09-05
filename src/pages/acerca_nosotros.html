@@ -34,7 +34,6 @@
     <div id="navbar--contenido"></div>
 
 
-    <br>
     <!--Sección1 -->
     <div class='contenedor'>
         <div class="contenedor--h1">
@@ -47,19 +46,16 @@
         </div>
 
         <div class="contenedor--boton">
-            <button class="contenedor--boton--empezar">Empezar</button>
+            <button onclick="window.location.href= 'formularioRegistro.html' "class="contenedor--boton--empezar" >Empezar</button>
         </div>
-        <br>
+        
     </div>
 
     <div class="contenedor--img">
         <img class="img--like" src="../../public/assets/Like.png.png" alt="Like">
     </div>
 
-    <br>
-
     <!--Sección 2-->
-
     <div class="contenedor2">
         <div class="contenedor2--h1">
             <h1 style="font-family: 'Poppins',sans-serif; font-size: 40px;font-weight: 600;">¿Por qué usar Konikapp?</h1>
@@ -79,7 +75,7 @@
 
 
     <!-- Sección 3 -->
-    <div class="contenedor3">
+    <div class="contenedor3" id="Mision">
         <div class="contenedor3--card-k">
             <h2 style="font-family: 'Poppins',sans-serif; font-size: 40px;font-weight: 600;">Misión</h2>
             <p>
@@ -97,7 +93,7 @@
         </div>
 
         <div class="contenedor3--card-k">
-            <h2 style="font-family: 'Poppins',sans-serif; font-size: 40px;font-weight: 600;">Valores</h2>
+            <h2 style="font-family: 'Poppins',sans-serif; font-size: 40px; font-weight: 600;">Valores</h2>
             <ul>
                 <li>Colaboración</li>
                 <li>Transparencia</li>
@@ -106,64 +102,78 @@
                 <li>Empatía</li>
             </ul>
         </div>
-
     </div>
 
-
-
     <!--Sección 4-->
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
 
                 <div class="card-fondo">
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/aparicio.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/Aparicio.jpeg" alt="...">
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Alberto Aparicio Huerta</h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/aparicio-huerta-mu%C3%B1oz-a83a83284/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/aparicio-huerta-mu%C3%B1oz-a83a83284/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/Cittavasi" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/brandon.jfif" alt="...">
+                            <img class= "imagen-carrusel-img"src="../../public/assets/brandon.jfif" alt="...">
 
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Brandon Pérez Ferrer</h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/brandonperezferrer/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/brandonperezferrer/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/ferrerbr" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/cintia.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/cintia.jfif" alt="...">
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Cintia Odeth Solano Cruz </h5>
+                        </div>
                             <p class="card-text">Desarrolladora Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/cintia-odeth/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/cintia-odeth/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/cinnoth" target="_blank"><i class="fab fa-github"></i></a>
+                               
+                            </div>
                         </div>
                     </div>
-
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/cris.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/cris.jfif" alt="...">
 
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Cristian Cruz Sánchez </h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/cristian-cruz-sánchez/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/cristian-cruz-sánchez/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/EyC11" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        
                         </div>
                     </div>
                 </div>
@@ -171,43 +181,56 @@
 
             <div class="carousel-item">
                 <div class="card-fondo">
-
+                    
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/emilio.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/emilio.jfif" alt="...">
 
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Diego Emilio Córdova González </h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button"
-                                href="https://www.linkedin.com/in/emilio-cordova-telecom-it-sistemas-electronica/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/emilio-cordova-telecom-it-sistemas-electronica/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/EmilioCorDev" target="_blank"><i class="fab fa-github"></i></a>
+                            
+                            </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/Edgar.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/Edgar.jfif" alt="...">
 
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Edgar Ulises Herrera Sebastian</h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/edgar-herrera-3632a131a/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/edgar-herrera-3632a131a/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/edgaraider" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/ivana.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/ivana.jfif" alt="...">
 
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Ivana Valencia Vives</h5>
+                        </div>
                             <p class="card-text">Desarrolladora Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/ivalenciavives/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/ivalenciavives/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://www.linkedin.com/in/ivalenciavives/" target="_blank"><i class="fab fa-github"></i></a>
+                           
+                            </div>
                         </div>
                     </div>
 
@@ -218,60 +241,69 @@
                 <div class="card-fondo">
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/jorge.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/jorge.jfif" alt="...">
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Jorge Armando Jiménez Neri</h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button" href="http://www.linkedin.com/in/jorge-armando-jim%C3%A9nez-neri"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="http://www.linkedin.com/in/jorge-armando-jim%C3%A9nez-neri" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/jjforce1" target="_blank"><i class="fab fa-github"></i></a>
+
+                            </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/Miguel.jpeg" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/Miguel.jpeg" alt="...">
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Miguel Ángel Mariscal Hernández</h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button" href="https://www.linkedin.com/in/miguelangelmariscal/"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/miguelangelmariscal/" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/MiguelM97" target="_blank"><i class="fab fa-github"></i></a>
+
+                            </div>
                         </div>
                     </div>
 
                     <div class="card">
                         <div class="imagen-carrusel">
-                            <img src="../../public/assets/saul.jfif" alt="...">
+                            <img class= "imagen-carrusel-img" src="../../public/assets/saul.jfif" alt="...">
                         </div>
                         <div class="card-body">
+                            <div class="card-titulo">
                             <h5 class="card-title">Ricardo Saul Hernández Merino</h5>
+                        </div>
                             <p class="card-text">Desarrollador Full Stack.</p>
-                            <a class="button"
-                                href="https://www.linkedin.com/in/ricardo-sa%C3%BAl-hern%C3%A1ndez-merino-105034312"
-                                target="_blank">LinkedIn</a>
+                            <div class="contenedor-boton">
+                            <a class="button" href="https://www.linkedin.com/in/ricardo-sa%C3%BAl-hern%C3%A1ndez-merino-105034312" target="_blank"><i class="fab fa-linkedin i-con"></i></a>
+                            <a class="button" href="https://github.com/Peep0Shy" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <button class="carousel-control-prev" id="prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <button class="carousel-control-next" id="next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br>
-
+    
+    <br><br><br>
+     <!-- footer -->
     <div id="footer--contenido"></div>
-
-
-
-
 
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

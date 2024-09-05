@@ -4,15 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suscripciones</title>
+    <!--Importacion Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
     <!--favicon-->
     <link rel="shortcut icon" href="../../public/assets/konijapp-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/suscripciones.css">
 </head>
 <body>
     <!-- Barra de navegación -->
     <div id="navbar--contenido"></div>
-    <!--scripts-->
-    <script src="../scripts/insertarNavBar.js"></script>
-    <script src="../scripts/footer.js"></script>
+
+   <main class="container--principal">
+        <h1>Planes de suscripción</h1>
+        
+        <div class="tarjetas--planes">
+            <section class="tarjeta--gratis">
+                <p class="titulos--tarjetas">
+                    Gratis
+                </p>
+            
+                <p class="titulos--tarjetas">
+                    $0
+                </p>
+              
+                <p class="titulos--tarjetas">
+                    <ul>Beneficios
+                        <li>Creación de perfil básico.</li>
+                        <li>Búsqueda de servicios y usuarios de manera general.</li>
+                        <li>Visibilidad básica del perfil en resultados de búsqueda.</li>
+                    </ul>
+                </p>
+                <button id="boton--gratis" onclick="window.location.href= 'suscripciones.html'">Obtener</button>
+             
+
+            </section>
+
+
+            <section class="tarjeta--mensual">
+                <p class="titulos--tarjetas">
+                    Premium
+                </p>
+                
+                <p class="titulos--tarjetas">
+                    $99 MXN/mes
+                </p>
+               
+                <p class="titulos--tarjetas">
+                    <ul>Beneficios
+                        <li>Prioridad en los resultados de búsqueda (visibilidad mejorada).</li>
+                        <li>Acceso a estadísticas básicas del perfil (visitas, interacciones, etc.).</li>
+                        <li>Publicación de anuncios de servicios destacados con más visibilidad.</li>
+                    </ul>
+                </p>
+                <button id="boton--mensual" onclick="window.location.href= 'suscripciones.html'">Obtener</button>
+                
+            </section>
+
+
+            <section class="tarjeta--anual">
+                <p class="titulos--tarjetas">
+                    Premium Pro
+                </p>
+
+        
+                
+                <p class="titulos--tarjetas">
+                    $999 MXN/año
+                </p>
+             
+                <p class="titulos--tarjetas">
+                    <ul>Beneficios
+                        <li>Todo lo incluido en el plan mensual, más:</li>
+                        <li>Acceso a herramientas de marketing avanzado (creación de campañas de anuncios).</li>
+                        <li>Capacidad para ver quién ha visitado tu perfil.</li>
+                    </ul>
+                </p>
+                
+                <button id="boton--anual" onclick="window.location.href= 'suscripciones.html'">Obtener</button>
+                
+            </section>
+        </div>
+        <br><br><br>
+
+        
+        
+
+   </main>
+   <div id="footer--contenido"></div>
+   <script src="../scripts/insertarNavBar.js"></script>
+   <script src="../scripts/footer.js"></script>
+   <script src="../scripts/suscripciones.js"></script>
+   
+    
     
 </body>
 </html>

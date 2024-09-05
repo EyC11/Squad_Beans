@@ -1,0 +1,183 @@
+/*
+Colores a usar
+#99B4BF azul claro
+#D9B70D dorado
+#253C59 azul mas oscuro
+#2D4B73 azul oscuro
+#EFF0F5 backgroud
+*/
+
+body{
+    background-color: #EFF0F5;
+}
+/*Estilos para el h1*/
+h1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+
+/*Estilos para los h3*/
+h3{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Estilos para los h4*/
+h4{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+
+}
+
+/*Estilos para los h5*/
+h5{
+    display: flex;
+    justify-content:end;
+    align-items: end;
+    justify-content: space-around;
+    font-family: 'DM-Sans',sans-serif;
+    font-weight: 600;
+    font-size: 5px;
+}
+
+/*Estilos para los label*/
+label{
+    color: #2D4B73;
+    font-family: 'DM-Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 1px;
+    margin: auto;
+}
+
+/*Estilos para los contenedores en general*/
+.container--pago{
+    min-height: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+/*Estilos para el titulo */
+.donar--title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    color: #2D4B73;
+}
+
+/*Estilos para los formularios de los contenedores*/
+.container--pago form{
+    width: 400px;
+    padding: 20px;
+    height: 800px;
+    background-color: #99B4BF;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 20px;
+    border: solid 2px #D9B70D;
+}
+
+/*Estilos botones*/
+.donar--botones{
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:space-evenly;
+}
+
+/*Estilos para botones 'Donar'*/
+.donar--botones button{
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    display: inline;
+    cursor: pointer;
+}
+.donar--botones button:hover{
+    background-color: #2D4B73;
+    color: #FFFFFF;
+    border: solid 2px #D9B70D;
+    transition-duration: 0.5s; 
+}
+.pago--btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Estilos para el boton 'Cancelar'*/
+#pago--btnCancelar {
+    background: #FFFFFF;
+    color: #2D4B73;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;  
+}
+#pago--btnCancelar:hover{
+    background-color: #2D4B73;
+    color: #FFFFFF;
+    border: solid 2px #D9B70D;
+    transition-duration: 0.5s;   
+}
+
+/*Estilos para el boton 'Submit'*/
+#pago--btnSubmit {
+    background: #D9B70D;
+    color: #2D4B73;
+    border-radius: 20px;
+    border: solid 2px #253C59;
+    margin: 2px;
+    width: 100px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif; 
+}
+#pago--btnSubmit:hover{
+    background-color: #2D4B73;
+    color: #D9B70D;
+    border: solid 2px #D9B70D;
+    transition-duration: 0.5s;   
+}
+ 
+/*Media para los contenedores*/
+@media screen and (max-width: 400px) {
+    .container--pago {
+        height:  1500px;  
+        margin-bottom: 200px; 
+    }
+}
+
+/* Cambia el ancho de los input´s */
+.imput--ancho {
+    width: 95%;
+}

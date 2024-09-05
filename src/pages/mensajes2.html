@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="../styles/mensajes2.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegación -->
+  <div id="navbar--contenido"></div>
+
+  <div class="contenedor">
+    <!-- Barra lateral izquierda -->
+    <aside class="barra-lateral">
+      <!-- Cuadro de búsqueda de chats -->
+      <!-- <input type="text" id="buscarChats" placeholder="Buscar chats..."> -->
+            
+      <div id="chatsContainer" class="chats-container">
+        <!-- Aquí se mostrarán los chats -->
+        <!-- Chat 1 -->
+        
+      
+      </div>
+
+           
+            
+      <div class="ad ad2">
+        <h3 class="premium">¿Ya eres Premium? </h3>
+        <p>Beneficios:<br>* Sin Ads<br>* Carrusel principal<br>* Más visibilidad</p>
+          <a href="#">
+            <!-- Cambiando clase btn2 a btn2Premium -->
+            <button onclick="window.location.href= 'suscripciones.html'" class="btn2Premium">Premium</button>
+          </a>
+      </div>
+    </aside>
+
+
+    <!-- Sección principal de mensajes -->
+    <section class="seccion-mensajes">
+      <div  id="chatHeader" class="perfil--barra" style="display: flex; align-items: center;">
+        <div class="foto--perfil">
+          <img id="perfilImg" src="" alt="Perfil" class="perfil-img">
+        </div>
+
+        <div class="texto--perfil">
+          <p id="nombre-Usuario" class="nombre-usuario"></p>
+        </div>
+
+        <div class="stars">
+          <p>Calificación &#9733;</p>
+          <span></span><!--&#9733;-->
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span><!--&#9734;-->
+        </div>
+                
+      </div>
+        
+      <div id="mensajeContainer" class="mensaje-container">
+        <!-- Aquí se mostrarán los mensajes -->
+      </div>
+
+      <div class="input-container">
+        <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
+        <button id="enviarMensaje">Enviar</button>
+      </div>
+    </section>
+
+  </div>
+  <br>
+
+  <div id="footer--contenido"></div>
+
+  <script src="../scripts/mensajes2.js"></script>
+  <script src="../scripts/insertarNavBar.js"></script>
+  <script src="../scripts/footer.js"></script>
+
+</body>
+
+</html>

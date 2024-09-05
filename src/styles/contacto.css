@@ -35,6 +35,7 @@ font-family: "Poppins", sans-serif;
     width: 100%; /* Cambio: ajustar ancho al 100% del contenedor */
     max-width: 600px; /* Cambio: máximo ancho de 600px para responsividad */
     box-sizing: border-box; /* Cambio de content-box a border-box para mejor manejo del padding */
+    border: solid 2px #D9B70D;
 }
 
 .form-container--contenedor {
@@ -42,6 +43,7 @@ font-family: "Poppins", sans-serif;
     align-items: row;
     text-align: center;
     justify-content: space-around;
+    gap: 15px; /*Agregue este gap si separa mucho rn la media Query puede quitarse*/
 }
 
 .form-container--contenedor--grupo-datos {
@@ -77,6 +79,7 @@ font-family: "Poppins", sans-serif;
 
 #from-div--img-contactanos {
     width: 350px;
+    padding: 10px;
 }
 /***********************Botones*****************************/
 
@@ -101,8 +104,27 @@ font-family: "Poppins", sans-serif;
     cursor: pointer;
 
 }
+.botonUsers--Proveedor {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    border: 2px solid #253C59;
+    color: #253C59;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+}
 
 .botonUsers--Cliente:hover {
+
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    background-color: #253C59;
+    transition: 0.5s;
+}
+
+.botonUsers--Proveedor:hover {
 
     border: 2px solid #FFFFFF;
     color: #FFFFFF;
@@ -111,26 +133,12 @@ font-family: "Poppins", sans-serif;
 
 }
 
-.botonUsers--Proveedor {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    border-radius: 20px;
-    text-align: center;
-    border: 2px solid #253C59;
-    color: #253C59;
-    background-color: #D9B70D;
-    cursor: pointer;
-
+.botonUsers--Cliente:disabled, .botonUsers--Proveedor:disabled {
+    background-color: #D9B70D; /* Cambia el color de fondo */
+    color: #253C59; /* Cambia el color del texto */
+    cursor: not-allowed; /* Cambia el cursor para indicar que está deshabilitado */
 }
 
-.botonUsers--Proveedor:hover {
-
-    border: 2px solid #D9B70D;
-    color: #D9B70D;
-    background-color: #253C59;
-    transition: 0.5s;
-
-}
 
 /* Boton enviar */
 
@@ -147,6 +155,10 @@ font-family: "Poppins", sans-serif;
     color: #253C59;
     background-color: #D9B70D;
     cursor: pointer;
+    /*Subiendo el tamaño al boton de enviar*/
+    font-size: 18px;
+    padding: 3px, 3px,3px,3px;
+    width: 90px;
 
 }
 
@@ -158,6 +170,9 @@ font-family: "Poppins", sans-serif;
     transition: 0.5s;
 
 }
+
+
+
 
 
 @media (max-width: 500px) { /* Cambio: media query para pantallas más pequeñas */

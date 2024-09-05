@@ -35,6 +35,7 @@ font-family: "Poppins", sans-serif;
 i {
     width: 50px;
     text-align: center;
+    /*font-size: 60px;*/
 }
 
 .container--general {
@@ -44,6 +45,9 @@ i {
     border-radius: 20px;
     padding: 20px;
     margin-top: 100px;
+    margin-bottom: 50px;
+    border: solid 2px #D9B70D;
+    
 }
 
 /************Titulo**********/
@@ -98,15 +102,15 @@ input, select, label {
     transition: 0.5s;
 }
 
-.redes {
+.form-redes { 
     font-size: x-large;
-    /* width: 250px; */
-    text-align:center;
+    text-align: center;
     font-family: "Poppins", sans-serif;
     color: #FFFFFF;
     font-weight: bold;
     margin:auto;
-
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -116,20 +120,101 @@ input, select, label {
     justify-content: space-between;
     gap: 20px;
 }
-
-@media (max-width: 500px){
-    .redes{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .columna1-fila {
-        display: flex;
-        flex-direction: column;
-    }
+.icon{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.icon:hover{
+    color: #D9B70D;
+    text-decoration: none;
+}
+.icon-container {
+    gap: 10px; /* Espacio entre los íconos */
+    justify-content: center; /* Centra los íconos horizontalmente */
+    padding: 10px; /* Espacio interior */
 }
 
+.icon-container i {
+    font-size: 17px; /* Tamaño de los íconos */
+    cursor: pointer; /* Cambia el cursor a mano al pasar sobre el ícono */
+}
+
+.icon-container i.hide {
+    display: none; /* Oculta los íconos con clase 'hide' */
+}
+
+
+.fa-eye {
+    color: #D9B70D;
+    cursor: pointer;
+}
+
+.fa-eye-slash {
+    color: #99B4BF;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+    
+}
+
+ .i-img {
+    margin: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 70px; 
+}
+
+
+.i-icon {
+    font-size: 50px;
+} 
+/*Estilos del checkbox "No soy un robot"*/
+.remember-me--position {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.remember-me {
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+
+    background-color: #99B4BF;
+    color: #2D4B73;
+    width:230px;
+
+}
+
+#robot-check{
+    margin-left: 10px;
+}
+
+
+.linkInformativo:hover{
+    color: #D9B70D;
+}
+
+    @media (max-width: 500px){
+        .columna1-fila {
+            display: flex;
+            flex-direction: column;
+        }
+        .i-img {
+            display: flex;
+            font-size: 50px;
+            padding: 10px;
+        }   
+    }

@@ -1,0 +1,111 @@
+body {
+    background-color: #EFF0F5;
+}
+
+ .contenedor{
+    
+    width: 100%;
+    height: 700px;
+    margin: 0 auto 88px;
+    
+}
+
+#carouselExampleControlsNoTouching{
+    margin-bottom: 30px;
+}
+
+.container--contenido--title{
+    text-align: center;
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #D9B70D;
+    margin-bottom: 30px;
+}
+
+.container--contenido--title-h1{
+    color: #253c59;
+    
+}
+
+.contenedor--contenido--descripcion{
+    margin: 0 40px 40px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    color: #253c59;
+    font-size: 18px;
+}
+
+.contenedor--contenido--boton{
+    
+    width:130px;
+    height: 40px;
+    margin: auto;
+    position: relative;
+    
+}
+
+
+.boton{
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    background-color: #D9B70D;
+    border: #253c59 solid 2px;
+    color: #253c59 !important;
+    padding: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+}
+
+.boton:hover {
+    border: #D9B70D solid 2px;
+    background-color: #2D4B73;
+    color: #D9B70D!important;
+    padding: 7px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+/* DESKTOP */
+@media (min-width: 800px){
+    .contenedor {
+        max-width: 100%;
+        align-items: center;
+        height: 500px;
+        display: flex;
+        
+        flex-direction: row-reverse;
+        margin-bottom: 0;
+        
+    }
+    #carouselExampleControlsNoTouching{
+        margin-right: 50px;
+        margin-left: 50px;
+        max-width: 600px;
+        
+        
+    }
+    .contenedor--contenido{
+            margin-left: 60px;
+            height: 300px;
+            margin-top: 0;
+    }
+
+    .container--contenido--title{
+        font-size: 35px;
+    }
+    .contenedor--contenido--descripcion{
+        
+        font-size: 18px;
+        margin: 0 0 20px;
+    }
+    .contenedor--contenido--boton{
+        margin-top: 30px;
+        width: 140px;
+        
+    }
+    }

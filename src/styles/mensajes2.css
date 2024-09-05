@@ -1,0 +1,332 @@
+/* Estilo global */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Contenedor principal que divide la página */
+.contenedor {
+    display: flex;
+    height: 80%;
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+/* Barra lateral de chats */
+
+
+
+/* *******Publicidad******* */
+.ad {
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.ad2{
+    display: flex;
+    flex-direction: column;
+    background-color: #aac8f0;
+    color: #2D4B73;
+    font-weight: bold;
+    width: 100%; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
+    height: 180px; /* Igualar la altura con ad1 */
+    font-family: 'Poppins',sans-serif;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+
+/*Boton premium*/
+
+.btn2Premium {
+    background-color: #D9B70D;
+    border: solid 2px #253C59;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #2D4B73;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn2Premium:hover {
+    background-color: #253C59;
+    color: #D9B70D;
+    transition: 0.5s;
+    border: solid 2px #D9B70D;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ******* Fin de Publicidad******* */
+
+/* Sección principal de mensajes */
+.seccion-mensajes {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #2D4B73;
+    color: #FFFFFF;
+    font-family: 'DM-Sans',sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border:solid 2px #D9B70D;
+}
+
+.perfil--barra {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    gap: 20px ;
+    align-items: center;
+}
+
+.texto--perfil{
+    padding: 20px;
+}
+
+.stars{
+    font-size: 25px;
+    color: #D9B70D;
+}
+
+.mensaje-container {
+    flex-grow: 1;
+    border: 1px solid #D9B70D;
+    overflow-y: auto;
+    background-color: #EFF0F5;
+    text-align: right;
+    align-content: end;
+    border-radius: 5px;
+}
+.chats-container {
+
+   width: 100%;
+   height: 70%;
+    border: 1px solid #D9B70D;
+    overflow-y: auto;
+    background-color: #EFF0F5;
+    text-align: right;
+    align-content:start;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+.chats-container :hover {
+     background-color: #cfcfd0;
+  
+    
+ }
+
+.input-container {
+    display: flex;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+#mensajeInput {
+    background-color: #EFF0F5;
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px solid #D9B70D;
+    border-radius: 5px;
+}
+
+#enviarMensaje {
+    padding: 7px;
+    border: solid 2px #2D4B73;
+    background-color: #D9B70D;
+    color: #2D4B73;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#enviarMensaje:hover {
+    background-color: #2D4B73;
+    color: #D9B70D;
+    transition: 0.5s;
+    font-family: 'Poppins',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border: solid 2px #D9B70D;
+}
+
+.mensajes--style {
+    background-color: #99B4BF; /* Color de fondo */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 10px; /* Espacio interior para el texto */
+    border: 4px solid #99B4BF; /* Borde del mismo color que el fondo */
+    color: #253C59; /* Color del texto */
+    margin: 5px 0; /* Espacio entre los mensajes */
+    display: inline-block; /* Ajusta el ancho al contenido */
+    max-width: 60%; /* Asegura que no se expanda más allá del contenedor */
+    word-wrap: break-word; /* Rompe las palabras largas */
+}
+
+/*Estilo de las listas */
+
+
+
+
+
+/* estilos momentaneos de pchats */
+.chat {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    
+}
+
+.perfil-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+    margin-right: 15px;
+}
+
+.chat-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chat-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nombre-usuario {
+    font-weight: bold;
+    margin: 10px;
+    font-size: large;
+    width: min-content;
+}
+
+.trabajo-usuario {
+    font-weight: bold;
+    font-size: small;
+}
+
+.trabajo{
+    width: 30%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ultimo-mensaje {
+    color: #555;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+}
+
+@media screen and  (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+        margin-bottom: 400px;
+    }
+
+    .barra-lateral {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .chats-container {
+        width: 90%;
+        height: 250px;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .ad2 {
+        height: 250px;
+    }
+
+    .seccion-mensajes {
+        width: 95%;
+        height: 650px; 
+    }
+
+    .mensaje-container {
+        height: 400px;
+    }
+}
+
+@media screen and  (max-width: 660px) {
+    .chats-container {
+        width: 190%;
+    }
+}
+
+@media (max-width: 500px){
+    .contenedor {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 200%;
+        margin-bottom: 0;
+    }
+
+    .chat-info {
+        width: 100%;
+    }
+
+    .seccion-mensajes {
+        width: 90%;
+        height: 650px;
+    }
+
+    .mensajeContainer {
+        width: 95%;
+        height: 100px;
+    }
+
+    .barra-lateral {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .chats-container {
+        width: 90%;
+        height: 350px;
+        align-items: center;
+    }
+
+    .chat-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #mensajeInput {
+    width: 80%;
+    }
+
+}
