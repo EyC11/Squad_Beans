@@ -10,154 +10,76 @@
 
 <body>
 
-    <!-- Barra de navegación -->
-    <div id="navbar--contenido"></div>
+  <!-- Barra de navegación -->
+  <div id="navbar--contenido"></div>
 
-    <div class="contenedor">
-        <!-- Barra lateral izquierda -->
-        <aside class="barra-lateral">
-            <!-- Cuadro de búsqueda de chats -->
-            <!-- <input type="text" id="buscarChats" placeholder="Buscar chats..."> -->
+  <div class="contenedor">
+    <!-- Barra lateral izquierda -->
+    <aside class="barra-lateral">
+      <!-- Cuadro de búsqueda de chats -->
+      <!-- <input type="text" id="buscarChats" placeholder="Buscar chats..."> -->
             
-          <div id="chatsContainer" class="chats-container">
-            <!-- Aquí se mostrarán los chats -->
-
-            <!-- Chat 1 -->
-            <div class="chat" data-chat="gabriel">
-              <img src="../../public/assets/jardineroGabriel.jpg" alt="Perfil 1" class="perfil-img">
-              <div class="chat-info">
-                  <div class="chat-row">
-                      <p class="nombre-usuario">Gabriel</p>
-                      <p class="trabajo-usuario">Jardinería</p>
-                  </div>
-                  <p class="ultimo-mensaje">Último mensaje de Gabriel</p>
-              </div>
-            </div>
-
-            <!-- Chat 2 -->
-            <div class="chat" data-chat="carpintero">
-              <img src="../../public/assets/carpintero.jfif" alt="Perfil 2" class="perfil-img">
-              <div class="chat-info">
-                <div class="chat-row">
-                  <p class="nombre-usuario">María</p>
-                  <p class="trabajo-usuario">Pastelera</p>
-                </div>
-                  <p class="ultimo-mensaje">Último mensaje de María</p>
-              </div>
-            </div>
-
-            <!-- Chat 3 -->
-            <div class="chat" data-chat="limpieza">
-              <img src="../../public/assets/Limpieza.jfif" alt="Perfil 3" class="perfil-img">
-              <div class="chat-info">
-                <div class="chat-row">
-                  <p class="nombre-usuario">Juan</p>
-                  <p class="trabajo-usuario">Albañil</p>
-                </div>
-                  <p class="ultimo-mensaje">Último mensaje de Juan</p>
-              </div>
-            </div>
-
-            <!-- Chat 4 -->
-            <div class="chat" data-chat="jardinero2">
-              <img src="../../public/assets/publicaciones/albañill.jpeg" alt="Perfil 1" class="perfil-img">
-              <div class="chat-info">
-                <div class="chat-row">
-                  <p class="nombre-usuario">josé</p>
-                  <p class="trabajo-usuario">Carpintero</p>
-                </div>
-                  <p class="ultimo-mensaje">Último mensaje de Ana</p>
-              </div>
-            </div>
-
-            <!-- Chat 5 -->
-            <div class="chat" data-chat="carpintero2">
-              <img src="../../public/assets/carpintero.jfif" alt="Perfil 2" class="perfil-img">
-              <div class="chat-info">
-                <div class="chat-row">
-                  <p class="nombre-usuario">Luis</p>
-                  <p class="trabajo-usuario">Fontanero</p>
-                </div>
-                  <p class="ultimo-mensaje">Último mensaje de Luis</p>
-              </div>
-            </div>
-
-            <!-- Chat 6 -->
-            <div class="chat" data-chat="limpieza2">
-              <img src="../../public/assets/cocinera.jpg" alt="Perfil 3" class="perfil-img">
-              <div class="chat-info">
-                <div class="chat-row">
-                  <p class="nombre-usuario">Laura</p>
-                  <p class="trabajo-usuario">Cocinera</p>
-                </div>
-                  <p class="ultimo-mensaje">Último mensaje de Laura</p>
-              </div>
-            </div>
-
-
-            
-            
-
-            
-
-
-          </div>
-
-          
-              
-
+      <div id="chatsContainer" class="chats-container">
+        <!-- Aquí se mostrarán los chats -->
+        <!-- Chat 1 -->
+        
+      
+      </div>
 
            
-            <br>
-            <div class="ad ad2">
-                <h3 class="premium">¿Ya eres Premium? </h3>
-                <p>Beneficios:<br>* Sin Ads<br>* Carrusel principal<br>* Más visibilidad</p>
-                <a href="#">
-                    <!-- Cambiando clase btn2 a btn2Premium -->
-                    <button onclick="window.location.href= 'suscripciones.html'" class="btn2Premium">Premium</button>
-                </a>
-            </div>
-        </aside>
+            
+      <div class="ad ad2">
+        <h3 class="premium">¿Ya eres Premium? </h3>
+        <p>Beneficios:<br>* Sin Ads<br>* Carrusel principal<br>* Más visibilidad</p>
+          <a href="#">
+            <!-- Cambiando clase btn2 a btn2Premium -->
+            <button onclick="window.location.href= 'suscripciones.html'" class="btn2Premium">Premium</button>
+          </a>
+      </div>
+    </aside>
 
 
-        <!-- Sección principal de mensajes -->
-        <section class="seccion-mensajes">
-            <div  id="chatHeader" class="perfil--barra" style="display: flex; align-items: center;">
-                <div class="foto--perfil"><img id="perfilImg" src="" alt="Perfil" class="perfil-img">
-                   </div>
-                <div class="texto--perfil">
-                  <p id="nombre-Usuario" class="nombre-usuario"></p>
-                    
-                    
-                </div>
-                <div class="stars">
-                    <p>Calificación</p>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9733;</span>
-                    <span>&#9734;</span>
-                </div>
+    <!-- Sección principal de mensajes -->
+    <section class="seccion-mensajes">
+      <div  id="chatHeader" class="perfil--barra" style="display: flex; align-items: center;">
+        <div class="foto--perfil">
+          <img id="perfilImg" src="" alt="Perfil" class="perfil-img">
+        </div>
+
+        <div class="texto--perfil">
+          <p id="nombre-Usuario" class="nombre-usuario"></p>
+        </div>
+
+        <div class="stars">
+          <p>Calificación &#9733;</p>
+          <span></span><!--&#9733;-->
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span><!--&#9734;-->
+        </div>
                 
+      </div>
+        
+      <div id="mensajeContainer" class="mensaje-container">
+        <!-- Aquí se mostrarán los mensajes -->
+      </div>
 
-            </div>
-            <br>
-            <div id="mensajeContainer" class="mensaje-container">
-                <!-- Aquí se mostrarán los mensajes -->
-            </div>
-            <div class="input-container">
-                <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
-                <button id="enviarMensaje">Enviar</button>
-            </div>
-        </section>
+      <div class="input-container">
+        <input type="text" id="mensajeInput" placeholder="Escribe tu mensaje">
+        <button id="enviarMensaje">Enviar</button>
+      </div>
+    </section>
 
-    </div>
+  </div>
+  <br>
 
-    <div id="footer--contenido"></div>
+  <div id="footer--contenido"></div>
 
-    <script src="../scripts/mensajes2.js"></script>
-    <script src="../scripts/insertarNavBar.js"></script>
-    <script src="../scripts/footer.js"></script>
+  <script src="../scripts/mensajes2.js"></script>
+  <script src="../scripts/insertarNavBar.js"></script>
+  <script src="../scripts/footer.js"></script>
+
 </body>
 
 </html>

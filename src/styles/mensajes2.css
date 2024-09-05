@@ -22,7 +22,7 @@ body, html {
 .ad {
     border-radius: 20px;
     padding: 20px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 10px;
 }
@@ -33,8 +33,8 @@ body, html {
     background-color: #aac8f0;
     color: #2D4B73;
     font-weight: bold;
-    width: 90%; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
-    height: 200px; /* Igualar la altura con ad1 */
+    width: 100%; /* Ajustar para que ad2 y ad3 ocupen el mismo ancho que ad1 cuando están uno al lado del otro */
+    height: 180px; /* Igualar la altura con ad1 */
     font-family: 'Poppins',sans-serif;
     font-weight: bolder;
     justify-content: center;
@@ -70,6 +70,7 @@ body, html {
 /* Sección principal de mensajes */
 .seccion-mensajes {
     width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #2D4B73;
@@ -78,7 +79,7 @@ body, html {
     font-size: 25px;
     font-weight: 300;
     margin-left: 20px;
-    padding: 20px;
+    padding: 5px;
     box-sizing: border-box;
     border-radius: 10px;
     border:solid 2px #D9B70D;
@@ -205,6 +206,7 @@ body, html {
 .chat-info {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .chat-row {
@@ -215,14 +217,21 @@ body, html {
 
 .nombre-usuario {
     font-weight: bold;
-    margin: 0;
+    margin: 10px;
     font-size: large;
+    width: min-content;
 }
 
 .trabajo-usuario {
     font-weight: bold;
     font-size: small;
-    text-align: left;
+}
+
+.trabajo{
+    width: 30%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .ultimo-mensaje {
@@ -231,4 +240,93 @@ body, html {
     width: 100%;
     text-align: left;
     white-space: nowrap;
+}
+
+@media screen and  (max-width: 800px) {
+    .contenedor {
+        flex-direction: column;
+        margin-bottom: 400px;
+    }
+
+    .barra-lateral {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .chats-container {
+        width: 90%;
+        height: 250px;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    .ad2 {
+        height: 250px;
+    }
+
+    .seccion-mensajes {
+        width: 95%;
+        height: 650px; 
+    }
+
+    .mensaje-container {
+        height: 400px;
+    }
+}
+
+@media screen and  (max-width: 660px) {
+    .chats-container {
+        width: 190%;
+    }
+}
+
+@media (max-width: 500px){
+    .contenedor {
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 200%;
+        margin-bottom: 0;
+    }
+
+    .chat-info {
+        width: 100%;
+    }
+
+    .seccion-mensajes {
+        width: 90%;
+        height: 650px;
+    }
+
+    .mensajeContainer {
+        width: 95%;
+        height: 100px;
+    }
+
+    .barra-lateral {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .chats-container {
+        width: 90%;
+        height: 350px;
+        align-items: center;
+    }
+
+    .chat-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #mensajeInput {
+    width: 80%;
+    }
+
 }
