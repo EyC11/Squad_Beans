@@ -205,14 +205,14 @@ body {
     text-align: center;
     font-size: 14px;
 }
+
 .contenedor-boton{
     display: flex;
     justify-content: space-between; 
     gap: 10px;
     /*margin:20px; */ 
-    /* mejor asi ya que esta responsivo ): con nosotros en un div dentro de otro div con colum y luego afectar  */
+} 
 
-} /* vayanse a comer xd*/
 .button {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -221,10 +221,10 @@ body {
     background-color: #D9B70D;
     border: #2D4B73 solid 2px;
     color: #2D4B73 !important;
-    padding: 8px;
+    padding: 6px;
     border-radius: 20px;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
     margin-left: 1px;
 }
 
@@ -232,11 +232,22 @@ body {
     border: #D9B70D solid 2px;
     background-color: #2D4B73;
     color: #D9B70D !important;
-    padding: 7px;
+    padding: 6px;
     border-radius: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
+
+.button i{
+    font-size: 25px;
+    /*Tamaño de iconos LK y Git de botones */
+}
+
+
+
+    
+
+
 @media screen and (max-width: 955px){
     .contenedor-boton{
         display: flex;

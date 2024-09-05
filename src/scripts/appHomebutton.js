@@ -17,7 +17,6 @@ buttonCerrar.addEventListener('click', () => {
 
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
   // Referencias a elementos del DOM
   const ikonikButton = document.getElementById('ikonik-button');
@@ -93,6 +92,11 @@ document.addEventListener('DOMContentLoaded', function () {
       // Verificar si se excede el límite de palabras
       submitCommentButton.disabled = wordCount > 100; // Deshabilitar el botón si se excede el límite
   });
+   
+   // Obtener el nombre del usuario desde el localStorage
+   const username = localStorage.getItem('username') || 'Usuario Anónimo';
+
+   
 
   // Manejar el envío de comentarios
   submitCommentButton.addEventListener('click', function () {
@@ -107,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Crear un nuevo elemento de comentario
       const newComment = document.createElement('div');
       newComment.classList.add('comment');
-      newComment.textContent = commentText;
+      newComment.innerHTML = `<strong>${username}:</strong> ${commentText}`;  // Mostrar el nombre del usuario antes del comentario
 
       // Agregar el comentario a la lista de comentarios
       commentsContainer.appendChild(newComment);
@@ -118,4 +122,17 @@ document.addEventListener('DOMContentLoaded', function () {
       submitCommentButton.disabled = false; // Rehabilitar el botón después de limpiar
   });
 });
+
+// Función para guardar el nombre del usuario en localStorage
+function nombreLocalStorage() {
+    const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const usuarioLogin = usuarios.find(usuario => usuario.login === 'in');
+    if (usuarioLogin) { 
+        localStorage.setItem('username', `${usuarioLogin.nombre} ${usuarioLogin.apellido}`);
+    } else {
+        localStorage.setItem('username', 'Usuario Anónimo');
+    }
+}
+
+nombreLocalStorage();
 

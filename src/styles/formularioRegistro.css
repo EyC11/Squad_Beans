@@ -120,8 +120,14 @@ input, select, label {
     justify-content: space-between;
     gap: 20px;
 }
-
-
+.icon{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.icon:hover{
+    color: #D9B70D;
+    text-decoration: none;
+}
 .icon-container {
     gap: 10px; /* Espacio entre los íconos */
     justify-content: center; /* Centra los íconos horizontalmente */
@@ -196,6 +202,10 @@ input, select, label {
     margin-left: 10px;
 }
 
+
+.linkInformativo:hover{
+    color: #D9B70D;
+}
 
     @media (max-width: 500px){
         .columna1-fila {
