@@ -27,14 +27,14 @@ const chatDatos = {
     },
     luis: { 
         nombre: 'Luis ', 
-        foto: '../../public/assets/carpintero.jfif',
-        servicio: 'Carpintería',
+        foto: '../../public/assets/publicaciones/mecanico.jpeg',
+        servicio: 'Mecanico',
         puntuacion: '4.7/5'
     },
     laura: { 
         nombre: 'Laura ', 
-        foto: '../../public/assets/cocinera.jpg',
-        servicio: 'Cocina',
+        foto: '../../public/assets/publicaciones/estilista.jpeg',
+        servicio: 'Estilista',
         puntuacion: '4.9/5'
     }
 };

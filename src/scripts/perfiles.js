@@ -114,24 +114,28 @@ function displayPosts() {
     const posts = JSON.parse(localStorage.getItem('posts')) || [];
     const postsContainer = document.querySelector('.container--publicacion .row');
     postsContainer.innerHTML = '';  // Limpia el contenedor antes de agregar las publicaciones
+    const user = JSON.parse(localStorage.getItem('usuarios')) || [];
+    const usuarioLogin = user.find(usuario => usuario.login === 'in');
+    const postElement = document.createElement('div');
 
     posts.forEach(post => {
-        const postElement = document.createElement('div');
+      
         postElement.classList.add('col');
         postElement.innerHTML = `
             <div class="post-container">
                 <div class="post-header">
                     <div class="post-icon">
-                        <img src="../../public/assets/publicaciones/albañil.jpeg" alt="icon">
+                        <img src="../../public/assets/user.png" alt="icon">
                     </div>
                     <div class="post-info">
-                        <h4>${post.category}</h4>
+                        <h4> Albañilería </h4>  
+                        <p> ${usuarioLogin.nombre} ${usuarioLogin.apellido}  4.0 ★</p>
                         <p>${post.location} - ${post.date}</p>
                     </div>
                 </div>
                 <div class="post-body">
                     <p>${post.content}</p>
-                    <img src="../../public/assets/publicaciones/albañileria.jpeg" alt="post-image">
+                    <img src="../../public/assets/publicaciones/publicacion-prueba.jpg" alt="post-image">
                 </div>
                 <div class="post-footer">
                     <button class="reaccion--btn--ikonik">iKonik</button>
