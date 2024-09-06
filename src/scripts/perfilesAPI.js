@@ -13,7 +13,7 @@ loginRevisar.addEventListener('click', () => {
             userInfo.innerHTML = `
 
 
-                <p>Nombre: ${data.nombre} ${data.apellido}</p>
+                <h3>${data.nombre} ${data.apellido}</h3>
                 <p>Correo electrónico: ${data.email}</p>
                 <p>Teléfono: ${data.telefono}</p>
                 <p>Fecha de Nacimiento: ${data.fechaNacimiento}</p>

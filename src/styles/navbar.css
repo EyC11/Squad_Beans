@@ -275,7 +275,7 @@ font-family: 'Poppins',sans-serif;
 }
 /* Afectando a todos los a para que no se muestre subrayado*/
 a{
-    text-decoration: none;  
+    text-decoration: none !important;  
 }
 
 
