@@ -1,3 +1,4 @@
+/***** Estilos para el body en general *****/
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@ body {
     background-color: #EFF0F5;
 }
 
-/* *************** Estilos de la card del perfil ***************************** */
+/**********  Estilos de la card del perfil **********/
 .profile-card {
     width: 100%; /* Ancho de la card*/
     border-radius: 20px;
@@ -24,6 +25,7 @@ body {
     margin: auto;
 }
 
+/* Estilo de la imágen circular del perfil, color y dimensiones*/
 .profile-image img {
     position: block;
     border-radius: 50%;
@@ -33,13 +35,14 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
 }
+
 .cargarImagen {
 
     border-radius: 50%;
     cursor: pointer;
 
 }
-
+/* Hover gris al pasar  por encima de la imágen*/
 .cargarImagen:hover {
     opacity: .75;
     border-radius: 50%;
@@ -47,6 +50,8 @@ body {
 
 
 }
+
+/* Estilo del ícono de lapiz de la imágen */
 #edit--icon{
     position: absolute;
     display: flex;
@@ -61,13 +66,15 @@ body {
     opacity: 1 !important; /* Muestra el ícono en hover */ 
     transition: 0.5s;
 }
+
+/* Estílos del nombre */
 .profile-name {
     margin: 15px 0 5px;
     font-weight: bold;
     font-size: 25px;
     color: #D9B70D;
 }
-
+/* Estílos del servicio */
 .profile-service {
     margin-bottom: 30px;
     font-weight: 500;
@@ -75,11 +82,11 @@ body {
     color: #FFFFFF;
 }
 
+/* Estilos para la sección de la calificación */
 .rating-section {
     text-align: center;
     margin: 22px 0;
 }
-
 .rating-section p {
     margin: 0;
     font-weight: 600;
@@ -92,11 +99,11 @@ body {
     color: #D9B70D;
 }
 
+/* Estilos para el div de reseña*/
 .review-section {
     width: 100%;
     text-align: center;
 }
-
 .review-section p {
     margin: 15px 0 10px;
     font-size: 20px;
@@ -104,6 +111,7 @@ body {
     color: #FFFFFF;
 }
 
+/* Estilos para la textarea de la reseña */
 #review {
     width: 100%;
     padding: 10px;
@@ -113,7 +121,8 @@ body {
     font-family: 'Poppins', sans-serif;
     resize: none;
 }
-/*Boton de enviar reseña*/
+
+/* Boton de enviar reseña */
 #submit-review {
     padding: 7px;
     background-color: #D9B70D;
@@ -138,7 +147,7 @@ body {
     transition: 0.5s;
 }
 
-
+/* Estilos para el container de las reseñas */
 #reviews-container {
     margin-top: 20px;
     color: #FFFFFF;
@@ -152,7 +161,7 @@ body {
     text-align: left;
 }
 
-/*Nuevos estilos*/
+/*Estilos del acomodo de los elementosdiv de la card*/
 
 #principal--perfiles {
     display: flex;
@@ -163,7 +172,7 @@ body {
 .div--card--general {
     margin: auto;
 }
-
+ /* Color de la card */
 .publicacion {
     background-color: #2D4B73;
     border-radius: 20px;

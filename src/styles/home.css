@@ -583,16 +583,6 @@ body {
 }
 
 
-/* Ajuste para pantallas más grandes */
-@media (min-width: 800px) {
-    .advertisements {
-        gap: 20px; /* Espacio entre los elementos */
-        margin-left: 40px; /* Aumenta el margen izquierdo para mayor separación en pantallas grandes */
-    }
-    
-}
-
-
 .ad-container {
     display: flex; /* Utilizar flex para organizar ad2 y ad3 en una fila */
     gap: 20px; /* Espacio entre ad2 y ad3 */
@@ -717,7 +707,14 @@ body {
     flex-direction: row;
     gap: 50px;
 }
-
+/* Ajuste para pantallas más grandes */
+@media (min-width: 800px) {
+    .advertisements {
+        gap: 20px; /* Espacio entre los elementos */
+        margin-left: 40px; /* Aumenta el margen izquierdo para mayor separación en pantallas grandes */
+    }
+    
+}
   @media (max-width:1400px) {
     
     .contenedor--general{

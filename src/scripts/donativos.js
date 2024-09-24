@@ -54,7 +54,7 @@ paymentForm.addEventListener('submit', function(event) {
     }
 });
 
-    //El usuario decide cancelar 
+    //Función del botón de cancelar por si el usuario decide cancelar 
     cancelButton.addEventListener('click', function() {
         paymentForm.reset(); // Restablecer el formulario de pago
         serviceForm.reset(); // Restablecer el formulario de donación (si es necesario)

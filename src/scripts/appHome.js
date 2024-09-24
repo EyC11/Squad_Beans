@@ -185,16 +185,3 @@ console.log (publicacionesObject);
 });
 
 
-
-//fetch("./nuevasPublicaciones.json").then
-
-/*
-const fs = require('fs');
-const nuevaPublicacion = JSON.stringify(publicacionesObject);
-fs.writeFile('nuevasPublicaciones.json',nuevaPublicacion, (error)=>{
-    if (error) throw error;
-    console.log('Informacion recibida'); 
-
-})  */
-    
-   

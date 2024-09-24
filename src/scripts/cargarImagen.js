@@ -1,4 +1,4 @@
-/*const archivoInput = document.getElementById("archivo-input");
+const archivoInput = document.getElementById("archivo-input");
 console.log(archivoInput);
 
 
@@ -37,4 +37,4 @@ archivoInput.addEventListener("change",function(event){
     })
 
 
-})*/
+})

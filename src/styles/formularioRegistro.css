@@ -1,5 +1,12 @@
 /* 
-USO DE COLORES 
+Colores utilizados: 
+#D9B70D -- Dorado
+#253C59 -- Azul obscuro
+#4C5973 -- Azul 
+#99B4BF -- Azul claro
+#FFFFFF -- Blanco
+
+Uso de colores según el color
  - #253C59: Para subtítulos o para resaltar el
 texto cuando el fondo sea color.
  - #2D4B73: Resaltar algún cuadro o figura que
@@ -11,33 +18,26 @@ sea #2D4B73. También se puede
 usar para resaltar detalles de los
 botones.
 
-
-***** css *****
-
-/*
-#D9B70D -- Dorado
-#253C59 -- Azul obscuro
-#4C5973 -- Azul 
-#99B4BF -- Azul claro
-#FFFFFF -- !Negro
-
-//Falta descargar tipo de letra 
+//Tipo de letra 
 font-family: "DM Sans", sans-serif; 
 Titulos 
 font-family: "Poppins", sans-serif;
 */
 
-*/ body {
+/* Fondo y color del fondo  */
+body {
     font-family: "DM Sans", sans-serif;
     color: #FFFFFF;
 }
 
+/* Alineación de los iconos */
 i {
     width: 50px;
     text-align: center;
     /*font-size: 60px;*/
 }
 
+/* Estilos del formulario */
 .container--general {
     background-color: #253C59;
     color: #FFFFFF;
@@ -68,7 +68,7 @@ input, select, label {
 #fecha-nacimiento {
     text-align: center;
 }
-/*Modificacion del boton*/
+/*Modificación del botón*/
 .div--boton {
     text-align: center;
     margin-top: 20px;
@@ -76,7 +76,7 @@ input, select, label {
 
 
 }
-/***********Estilos del boton*************/
+/***********Estilos del botón registrarse*************/
 .boton--registrarse {
     font-family: "Poppins", sans-serif;
     font-weight: bold;
@@ -101,7 +101,7 @@ input, select, label {
     background-color: #253C59;
     transition: 0.5s;
 }
-
+/* Estílos  div íconos*/
 .form-redes { 
     font-size: x-large;
     text-align: center;
@@ -120,6 +120,7 @@ input, select, label {
     justify-content: space-between;
     gap: 20px;
 }
+/* Estílos de los íconos */
 .icon{
     color: #FFFFFF;
     text-decoration: none;
@@ -143,7 +144,7 @@ input, select, label {
     display: none; /* Oculta los íconos con clase 'hide' */
 }
 
-
+/* Estilos de los íconos de  visualización para contraseñas (ojos) */
 .fa-eye {
     color: #D9B70D;
     cursor: pointer;
@@ -174,39 +175,14 @@ input, select, label {
 .i-icon {
     font-size: 50px;
 } 
-/*Estilos del checkbox "No soy un robot"*/
-.remember-me--position {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-
-}
-.remember-me {
-    font-family: 'Poppins',sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-
-    background-color: #99B4BF;
-    color: #2D4B73;
-    width:230px;
-
-}
-
-#robot-check{
-    margin-left: 10px;
-}
 
 
+/* Estílos de hover para el span de términos y condiciones */
 .linkInformativo:hover{
     color: #D9B70D;
 }
 
+/* Media query de fila de teléfono y mail*/
     @media (max-width: 500px){
         .columna1-fila {
             display: flex;

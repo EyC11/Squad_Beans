@@ -62,9 +62,6 @@ function validacion2() {
     }
 }
 
-//faltan funcion o check radius botones
-
-
 /******************************************JSON ***********************/
 
 //Evento para que una vez validados los inputs guarde todo en variables al pulsar registrarse
@@ -126,15 +123,3 @@ function validacion2() {
         // El formulario se envía aquí si no hay errores
     });
     
-    
-    
-//     //funcion para neviar formulario a correo electronico
-//    const $d = document;
-   
-//     $d.addEventListener("submit",(e)=>{
-        
-//         //e.preventDefault();
-//         alert("Enviando formulario" );
-        
- 
-//     } );

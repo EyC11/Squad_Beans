@@ -1,14 +1,17 @@
+
+/* Color del fondo */
 .div-principal {
     background-color: #2D4B73;
     border-radius: 25px;
 }
 
+/* Estílos de color y de letra de los párrafos*/
 .div-principal--subt, .div-principal p{
     font-family: "DM Sans", sans-serif;
     color: #ffffff;
     margin: 0px 10px;
 }
-
+/* Estílos de letra y color del título */
 .div-principal--titulo {
     font-family: 'Poppins', sans-serif;
     text-align: center;

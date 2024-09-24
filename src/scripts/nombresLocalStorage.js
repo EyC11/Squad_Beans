@@ -1,3 +1,4 @@
+//Funcion para mostrar el nombre de usuario desde la local storage en apartado de hacer una publicacion
 function nombreLocalStorage() {
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
     const usuarioLogin = usuarios.find(usuario => usuario.login === 'in');
@@ -13,6 +14,7 @@ function nombreLocalStorage() {
 
 nombreLocalStorage();
 
+//Funcion para mostrar el nombre de usuario desde la local storage en la tarjeta de perfil
 function nombreLocalStoragePerfil() {
     const usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
     const usuarioLogin = usuarios.find(usuario => usuario.login === 'in');

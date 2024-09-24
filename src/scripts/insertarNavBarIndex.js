@@ -64,7 +64,7 @@ function actualizarElementosSegunSesion() {
     }
   }
   
-  
+  // funcion fetch para insertar la navbar
   document.addEventListener("DOMContentLoaded", function() {
       fetch('./src/pages/navbar.html')
         .then(response => response.text())

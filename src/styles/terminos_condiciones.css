@@ -1,14 +1,19 @@
+/* Estílos de términos y condiciones*/
+
+/* Color de fondo */
 .div-principal {
     background-color: #2D4B73;
     border-radius: 25px;
 }
 
+/* Estílos de color y letra de los subtítulos */
 .div-principal--subtitulo, .div-principal p {
     font-family: "DM Sans", sans-serif;
     color: #ffffff;
     margin: 0px 50px;
 }
 
+/* Estílos de color y letra del título */
 .div-principal--titulo {
     font-family: 'Poppins', sans-serif;
     text-align: center;

@@ -24,10 +24,7 @@ function validarcontraseña() {
 function comparacionContraseñas() {
     const $constraseniat = document.getElementById("contrasena").value;
     const $constraseniag = document.getElementById("contrasena2").value;
-
-
 }
-
 
 // Seleccionar elementos específicos
 const inputEl = document.querySelector("#contrasena");
